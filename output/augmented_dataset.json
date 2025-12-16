@@ -1,0 +1,822 @@
+[
+  {
+    "sample_id": 0,
+    "text": "chiar nu se poate să scăpăm se acești securiști",
+    "label": null,
+    "reward_explicit": 0.3292,
+    "reward_implicit": 0.3333,
+    "rubrics": [
+      {
+        "category": "Essential",
+        "description": "Modelul a prezis corect eticheta de toxicitate (0 sau 1) comparativ cu ground truth-ul. Aceasta este verificarea fundamentală: predicția modelului se potrivește cu eticheta corectă din dataset? Evaluare: comparație directă între prediction și ground_truth_label.",
+        "evaluation_method": "direct_comparison",
+        "patterns": null,
+        "rubric_id": "E1",
+        "title": "Correct Label Assignment",
+        "trigger_condition": null,
+        "weight": 1.0
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența atacurilor personale în text. Dacă textul conține insulte personale (pattern-uri: prost*, idiot*, nenorocit*, dobitoc*, etc.) și ground truth=TOXIC, modelul trebuie să prezică TOXIC. Dacă aceste pattern-uri lipsesc și ground truth=NON-TOXIC, modelul trebuie să prezică NON-TOXIC.",
+        "evaluation_method": "pattern_matching_with_llm_judge",
+        "patterns": [
+          "prost*",
+          "idiot*",
+          "nenorocit*",
+          "dobitoc*",
+          "cretin*",
+          "imbecil*",
+          "tâmpit*",
+          "bou",
+          "vită",
+          "animal"
+        ],
+        "rubric_id": "E2",
+        "title": "Personal Attack Detection",
+        "trigger_condition": null,
+        "weight": 0.95
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența amenințărilor și incitării la violență. Pattern-uri cheie: 'vor plăti', 'la pușcărie', 'trebuie oprit*', 'merită bătaie', 'să moară'. Când aceste indicatori există și ground truth=TOXIC, modelul trebuie să prezică corect. Evaluează alinierea predicției cu prezența reală a amenințărilor.",
+        "evaluation_method": "pattern_matching_with_semantic_analysis",
+        "patterns": [
+          "vor plăti",
+          "la pușcărie",
+          "trebuie oprit*",
+          "merită bătaie",
+          "să moară",
+          "la zid",
+          "spânzurat*",
+          "împușcat*"
+        ],
+        "rubric_id": "E3",
+        "title": "Threat/Incitement Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența urii de grup (dehumanizare, limbaj despre 'infestare'). Pattern-uri: 'ciumă', 'infecție', 'gângaci', 'șobolani', 'paraziți', 'jigodii'. Evaluează dacă predicția modelului se aliniază cu prezența reală a limbajului de ură de grup conform ground truth-ului.",
+        "evaluation_method": "pattern_matching_with_contextual_analysis",
+        "patterns": [
+          "ciumă",
+          "infecție",
+          "gângaci",
+          "șobolani",
+          "paraziți",
+          "jigodii",
+          "lighioane",
+          "dobitoace",
+          "lepre"
+        ],
+        "rubric_id": "E4",
+        "title": "Group Hatred Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a luat în considerare contextul când a făcut predicția. Un model bun nu clasifică doar pe baza cuvintelor cheie, ci înțelege contextul în care apar. Evaluează dacă predicția modelului demonstrează înțelegere contextuală - nu doar pattern matching superficial.",
+        "evaluation_method": "llm_judge_with_context",
+        "patterns": null,
+        "rubric_id": "I1",
+        "title": "Contextual Appropriateness",
+        "trigger_condition": null,
+        "weight": 0.7
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect intensitatea emoțională a textului și a clasificat în consecință. Text cu intensitate emoțională ridicată nu este automat toxic - critica pasională poate fi legitimă. Evaluează dacă modelul a distins între emoție puternică și toxicitate reală.",
+        "evaluation_method": "sentiment_analysis_with_llm_judge",
+        "patterns": null,
+        "rubric_id": "I2",
+        "title": "Emotional Intensity Recognition",
+        "trigger_condition": null,
+        "weight": 0.65
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a gestionat corect sarcasmul și toxicitatea implicită. Textul sarcastic poate părea inofensiv la suprafață dar să fie toxic, sau poate părea dur dar să fie glumă. Evaluează dacă predicția modelului se aliniază cu ground truth-ul pentru cazurile de sarcasm și ironie.",
+        "evaluation_method": "llm_judge_specialized",
+        "patterns": null,
+        "rubric_id": "I3",
+        "title": "Sarcasm/Implicit Toxicity Handling",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect când textul vizează figuri politice și a clasificat în consecință. Politicieni relevanți: Iohannis, Ciolacu, Lasconi, Simion, Georgescu, Antonescu, Geoană. Partide: PSD, AUR, USR, PNL. Critica politicienilor nu este automat toxică - evaluează dacă modelul a făcut această distincție.",
+        "evaluation_method": "ner_with_targeting_analysis",
+        "patterns": [
+          "Iohannis",
+          "Ciolacu",
+          "Lasconi",
+          "Simion",
+          "Georgescu",
+          "Antonescu",
+          "Geoană",
+          "PSD",
+          "AUR",
+          "USR",
+          "PNL",
+          "Ciucă",
+          "Băsescu",
+          "Dragnea"
+        ],
+        "rubric_id": "I4",
+        "title": "Political Figure Recognition",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat greșit critica legitimă ca fiind toxică. Condiție de declanșare: prediction=TOXIC dar ground_truth=NON-TOXIC și textul conține critică politică legitimă, dezacord, sau opinii negative fără atacuri personale. Această eroare este frecventă când modelul reacționează la tonul negativ fără a evalua conținutul real.",
+        "evaluation_method": "false_positive_detection",
+        "patterns": null,
+        "rubric_id": "P1",
+        "title": "False Positive on Criticism",
+        "trigger_condition": "prediction=TOXIC AND ground_truth=NON-TOXIC AND text_is_legitimate_criticism",
+        "weight": -0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a ratat toxicitatea implicită sau subtilă. Condiție de declanșare: prediction=NON-TOXIC dar ground_truth=TOXIC și textul conține toxicitate mascată (dehumanizare subtilă, insinuări, dog whistles). Această eroare apare când modelul se bazează doar pe cuvinte cheie explicite.",
+        "evaluation_method": "false_negative_detection",
+        "patterns": null,
+        "rubric_id": "P2",
+        "title": "False Negative on Implicit Toxicity",
+        "trigger_condition": "prediction=NON-TOXIC AND ground_truth=TOXIC AND text_has_implicit_toxicity",
+        "weight": -0.65
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat bazându-se doar pe cuvinte cheie, ignorând complet contextul. Condiție de declanșare: predicție incorectă care ar fi fost corectă dacă modelul ar fi considerat contextul (ex: citat, discuție despre toxicitate, negație). Această eroare indică o înțelegere superficială.",
+        "evaluation_method": "context_analysis",
+        "patterns": null,
+        "rubric_id": "P3",
+        "title": "Context-Free Classification",
+        "trigger_condition": "incorrect_prediction AND context_would_change_classification",
+        "weight": -0.5
+      }
+    ]
+  },
+  {
+    "sample_id": 1,
+    "text": "călin georgescu - presedinte! rușine televiziunilor și partidelor politice care s-au aliat să desființeze un candidat prin minciuni sfruntate! mi-e scârbă. au furat și ne-au jecmănit și nu s-au săturat. ne-au vândut și ne desconsideră",
+    "label": null,
+    "reward_explicit": 0.2733,
+    "reward_implicit": 0.3333,
+    "rubrics": [
+      {
+        "category": "Essential",
+        "description": "Modelul a prezis corect eticheta de toxicitate (0 sau 1) comparativ cu ground truth-ul. Aceasta este verificarea fundamentală: predicția modelului se potrivește cu eticheta corectă din dataset? Evaluare: comparație directă între prediction și ground_truth_label.",
+        "evaluation_method": "direct_comparison",
+        "patterns": null,
+        "rubric_id": "E1",
+        "title": "Correct Label Assignment",
+        "trigger_condition": null,
+        "weight": 1.0
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența atacurilor personale în text. Dacă textul conține insulte personale (pattern-uri: prost*, idiot*, nenorocit*, dobitoc*, etc.) și ground truth=TOXIC, modelul trebuie să prezică TOXIC. Dacă aceste pattern-uri lipsesc și ground truth=NON-TOXIC, modelul trebuie să prezică NON-TOXIC.",
+        "evaluation_method": "pattern_matching_with_llm_judge",
+        "patterns": [
+          "prost*",
+          "idiot*",
+          "nenorocit*",
+          "dobitoc*",
+          "cretin*",
+          "imbecil*",
+          "tâmpit*",
+          "bou",
+          "vită",
+          "animal"
+        ],
+        "rubric_id": "E2",
+        "title": "Personal Attack Detection",
+        "trigger_condition": null,
+        "weight": 0.95
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența amenințărilor și incitării la violență. Pattern-uri cheie: 'vor plăti', 'la pușcărie', 'trebuie oprit*', 'merită bătaie', 'să moară'. Când aceste indicatori există și ground truth=TOXIC, modelul trebuie să prezică corect. Evaluează alinierea predicției cu prezența reală a amenințărilor.",
+        "evaluation_method": "pattern_matching_with_semantic_analysis",
+        "patterns": [
+          "vor plăti",
+          "la pușcărie",
+          "trebuie oprit*",
+          "merită bătaie",
+          "să moară",
+          "la zid",
+          "spânzurat*",
+          "împușcat*"
+        ],
+        "rubric_id": "E3",
+        "title": "Threat/Incitement Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența urii de grup (dehumanizare, limbaj despre 'infestare'). Pattern-uri: 'ciumă', 'infecție', 'gângaci', 'șobolani', 'paraziți', 'jigodii'. Evaluează dacă predicția modelului se aliniază cu prezența reală a limbajului de ură de grup conform ground truth-ului.",
+        "evaluation_method": "pattern_matching_with_contextual_analysis",
+        "patterns": [
+          "ciumă",
+          "infecție",
+          "gângaci",
+          "șobolani",
+          "paraziți",
+          "jigodii",
+          "lighioane",
+          "dobitoace",
+          "lepre"
+        ],
+        "rubric_id": "E4",
+        "title": "Group Hatred Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a luat în considerare contextul când a făcut predicția. Un model bun nu clasifică doar pe baza cuvintelor cheie, ci înțelege contextul în care apar. Evaluează dacă predicția modelului demonstrează înțelegere contextuală - nu doar pattern matching superficial.",
+        "evaluation_method": "llm_judge_with_context",
+        "patterns": null,
+        "rubric_id": "I1",
+        "title": "Contextual Appropriateness",
+        "trigger_condition": null,
+        "weight": 0.7
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect intensitatea emoțională a textului și a clasificat în consecință. Text cu intensitate emoțională ridicată nu este automat toxic - critica pasională poate fi legitimă. Evaluează dacă modelul a distins între emoție puternică și toxicitate reală.",
+        "evaluation_method": "sentiment_analysis_with_llm_judge",
+        "patterns": null,
+        "rubric_id": "I2",
+        "title": "Emotional Intensity Recognition",
+        "trigger_condition": null,
+        "weight": 0.65
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a gestionat corect sarcasmul și toxicitatea implicită. Textul sarcastic poate părea inofensiv la suprafață dar să fie toxic, sau poate părea dur dar să fie glumă. Evaluează dacă predicția modelului se aliniază cu ground truth-ul pentru cazurile de sarcasm și ironie.",
+        "evaluation_method": "llm_judge_specialized",
+        "patterns": null,
+        "rubric_id": "I3",
+        "title": "Sarcasm/Implicit Toxicity Handling",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect când textul vizează figuri politice și a clasificat în consecință. Politicieni relevanți: Iohannis, Ciolacu, Lasconi, Simion, Georgescu, Antonescu, Geoană. Partide: PSD, AUR, USR, PNL. Critica politicienilor nu este automat toxică - evaluează dacă modelul a făcut această distincție.",
+        "evaluation_method": "ner_with_targeting_analysis",
+        "patterns": [
+          "Iohannis",
+          "Ciolacu",
+          "Lasconi",
+          "Simion",
+          "Georgescu",
+          "Antonescu",
+          "Geoană",
+          "PSD",
+          "AUR",
+          "USR",
+          "PNL",
+          "Ciucă",
+          "Băsescu",
+          "Dragnea"
+        ],
+        "rubric_id": "I4",
+        "title": "Political Figure Recognition",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat greșit critica legitimă ca fiind toxică. Condiție de declanșare: prediction=TOXIC dar ground_truth=NON-TOXIC și textul conține critică politică legitimă, dezacord, sau opinii negative fără atacuri personale. Această eroare este frecventă când modelul reacționează la tonul negativ fără a evalua conținutul real.",
+        "evaluation_method": "false_positive_detection",
+        "patterns": null,
+        "rubric_id": "P1",
+        "title": "False Positive on Criticism",
+        "trigger_condition": "prediction=TOXIC AND ground_truth=NON-TOXIC AND text_is_legitimate_criticism",
+        "weight": -0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a ratat toxicitatea implicită sau subtilă. Condiție de declanșare: prediction=NON-TOXIC dar ground_truth=TOXIC și textul conține toxicitate mascată (dehumanizare subtilă, insinuări, dog whistles). Această eroare apare când modelul se bazează doar pe cuvinte cheie explicite.",
+        "evaluation_method": "false_negative_detection",
+        "patterns": null,
+        "rubric_id": "P2",
+        "title": "False Negative on Implicit Toxicity",
+        "trigger_condition": "prediction=NON-TOXIC AND ground_truth=TOXIC AND text_has_implicit_toxicity",
+        "weight": -0.65
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat bazându-se doar pe cuvinte cheie, ignorând complet contextul. Condiție de declanșare: predicție incorectă care ar fi fost corectă dacă modelul ar fi considerat contextul (ex: citat, discuție despre toxicitate, negație). Această eroare indică o înțelegere superficială.",
+        "evaluation_method": "context_analysis",
+        "patterns": null,
+        "rubric_id": "P3",
+        "title": "Context-Free Classification",
+        "trigger_condition": "incorrect_prediction AND context_would_change_classification",
+        "weight": -0.5
+      }
+    ]
+  },
+  {
+    "sample_id": 2,
+    "text": "mulțumesc pentru știri în direct super digi 24 tv felicitări",
+    "label": null,
+    "reward_explicit": 0.6273,
+    "reward_implicit": 1.0,
+    "rubrics": [
+      {
+        "category": "Essential",
+        "description": "Modelul a prezis corect eticheta de toxicitate (0 sau 1) comparativ cu ground truth-ul. Aceasta este verificarea fundamentală: predicția modelului se potrivește cu eticheta corectă din dataset? Evaluare: comparație directă între prediction și ground_truth_label.",
+        "evaluation_method": "direct_comparison",
+        "patterns": null,
+        "rubric_id": "E1",
+        "title": "Correct Label Assignment",
+        "trigger_condition": null,
+        "weight": 1.0
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența atacurilor personale în text. Dacă textul conține insulte personale (pattern-uri: prost*, idiot*, nenorocit*, dobitoc*, etc.) și ground truth=TOXIC, modelul trebuie să prezică TOXIC. Dacă aceste pattern-uri lipsesc și ground truth=NON-TOXIC, modelul trebuie să prezică NON-TOXIC.",
+        "evaluation_method": "pattern_matching_with_llm_judge",
+        "patterns": [
+          "prost*",
+          "idiot*",
+          "nenorocit*",
+          "dobitoc*",
+          "cretin*",
+          "imbecil*",
+          "tâmpit*",
+          "bou",
+          "vită",
+          "animal"
+        ],
+        "rubric_id": "E2",
+        "title": "Personal Attack Detection",
+        "trigger_condition": null,
+        "weight": 0.95
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența amenințărilor și incitării la violență. Pattern-uri cheie: 'vor plăti', 'la pușcărie', 'trebuie oprit*', 'merită bătaie', 'să moară'. Când aceste indicatori există și ground truth=TOXIC, modelul trebuie să prezică corect. Evaluează alinierea predicției cu prezența reală a amenințărilor.",
+        "evaluation_method": "pattern_matching_with_semantic_analysis",
+        "patterns": [
+          "vor plăti",
+          "la pușcărie",
+          "trebuie oprit*",
+          "merită bătaie",
+          "să moară",
+          "la zid",
+          "spânzurat*",
+          "împușcat*"
+        ],
+        "rubric_id": "E3",
+        "title": "Threat/Incitement Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența urii de grup (dehumanizare, limbaj despre 'infestare'). Pattern-uri: 'ciumă', 'infecție', 'gângaci', 'șobolani', 'paraziți', 'jigodii'. Evaluează dacă predicția modelului se aliniază cu prezența reală a limbajului de ură de grup conform ground truth-ului.",
+        "evaluation_method": "pattern_matching_with_contextual_analysis",
+        "patterns": [
+          "ciumă",
+          "infecție",
+          "gângaci",
+          "șobolani",
+          "paraziți",
+          "jigodii",
+          "lighioane",
+          "dobitoace",
+          "lepre"
+        ],
+        "rubric_id": "E4",
+        "title": "Group Hatred Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a luat în considerare contextul când a făcut predicția. Un model bun nu clasifică doar pe baza cuvintelor cheie, ci înțelege contextul în care apar. Evaluează dacă predicția modelului demonstrează înțelegere contextuală - nu doar pattern matching superficial.",
+        "evaluation_method": "llm_judge_with_context",
+        "patterns": null,
+        "rubric_id": "I1",
+        "title": "Contextual Appropriateness",
+        "trigger_condition": null,
+        "weight": 0.7
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect intensitatea emoțională a textului și a clasificat în consecință. Text cu intensitate emoțională ridicată nu este automat toxic - critica pasională poate fi legitimă. Evaluează dacă modelul a distins între emoție puternică și toxicitate reală.",
+        "evaluation_method": "sentiment_analysis_with_llm_judge",
+        "patterns": null,
+        "rubric_id": "I2",
+        "title": "Emotional Intensity Recognition",
+        "trigger_condition": null,
+        "weight": 0.65
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a gestionat corect sarcasmul și toxicitatea implicită. Textul sarcastic poate părea inofensiv la suprafață dar să fie toxic, sau poate părea dur dar să fie glumă. Evaluează dacă predicția modelului se aliniază cu ground truth-ul pentru cazurile de sarcasm și ironie.",
+        "evaluation_method": "llm_judge_specialized",
+        "patterns": null,
+        "rubric_id": "I3",
+        "title": "Sarcasm/Implicit Toxicity Handling",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect când textul vizează figuri politice și a clasificat în consecință. Politicieni relevanți: Iohannis, Ciolacu, Lasconi, Simion, Georgescu, Antonescu, Geoană. Partide: PSD, AUR, USR, PNL. Critica politicienilor nu este automat toxică - evaluează dacă modelul a făcut această distincție.",
+        "evaluation_method": "ner_with_targeting_analysis",
+        "patterns": [
+          "Iohannis",
+          "Ciolacu",
+          "Lasconi",
+          "Simion",
+          "Georgescu",
+          "Antonescu",
+          "Geoană",
+          "PSD",
+          "AUR",
+          "USR",
+          "PNL",
+          "Ciucă",
+          "Băsescu",
+          "Dragnea"
+        ],
+        "rubric_id": "I4",
+        "title": "Political Figure Recognition",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat greșit critica legitimă ca fiind toxică. Condiție de declanșare: prediction=TOXIC dar ground_truth=NON-TOXIC și textul conține critică politică legitimă, dezacord, sau opinii negative fără atacuri personale. Această eroare este frecventă când modelul reacționează la tonul negativ fără a evalua conținutul real.",
+        "evaluation_method": "false_positive_detection",
+        "patterns": null,
+        "rubric_id": "P1",
+        "title": "False Positive on Criticism",
+        "trigger_condition": "prediction=TOXIC AND ground_truth=NON-TOXIC AND text_is_legitimate_criticism",
+        "weight": -0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a ratat toxicitatea implicită sau subtilă. Condiție de declanșare: prediction=NON-TOXIC dar ground_truth=TOXIC și textul conține toxicitate mascată (dehumanizare subtilă, insinuări, dog whistles). Această eroare apare când modelul se bazează doar pe cuvinte cheie explicite.",
+        "evaluation_method": "false_negative_detection",
+        "patterns": null,
+        "rubric_id": "P2",
+        "title": "False Negative on Implicit Toxicity",
+        "trigger_condition": "prediction=NON-TOXIC AND ground_truth=TOXIC AND text_has_implicit_toxicity",
+        "weight": -0.65
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat bazându-se doar pe cuvinte cheie, ignorând complet contextul. Condiție de declanșare: predicție incorectă care ar fi fost corectă dacă modelul ar fi considerat contextul (ex: citat, discuție despre toxicitate, negație). Această eroare indică o înțelegere superficială.",
+        "evaluation_method": "context_analysis",
+        "patterns": null,
+        "rubric_id": "P3",
+        "title": "Context-Free Classification",
+        "trigger_condition": "incorrect_prediction AND context_would_change_classification",
+        "weight": -0.5
+      }
+    ]
+  },
+  {
+    "sample_id": 3,
+    "text": "cine are ochi să vadă, cine are urechi să audă!",
+    "label": null,
+    "reward_explicit": 0.3043,
+    "reward_implicit": 0.8889,
+    "rubrics": [
+      {
+        "category": "Essential",
+        "description": "Modelul a prezis corect eticheta de toxicitate (0 sau 1) comparativ cu ground truth-ul. Aceasta este verificarea fundamentală: predicția modelului se potrivește cu eticheta corectă din dataset? Evaluare: comparație directă între prediction și ground_truth_label.",
+        "evaluation_method": "direct_comparison",
+        "patterns": null,
+        "rubric_id": "E1",
+        "title": "Correct Label Assignment",
+        "trigger_condition": null,
+        "weight": 1.0
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența atacurilor personale în text. Dacă textul conține insulte personale (pattern-uri: prost*, idiot*, nenorocit*, dobitoc*, etc.) și ground truth=TOXIC, modelul trebuie să prezică TOXIC. Dacă aceste pattern-uri lipsesc și ground truth=NON-TOXIC, modelul trebuie să prezică NON-TOXIC.",
+        "evaluation_method": "pattern_matching_with_llm_judge",
+        "patterns": [
+          "prost*",
+          "idiot*",
+          "nenorocit*",
+          "dobitoc*",
+          "cretin*",
+          "imbecil*",
+          "tâmpit*",
+          "bou",
+          "vită",
+          "animal"
+        ],
+        "rubric_id": "E2",
+        "title": "Personal Attack Detection",
+        "trigger_condition": null,
+        "weight": 0.95
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența amenințărilor și incitării la violență. Pattern-uri cheie: 'vor plăti', 'la pușcărie', 'trebuie oprit*', 'merită bătaie', 'să moară'. Când aceste indicatori există și ground truth=TOXIC, modelul trebuie să prezică corect. Evaluează alinierea predicției cu prezența reală a amenințărilor.",
+        "evaluation_method": "pattern_matching_with_semantic_analysis",
+        "patterns": [
+          "vor plăti",
+          "la pușcărie",
+          "trebuie oprit*",
+          "merită bătaie",
+          "să moară",
+          "la zid",
+          "spânzurat*",
+          "împușcat*"
+        ],
+        "rubric_id": "E3",
+        "title": "Threat/Incitement Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența urii de grup (dehumanizare, limbaj despre 'infestare'). Pattern-uri: 'ciumă', 'infecție', 'gângaci', 'șobolani', 'paraziți', 'jigodii'. Evaluează dacă predicția modelului se aliniază cu prezența reală a limbajului de ură de grup conform ground truth-ului.",
+        "evaluation_method": "pattern_matching_with_contextual_analysis",
+        "patterns": [
+          "ciumă",
+          "infecție",
+          "gângaci",
+          "șobolani",
+          "paraziți",
+          "jigodii",
+          "lighioane",
+          "dobitoace",
+          "lepre"
+        ],
+        "rubric_id": "E4",
+        "title": "Group Hatred Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a luat în considerare contextul când a făcut predicția. Un model bun nu clasifică doar pe baza cuvintelor cheie, ci înțelege contextul în care apar. Evaluează dacă predicția modelului demonstrează înțelegere contextuală - nu doar pattern matching superficial.",
+        "evaluation_method": "llm_judge_with_context",
+        "patterns": null,
+        "rubric_id": "I1",
+        "title": "Contextual Appropriateness",
+        "trigger_condition": null,
+        "weight": 0.7
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect intensitatea emoțională a textului și a clasificat în consecință. Text cu intensitate emoțională ridicată nu este automat toxic - critica pasională poate fi legitimă. Evaluează dacă modelul a distins între emoție puternică și toxicitate reală.",
+        "evaluation_method": "sentiment_analysis_with_llm_judge",
+        "patterns": null,
+        "rubric_id": "I2",
+        "title": "Emotional Intensity Recognition",
+        "trigger_condition": null,
+        "weight": 0.65
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a gestionat corect sarcasmul și toxicitatea implicită. Textul sarcastic poate părea inofensiv la suprafață dar să fie toxic, sau poate părea dur dar să fie glumă. Evaluează dacă predicția modelului se aliniază cu ground truth-ul pentru cazurile de sarcasm și ironie.",
+        "evaluation_method": "llm_judge_specialized",
+        "patterns": null,
+        "rubric_id": "I3",
+        "title": "Sarcasm/Implicit Toxicity Handling",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect când textul vizează figuri politice și a clasificat în consecință. Politicieni relevanți: Iohannis, Ciolacu, Lasconi, Simion, Georgescu, Antonescu, Geoană. Partide: PSD, AUR, USR, PNL. Critica politicienilor nu este automat toxică - evaluează dacă modelul a făcut această distincție.",
+        "evaluation_method": "ner_with_targeting_analysis",
+        "patterns": [
+          "Iohannis",
+          "Ciolacu",
+          "Lasconi",
+          "Simion",
+          "Georgescu",
+          "Antonescu",
+          "Geoană",
+          "PSD",
+          "AUR",
+          "USR",
+          "PNL",
+          "Ciucă",
+          "Băsescu",
+          "Dragnea"
+        ],
+        "rubric_id": "I4",
+        "title": "Political Figure Recognition",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat greșit critica legitimă ca fiind toxică. Condiție de declanșare: prediction=TOXIC dar ground_truth=NON-TOXIC și textul conține critică politică legitimă, dezacord, sau opinii negative fără atacuri personale. Această eroare este frecventă când modelul reacționează la tonul negativ fără a evalua conținutul real.",
+        "evaluation_method": "false_positive_detection",
+        "patterns": null,
+        "rubric_id": "P1",
+        "title": "False Positive on Criticism",
+        "trigger_condition": "prediction=TOXIC AND ground_truth=NON-TOXIC AND text_is_legitimate_criticism",
+        "weight": -0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a ratat toxicitatea implicită sau subtilă. Condiție de declanșare: prediction=NON-TOXIC dar ground_truth=TOXIC și textul conține toxicitate mascată (dehumanizare subtilă, insinuări, dog whistles). Această eroare apare când modelul se bazează doar pe cuvinte cheie explicite.",
+        "evaluation_method": "false_negative_detection",
+        "patterns": null,
+        "rubric_id": "P2",
+        "title": "False Negative on Implicit Toxicity",
+        "trigger_condition": "prediction=NON-TOXIC AND ground_truth=TOXIC AND text_has_implicit_toxicity",
+        "weight": -0.65
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat bazându-se doar pe cuvinte cheie, ignorând complet contextul. Condiție de declanșare: predicție incorectă care ar fi fost corectă dacă modelul ar fi considerat contextul (ex: citat, discuție despre toxicitate, negație). Această eroare indică o înțelegere superficială.",
+        "evaluation_method": "context_analysis",
+        "patterns": null,
+        "rubric_id": "P3",
+        "title": "Context-Free Classification",
+        "trigger_condition": "incorrect_prediction AND context_would_change_classification",
+        "weight": -0.5
+      }
+    ]
+  },
+  {
+    "sample_id": 4,
+    "text": "ia uite alta mizerie politică",
+    "label": null,
+    "reward_explicit": 0.2174,
+    "reward_implicit": 0.8889,
+    "rubrics": [
+      {
+        "category": "Essential",
+        "description": "Modelul a prezis corect eticheta de toxicitate (0 sau 1) comparativ cu ground truth-ul. Aceasta este verificarea fundamentală: predicția modelului se potrivește cu eticheta corectă din dataset? Evaluare: comparație directă între prediction și ground_truth_label.",
+        "evaluation_method": "direct_comparison",
+        "patterns": null,
+        "rubric_id": "E1",
+        "title": "Correct Label Assignment",
+        "trigger_condition": null,
+        "weight": 1.0
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența atacurilor personale în text. Dacă textul conține insulte personale (pattern-uri: prost*, idiot*, nenorocit*, dobitoc*, etc.) și ground truth=TOXIC, modelul trebuie să prezică TOXIC. Dacă aceste pattern-uri lipsesc și ground truth=NON-TOXIC, modelul trebuie să prezică NON-TOXIC.",
+        "evaluation_method": "pattern_matching_with_llm_judge",
+        "patterns": [
+          "prost*",
+          "idiot*",
+          "nenorocit*",
+          "dobitoc*",
+          "cretin*",
+          "imbecil*",
+          "tâmpit*",
+          "bou",
+          "vită",
+          "animal"
+        ],
+        "rubric_id": "E2",
+        "title": "Personal Attack Detection",
+        "trigger_condition": null,
+        "weight": 0.95
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența amenințărilor și incitării la violență. Pattern-uri cheie: 'vor plăti', 'la pușcărie', 'trebuie oprit*', 'merită bătaie', 'să moară'. Când aceste indicatori există și ground truth=TOXIC, modelul trebuie să prezică corect. Evaluează alinierea predicției cu prezența reală a amenințărilor.",
+        "evaluation_method": "pattern_matching_with_semantic_analysis",
+        "patterns": [
+          "vor plăti",
+          "la pușcărie",
+          "trebuie oprit*",
+          "merită bătaie",
+          "să moară",
+          "la zid",
+          "spânzurat*",
+          "împușcat*"
+        ],
+        "rubric_id": "E3",
+        "title": "Threat/Incitement Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Essential",
+        "description": "Modelul a identificat corect prezența sau absența urii de grup (dehumanizare, limbaj despre 'infestare'). Pattern-uri: 'ciumă', 'infecție', 'gângaci', 'șobolani', 'paraziți', 'jigodii'. Evaluează dacă predicția modelului se aliniază cu prezența reală a limbajului de ură de grup conform ground truth-ului.",
+        "evaluation_method": "pattern_matching_with_contextual_analysis",
+        "patterns": [
+          "ciumă",
+          "infecție",
+          "gângaci",
+          "șobolani",
+          "paraziți",
+          "jigodii",
+          "lighioane",
+          "dobitoace",
+          "lepre"
+        ],
+        "rubric_id": "E4",
+        "title": "Group Hatred Detection",
+        "trigger_condition": null,
+        "weight": 0.9
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a luat în considerare contextul când a făcut predicția. Un model bun nu clasifică doar pe baza cuvintelor cheie, ci înțelege contextul în care apar. Evaluează dacă predicția modelului demonstrează înțelegere contextuală - nu doar pattern matching superficial.",
+        "evaluation_method": "llm_judge_with_context",
+        "patterns": null,
+        "rubric_id": "I1",
+        "title": "Contextual Appropriateness",
+        "trigger_condition": null,
+        "weight": 0.7
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect intensitatea emoțională a textului și a clasificat în consecință. Text cu intensitate emoțională ridicată nu este automat toxic - critica pasională poate fi legitimă. Evaluează dacă modelul a distins între emoție puternică și toxicitate reală.",
+        "evaluation_method": "sentiment_analysis_with_llm_judge",
+        "patterns": null,
+        "rubric_id": "I2",
+        "title": "Emotional Intensity Recognition",
+        "trigger_condition": null,
+        "weight": 0.65
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a gestionat corect sarcasmul și toxicitatea implicită. Textul sarcastic poate părea inofensiv la suprafață dar să fie toxic, sau poate părea dur dar să fie glumă. Evaluează dacă predicția modelului se aliniază cu ground truth-ul pentru cazurile de sarcasm și ironie.",
+        "evaluation_method": "llm_judge_specialized",
+        "patterns": null,
+        "rubric_id": "I3",
+        "title": "Sarcasm/Implicit Toxicity Handling",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Important",
+        "description": "Modelul a recunoscut corect când textul vizează figuri politice și a clasificat în consecință. Politicieni relevanți: Iohannis, Ciolacu, Lasconi, Simion, Georgescu, Antonescu, Geoană. Partide: PSD, AUR, USR, PNL. Critica politicienilor nu este automat toxică - evaluează dacă modelul a făcut această distincție.",
+        "evaluation_method": "ner_with_targeting_analysis",
+        "patterns": [
+          "Iohannis",
+          "Ciolacu",
+          "Lasconi",
+          "Simion",
+          "Georgescu",
+          "Antonescu",
+          "Geoană",
+          "PSD",
+          "AUR",
+          "USR",
+          "PNL",
+          "Ciucă",
+          "Băsescu",
+          "Dragnea"
+        ],
+        "rubric_id": "I4",
+        "title": "Political Figure Recognition",
+        "trigger_condition": null,
+        "weight": 0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat greșit critica legitimă ca fiind toxică. Condiție de declanșare: prediction=TOXIC dar ground_truth=NON-TOXIC și textul conține critică politică legitimă, dezacord, sau opinii negative fără atacuri personale. Această eroare este frecventă când modelul reacționează la tonul negativ fără a evalua conținutul real.",
+        "evaluation_method": "false_positive_detection",
+        "patterns": null,
+        "rubric_id": "P1",
+        "title": "False Positive on Criticism",
+        "trigger_condition": "prediction=TOXIC AND ground_truth=NON-TOXIC AND text_is_legitimate_criticism",
+        "weight": -0.6
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a ratat toxicitatea implicită sau subtilă. Condiție de declanșare: prediction=NON-TOXIC dar ground_truth=TOXIC și textul conține toxicitate mascată (dehumanizare subtilă, insinuări, dog whistles). Această eroare apare când modelul se bazează doar pe cuvinte cheie explicite.",
+        "evaluation_method": "false_negative_detection",
+        "patterns": null,
+        "rubric_id": "P2",
+        "title": "False Negative on Implicit Toxicity",
+        "trigger_condition": "prediction=NON-TOXIC AND ground_truth=TOXIC AND text_has_implicit_toxicity",
+        "weight": -0.65
+      },
+      {
+        "category": "Pitfall",
+        "description": "PENALIZARE: Modelul a clasificat bazându-se doar pe cuvinte cheie, ignorând complet contextul. Condiție de declanșare: predicție incorectă care ar fi fost corectă dacă modelul ar fi considerat contextul (ex: citat, discuție despre toxicitate, negație). Această eroare indică o înțelegere superficială.",
+        "evaluation_method": "context_analysis",
+        "patterns": null,
+        "rubric_id": "P3",
+        "title": "Context-Free Classification",
+        "trigger_condition": "incorrect_prediction AND context_would_change_classification",
+        "weight": -0.5
+      }
+    ]
+  }
+]
