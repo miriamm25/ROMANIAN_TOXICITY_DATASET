@@ -3,7 +3,7 @@
 
 # LLM Provider Configuration
 # Options: openrouter, vllm, litellm_proxy
-llm_provider: openrouter
+llm_provider: vllm
 
 # =============================================================================
 # OpenRouter Configuration (default provider)
@@ -22,7 +22,7 @@ judge_model: openrouter/openai/gpt-4o-mini
 # =============================================================================
 
 vllm_base_url: http://localhost:8000/v1
-vllm_model_name: meta-llama/Llama-3.1-8B-Instruct
+vllm_model_name: /models/qwen2.5-7b-instruct-q3_k_m.gguf
 
 # =============================================================================
 # LiteLLM Proxy Configuration
