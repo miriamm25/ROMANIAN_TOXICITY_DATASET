@@ -36,7 +36,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 
 # 3. Configure environment
-cp .env.example .env
+cp config/.env.example .env
 # Edit .env with your API keys
 
 # 4. Run the pipeline
@@ -56,7 +56,7 @@ export OPENROUTER_API_KEY=your_key_here
 # Or add to .env file
 echo "OPENROUTER_API_KEY=your_key_here" >> .env
 
-# Ensure settings.yaml has:
+# Ensure config/settings.yaml has:
 # llm_provider: openrouter
 ```
 
@@ -71,7 +71,7 @@ docker-compose up vllm
 # Or use deploy script
 ./scripts/deploy.sh start vllm
 
-# Ensure settings.yaml has:
+# Ensure config/settings.yaml has:
 # llm_provider: vllm
 ```
 
@@ -95,7 +95,7 @@ docker run -d --name torch-rar-vllm-gguf --gpus all -p 8000:8000 \
   --gpu-memory-utilization 0.85 \
   --host 0.0.0.0 --port 8000
 
-# 3. Update settings.yaml:
+# 3. Update config/settings.yaml:
 # vllm_model_name: /models/qwen2.5-7b-instruct-q3_k_m.gguf
 ```
 
@@ -120,7 +120,7 @@ docker-compose --profile with-proxy up
 # Or use deploy script
 ./scripts/deploy.sh start litellm
 
-# Ensure settings.yaml has:
+# Ensure config/settings.yaml has:
 # llm_provider: litellm_proxy
 ```
 
@@ -162,7 +162,7 @@ uv run python main.py test -v
 
 ## Configuration
 
-Edit `settings.yaml` to customize:
+Edit `config/settings.yaml` to customize:
 
 ```yaml
 # LLM provider selection
@@ -202,14 +202,17 @@ TORCH/
 │   ├── rubric_generator.py # Instance-specific rubric generation
 │   ├── reward_calculator.py # Reward computation (explicit/implicit)
 │   └── pipeline.py        # Main augmentation pipeline
+├── config/                # Configuration files
+│   ├── settings.yaml      # Application configuration
+│   ├── litellm_config.yaml # LiteLLM proxy model routing
+│   └── .env.example       # Environment variables template
+├── data/                  # Static data files
+│   └── rubrics.json       # Pre-generated rubrics database
 ├── scripts/
 │   └── deploy.sh          # Deployment automation script
 ├── docs/                  # Documentation and research papers
 ├── main.py                # CLI entry point
-├── docker-compose.yml     # Docker container configuration
-├── litellm_config.yaml    # LiteLLM proxy model routing
-├── settings.yaml          # Application configuration
-└── .env.example           # Environment variables template
+└── docker-compose.yml     # Docker container configuration
 ```
 
 ## Key Concepts (from RaR Paper)

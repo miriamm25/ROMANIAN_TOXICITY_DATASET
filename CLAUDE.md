@@ -19,7 +19,7 @@ Key features:
 # Install dependencies with uv
 uv sync
 
-# Configure settings (edit settings.yaml)
+# Configure settings (edit config/settings.yaml)
 # Set your API key: openrouter_api_key: your_key_here
 # Or use env var: openrouter_api_key: ${OPENROUTER_API_KEY}
 
@@ -47,22 +47,28 @@ docker-compose --profile with-proxy up
 ```
 src/torch_rar/
 ├── __init__.py           # Package exports
-├── config.py             # Settings loaded from settings.yaml
+├── config.py             # Settings loaded from config/settings.yaml
 ├── llm_client.py         # LiteLLM wrapper for OpenRouter/vLLM
 ├── data_loader.py        # HuggingFace dataset loading
 ├── rubric_generator.py   # Instance-specific rubric generation
 ├── reward_calculator.py  # Explicit/implicit reward aggregation
 └── pipeline.py           # Main augmentation pipeline
 
+config/
+├── settings.yaml         # Main configuration file
+├── litellm_config.yaml   # LiteLLM proxy configuration
+└── .env.example          # Environment variable template
+
+data/
+└── rubrics.json          # Pre-generated rubrics database
+
 main.py                   # CLI entry point
-settings.yaml             # Main configuration file
 docker-compose.yml        # vLLM and LiteLLM proxy containers
-litellm_config.yaml       # LiteLLM proxy configuration
 ```
 
 ## Configuration
 
-Settings are loaded from `settings.yaml`. The file supports environment variable substitution using `${VAR_NAME}` syntax.
+Settings are loaded from `config/settings.yaml`. The file supports environment variable substitution using `${VAR_NAME}` syntax.
 
 Key settings:
 - `llm_provider`: openrouter | vllm | litellm_proxy

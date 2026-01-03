@@ -9,16 +9,27 @@ from typing import Any, Optional
 import yaml
 from pydantic import BaseModel, Field
 
+from torch_rar.constants import (
+    APIEndpoints,
+    CacheDefaults,
+    CategoryDefaults,
+    LoggingDefaults,
+    ModelDefaults,
+    DatasetDefaults,
+    ProcessingLimits,
+    PromptDefaults,
+)
+
 
 class LoggingConfig(BaseModel):
     """Configuration for logging settings."""
 
     level: str = Field(
-        default="INFO",
+        default=LoggingDefaults.LEVEL,
         description="Log level (DEBUG, INFO, WARNING, ERROR)",
     )
     directory: str = Field(
-        default="logs",
+        default=LoggingDefaults.DIRECTORY,
         description="Directory for log files",
     )
     json_format: bool = Field(
@@ -26,11 +37,11 @@ class LoggingConfig(BaseModel):
         description="Whether to output JSON to files",
     )
     rotation: str = Field(
-        default="10 MB",
+        default=LoggingDefaults.ROTATION,
         description="When to rotate log files",
     )
     retention: str = Field(
-        default="7 days",
+        default=LoggingDefaults.RETENTION,
         description="How long to keep old logs",
     )
 
@@ -43,15 +54,15 @@ class CacheConfig(BaseModel):
         description="Whether caching is enabled",
     )
     directory: str = Field(
-        default=".cache/rubrics",
+        default=CacheDefaults.DIRECTORY,
         description="Directory for cache files",
     )
     ttl_seconds: int = Field(
-        default=2592000,  # 30 days
+        default=CacheDefaults.TTL_SECONDS,
         description="Cache entry time-to-live in seconds",
     )
     size_limit_gb: float = Field(
-        default=1.0,
+        default=CacheDefaults.SIZE_LIMIT_GB,
         description="Maximum cache size in GB",
     )
 
@@ -73,11 +84,11 @@ class PromptTemplatesConfig(BaseModel):
     """Configuration for prompt template system."""
 
     directory: str = Field(
-        default="prompts/",
+        default=PromptDefaults.DIRECTORY,
         description="Path to the templates directory",
     )
     default_domain: str = Field(
-        default="toxicity",
+        default=PromptDefaults.DEFAULT_DOMAIN,
         description="Default domain to use when not specified",
     )
     domains: dict[str, DomainConfig] = Field(
@@ -97,30 +108,37 @@ class RubricWeights:
     Essential criteria have highest weights (critical indicators).
     Important criteria have moderate weights (contextual factors).
     Pitfall criteria have negative weights (penalties for errors).
+
+    Note: Individual rubric weights are now defined in torch_rar.constants
+    (EssentialWeights, ImportantWeights, PitfallWeights). This class is
+    kept for backward compatibility.
     """
 
+    # Import from constants for backward compatibility
+    from torch_rar.constants import EssentialWeights, ImportantWeights, PitfallWeights
+
     # Essential criteria weights (E1-E4)
-    E1_CORRECT_LABEL = 1.0
-    E2_PERSONAL_ATTACK = 0.95
-    E3_THREAT_DETECTION = 0.90
-    E4_GROUP_HATRED = 0.90
+    E1_CORRECT_LABEL = EssentialWeights.E1_CORRECT_LABEL
+    E2_PERSONAL_ATTACK = EssentialWeights.E2_PERSONAL_ATTACK
+    E3_THREAT_DETECTION = EssentialWeights.E3_THREAT_DETECTION
+    E4_GROUP_HATRED = EssentialWeights.E4_GROUP_HATRED
 
     # Important criteria weights (I1-I4)
-    I1_CONTEXTUAL = 0.70
-    I2_EMOTIONAL = 0.65
-    I3_SARCASM = 0.60
-    I4_POLITICAL = 0.60
+    I1_CONTEXTUAL = ImportantWeights.I1_CONTEXTUAL
+    I2_EMOTIONAL = ImportantWeights.I2_EMOTIONAL
+    I3_SARCASM = ImportantWeights.I3_SARCASM
+    I4_POLITICAL = ImportantWeights.I4_POLITICAL
 
     # Pitfall criteria weights (P1-P3) - negative for penalties
-    P1_FALSE_POSITIVE = -0.60
-    P2_FALSE_NEGATIVE = -0.65
-    P3_CONTEXT_FREE = -0.50
+    P1_FALSE_POSITIVE = PitfallWeights.P1_FALSE_POSITIVE
+    P2_FALSE_NEGATIVE = PitfallWeights.P2_FALSE_NEGATIVE
+    P3_CONTEXT_FREE = PitfallWeights.P3_CONTEXT_FREE
 
     # Default category weights for prompt-based rubrics
-    ESSENTIAL_DEFAULT = 1.0
-    IMPORTANT_DEFAULT = 0.7
-    OPTIONAL_DEFAULT = 0.3
-    PITFALL_DEFAULT = -0.9
+    ESSENTIAL_DEFAULT = CategoryDefaults.ESSENTIAL
+    IMPORTANT_DEFAULT = CategoryDefaults.IMPORTANT
+    OPTIONAL_DEFAULT = CategoryDefaults.OPTIONAL
+    PITFALL_DEFAULT = CategoryDefaults.PITFALL
 
 
 class LLMProvider(str, Enum):
@@ -155,12 +173,12 @@ def _find_settings_file() -> Path:
     """Find the settings.yaml file.
 
     Searches in order:
-    1. Current working directory
-    2. Project root (where pyproject.toml is)
-    3. Package directory
+    1. Current working directory (config/settings.yaml)
+    2. Project root (where pyproject.toml is, config/settings.yaml)
+    3. Package directory (config/settings.yaml)
     """
     # Current directory
-    cwd_path = Path.cwd() / "settings.yaml"
+    cwd_path = Path.cwd() / "config" / "settings.yaml"
     if cwd_path.exists():
         return cwd_path
 
@@ -168,18 +186,18 @@ def _find_settings_file() -> Path:
     current = Path.cwd()
     for parent in [current] + list(current.parents):
         if (parent / "pyproject.toml").exists():
-            settings_path = parent / "settings.yaml"
+            settings_path = parent / "config" / "settings.yaml"
             if settings_path.exists():
                 return settings_path
 
     # Fallback to package directory
     package_dir = Path(__file__).parent.parent.parent
-    settings_path = package_dir / "settings.yaml"
+    settings_path = package_dir / "config" / "settings.yaml"
     if settings_path.exists():
         return settings_path
 
     raise FileNotFoundError(
-        "settings.yaml not found. Please create one from settings.yaml.example"
+        "config/settings.yaml not found. Please create one from config/settings.yaml.example"
     )
 
 
@@ -198,23 +216,23 @@ class Settings(BaseModel):
         description="OpenRouter API key",
     )
     openrouter_base_url: str = Field(
-        default="https://openrouter.ai/api/v1",
+        default=APIEndpoints.OPENROUTER,
         description="OpenRouter API base URL",
     )
 
     # vLLM Settings (for local Docker deployment)
     vllm_base_url: str = Field(
-        default="http://localhost:8000/v1",
+        default=APIEndpoints.VLLM_LOCAL,
         description="vLLM server base URL",
     )
     vllm_model_name: str = Field(
-        default="meta-llama/Llama-3.1-8B-Instruct",
+        default=ModelDefaults.VLLM_MODEL,
         description="Model name for vLLM server",
     )
 
     # LiteLLM Proxy Settings
     litellm_proxy_url: str = Field(
-        default="http://localhost:4000",
+        default=APIEndpoints.LITELLM_PROXY,
         description="LiteLLM proxy server URL",
     )
     litellm_api_key: Optional[str] = Field(
@@ -224,46 +242,77 @@ class Settings(BaseModel):
 
     # Model Selection
     rubric_generator_model: str = Field(
-        default="openrouter/openai/gpt-4o",
+        default=ModelDefaults.RUBRIC_GENERATOR,
         description="Model for generating rubrics",
     )
     judge_model: str = Field(
-        default="openrouter/openai/gpt-4o-mini",
+        default=ModelDefaults.JUDGE,
         description="Model for evaluating responses (LLM-as-Judge)",
     )
 
     # Dataset Settings
     dataset_name: str = Field(
-        default="olimpia20/toxicity-dataset-ro-master",
+        default=DatasetDefaults.NAME,
         description="HuggingFace dataset to augment",
     )
     dataset_split: str = Field(
-        default="train",
+        default=DatasetDefaults.SPLIT,
         description="Dataset split to use",
     )
     output_dir: str = Field(
-        default="./output",
+        default=DatasetDefaults.OUTPUT_DIR,
         description="Directory for output files",
     )
 
     # Rubric Settings
-    min_rubric_items: int = Field(default=7, description="Minimum rubric items per prompt")
-    max_rubric_items: int = Field(default=20, description="Maximum rubric items per prompt")
+    min_rubric_items: int = Field(
+        default=ProcessingLimits.MIN_RUBRIC_ITEMS,
+        description="Minimum rubric items per prompt",
+    )
+    max_rubric_items: int = Field(
+        default=ProcessingLimits.MAX_RUBRIC_ITEMS,
+        description="Maximum rubric items per prompt",
+    )
 
     # Processing Settings
-    batch_size: int = Field(default=10, description="Batch size for processing")
-    max_concurrent_requests: int = Field(
-        default=5, description="Max concurrent LLM API requests"
+    batch_size: int = Field(
+        default=ProcessingLimits.DEFAULT_BATCH_SIZE,
+        description="Batch size for processing",
     )
-    request_timeout: int = Field(default=120, description="API request timeout in seconds")
-    max_retries: int = Field(default=3, description="Max retries for failed requests")
-    max_tokens: int = Field(default=2048, description="Maximum tokens in LLM response")
+    max_concurrent_requests: int = Field(
+        default=ProcessingLimits.MAX_CONCURRENT_REQUESTS,
+        description="Max concurrent LLM API requests",
+    )
+    request_timeout: int = Field(
+        default=ProcessingLimits.REQUEST_TIMEOUT_SECONDS,
+        description="API request timeout in seconds",
+    )
+    max_retries: int = Field(
+        default=ProcessingLimits.MAX_RETRIES,
+        description="Max retries for failed requests",
+    )
+    max_tokens: int = Field(
+        default=ProcessingLimits.MAX_TOKENS,
+        description="Maximum tokens in LLM response",
+    )
 
     # Reward Weights (for explicit aggregation)
-    weight_essential: float = Field(default=1.0, description="Weight for Essential criteria")
-    weight_important: float = Field(default=0.7, description="Weight for Important criteria")
-    weight_optional: float = Field(default=0.3, description="Weight for Optional criteria")
-    weight_pitfall: float = Field(default=0.9, description="Weight for Pitfall criteria")
+    weight_essential: float = Field(
+        default=CategoryDefaults.ESSENTIAL,
+        description="Weight for Essential criteria",
+    )
+    weight_important: float = Field(
+        default=CategoryDefaults.IMPORTANT,
+        description="Weight for Important criteria",
+    )
+    weight_optional: float = Field(
+        default=CategoryDefaults.OPTIONAL,
+        description="Weight for Optional criteria",
+    )
+    weight_pitfall: float = Field(
+        default=abs(CategoryDefaults.PITFALL),
+        description="Weight for Pitfall criteria (absolute value)",
+    )
 
     # Prompt Templates Configuration
     prompt_templates: PromptTemplatesConfig = Field(

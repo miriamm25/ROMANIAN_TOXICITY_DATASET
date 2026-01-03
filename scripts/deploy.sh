@@ -198,7 +198,7 @@ setup_env() {
     print_section "Setting up environment"
 
     local env_file="$PROJECT_ROOT/.env"
-    local env_example="$PROJECT_ROOT/.env.example"
+    local env_example="$PROJECT_ROOT/config/.env.example"
 
     if [[ -f "$env_file" ]]; then
         print_info ".env file already exists"
@@ -279,28 +279,28 @@ validate_config_files() {
     local has_errors=false
 
     # Check settings.yaml
-    if [[ -f "$PROJECT_ROOT/settings.yaml" ]]; then
-        if python3 -c "import yaml; yaml.safe_load(open('$PROJECT_ROOT/settings.yaml'))" 2>/dev/null; then
-            print_success "settings.yaml is valid YAML"
+    if [[ -f "$PROJECT_ROOT/config/settings.yaml" ]]; then
+        if python3 -c "import yaml; yaml.safe_load(open('$PROJECT_ROOT/config/settings.yaml'))" 2>/dev/null; then
+            print_success "config/settings.yaml is valid YAML"
         else
-            print_error "settings.yaml has invalid YAML syntax"
+            print_error "config/settings.yaml has invalid YAML syntax"
             has_errors=true
         fi
     else
-        print_error "settings.yaml not found"
+        print_error "config/settings.yaml not found"
         has_errors=true
     fi
 
     # Check litellm_config.yaml
-    if [[ -f "$PROJECT_ROOT/litellm_config.yaml" ]]; then
-        if python3 -c "import yaml; yaml.safe_load(open('$PROJECT_ROOT/litellm_config.yaml'))" 2>/dev/null; then
-            print_success "litellm_config.yaml is valid YAML"
+    if [[ -f "$PROJECT_ROOT/config/litellm_config.yaml" ]]; then
+        if python3 -c "import yaml; yaml.safe_load(open('$PROJECT_ROOT/config/litellm_config.yaml'))" 2>/dev/null; then
+            print_success "config/litellm_config.yaml is valid YAML"
         else
-            print_error "litellm_config.yaml has invalid YAML syntax"
+            print_error "config/litellm_config.yaml has invalid YAML syntax"
             has_errors=true
         fi
     else
-        print_error "litellm_config.yaml not found"
+        print_error "config/litellm_config.yaml not found"
         has_errors=true
     fi
 
@@ -566,9 +566,9 @@ service_status() {
     fi
 
     echo -e "\n${BOLD}Current Configuration:${NC}"
-    if [[ -f "$PROJECT_ROOT/settings.yaml" ]]; then
+    if [[ -f "$PROJECT_ROOT/config/settings.yaml" ]]; then
         local provider
-        provider=$(grep "^llm_provider:" "$PROJECT_ROOT/settings.yaml" | awk '{print $2}')
+        provider=$(grep "^llm_provider:" "$PROJECT_ROOT/config/settings.yaml" | awk '{print $2}')
         print_info "LLM Provider: $provider"
     fi
 }
@@ -616,7 +616,7 @@ setup_vllm() {
 
     # Update settings.yaml
     print_info "Configuring settings.yaml for vLLM..."
-    sed -i 's/^llm_provider:.*/llm_provider: vllm/' "$PROJECT_ROOT/settings.yaml"
+    sed -i 's/^llm_provider:.*/llm_provider: vllm/' "$PROJECT_ROOT/config/settings.yaml"
 
     print_success "vLLM provider configured"
 
@@ -655,7 +655,7 @@ setup_openrouter() {
 
     # Update settings.yaml
     print_info "Configuring settings.yaml for OpenRouter..."
-    sed -i 's/^llm_provider:.*/llm_provider: openrouter/' "$PROJECT_ROOT/settings.yaml"
+    sed -i 's/^llm_provider:.*/llm_provider: openrouter/' "$PROJECT_ROOT/config/settings.yaml"
 
     print_success "OpenRouter provider configured"
 
@@ -674,7 +674,7 @@ setup_litellm_proxy() {
 
     # Update settings.yaml
     print_info "Configuring settings.yaml for LiteLLM Proxy..."
-    sed -i 's/^llm_provider:.*/llm_provider: litellm_proxy/' "$PROJECT_ROOT/settings.yaml"
+    sed -i 's/^llm_provider:.*/llm_provider: litellm_proxy/' "$PROJECT_ROOT/config/settings.yaml"
 
     print_success "LiteLLM Proxy provider configured"
 

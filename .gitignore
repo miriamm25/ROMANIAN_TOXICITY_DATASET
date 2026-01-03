@@ -1,4 +1,4 @@
-# Environment files (keep .env.example)
+# Environment files (template at config/.env.example)
 .env
 .env.local
 .env.*.local
