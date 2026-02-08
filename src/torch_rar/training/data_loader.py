@@ -92,7 +92,7 @@ def load_training_dataset(config: GRPOTrainingConfig) -> Dataset:
                     rubrics = json.loads(rubrics)
                 except json.JSONDecodeError:
                     rubrics = []
-            record["rubrics"] = rubrics if rubrics else []
+            record["rubrics"] = list(rubrics) if rubrics is not None and len(rubrics) > 0 else []
 
         records.append(record)
 
