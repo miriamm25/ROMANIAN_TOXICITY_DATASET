@@ -53,7 +53,7 @@ class AugmentedSample:
             "reward_explicit": self.reward_explicit,
             "reward_implicit": self.reward_implicit,
             "generated_response": self.generated_response,
-            "metadata": self.original.metadata or {},
+            "metadata": self.original.metadata if self.original.metadata else None,
         }
 
 

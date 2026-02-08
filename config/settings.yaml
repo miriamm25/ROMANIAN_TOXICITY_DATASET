@@ -74,9 +74,9 @@ prompt_templates:
 # Processing Configuration
 # =============================================================================
 
-batch_size: 5
-max_concurrent_requests: 2
-request_timeout: 600
+batch_size: 20
+max_concurrent_requests: 15
+request_timeout: 120
 max_retries: 3
 max_tokens: 8192  # Maximum tokens in LLM response (reduce for smaller context models)
 

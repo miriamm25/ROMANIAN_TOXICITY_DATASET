@@ -88,7 +88,7 @@ class Evaluator:
 
         # Find text and label columns
         text_col = self._find_column(dataset.column_names, ["text", "content", "comment"])
-        label_col = self._find_column(dataset.column_names, ["label", "toxic", "toxicity"])
+        label_col = self._find_column(dataset.column_names, ["label", "labels", "toxic", "toxicity"])
 
         if text_col is None or label_col is None:
             raise ValueError(

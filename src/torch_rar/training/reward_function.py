@@ -42,13 +42,15 @@ class RaRRewardFunction:
             max_workers=config.judge_max_concurrent
         )
 
-    def __call__(self, completions: list[str], **kwargs) -> list[float]:
+    def __call__(self, completions, **kwargs) -> list[float]:
         """Compute rewards for a batch of completions.
 
         This is called by TRL's GRPOTrainer after generating completions.
 
         Args:
-            completions: List of model-generated text strings.
+            completions: Model-generated completions. Format depends on dataset:
+                - Standard format: list[str]
+                - Conversational format: list[list[dict]] (message dicts)
             **kwargs: Additional dataset columns including:
                 - label: Ground truth labels (list[int])
                 - rubrics: Pre-generated rubrics (list[list[dict]])
@@ -57,13 +59,23 @@ class RaRRewardFunction:
         Returns:
             List of float rewards, one per completion.
         """
-        labels = kwargs.get("label", [None] * len(completions))
-        original_texts = kwargs.get("original_text", [""] * len(completions))
-        rubrics = kwargs.get("rubrics", [[] for _ in completions])
+        # Handle both conversational and standard formats from TRL
+        texts = []
+        for c in completions:
+            if isinstance(c, list):  # conversational: [{"role": "assistant", "content": "..."}]
+                texts.append(c[0]["content"] if c else "")
+            elif isinstance(c, str):
+                texts.append(c)
+            else:
+                texts.append(str(c))
+
+        labels = kwargs.get("label", [None] * len(texts))
+        original_texts = kwargs.get("original_text", [""] * len(texts))
+        rubrics = kwargs.get("rubrics", [[] for _ in texts])
 
         rewards = []
         for completion, label, text, rubric_list in zip(
-            completions, labels, original_texts, rubrics
+            texts, labels, original_texts, rubrics
         ):
             reward = self._compute_single_reward(
                 completion, label, text, rubric_list
