@@ -52,8 +52,8 @@ class GRPOTrainingConfig:
     # Judge (Ollama)
     judge_base_url: str = "http://localhost:11434/v1"
     judge_model: str = "deepseek-r1:70b"
-    judge_max_concurrent: int = 4
-    judge_timeout: int = 120
+    judge_max_concurrent: int = 2
+    judge_timeout: int = 600
 
     # Paths
     output_dir: str = "./checkpoints"

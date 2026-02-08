@@ -21,8 +21,8 @@ judge_model: openrouter/openai/gpt-4o-mini
 # vLLM Configuration (local Docker deployment)
 # =============================================================================
 
-vllm_base_url: http://localhost:8000/v1
-vllm_model_name: /models/qwen2.5-7b-instruct-q3_k_m.gguf
+vllm_base_url: http://localhost:11434/v1
+vllm_model_name: deepseek-r1:70b
 
 # =============================================================================
 # LiteLLM Proxy Configuration
@@ -74,9 +74,9 @@ prompt_templates:
 # Processing Configuration
 # =============================================================================
 
-batch_size: 10
-max_concurrent_requests: 5
-request_timeout: 120
+batch_size: 5
+max_concurrent_requests: 2
+request_timeout: 600
 max_retries: 3
 max_tokens: 8192  # Maximum tokens in LLM response (reduce for smaller context models)
 
