@@ -207,7 +207,7 @@ def main():
         logging_steps=config.logging_steps,
         save_steps=config.save_steps,
         num_generations=config.num_generations,
-        max_new_tokens=config.max_new_tokens,
+        max_completion_length=config.max_new_tokens,
         temperature=config.temperature,
         report_to="wandb" if not args.no_wandb else "none",
     )
