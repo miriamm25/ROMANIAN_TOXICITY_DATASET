@@ -141,7 +141,7 @@ class DatasetLoader:
         columns = self.get_column_names()
 
         # Common label column names
-        label_candidates = ["label", "toxic", "toxicity", "is_toxic", "class", "target"]
+        label_candidates = ["label", "labels", "toxic", "toxicity", "is_toxic", "class", "target"]
         for candidate in label_candidates:
             if candidate in columns:
                 return candidate

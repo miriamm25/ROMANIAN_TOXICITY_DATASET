@@ -61,7 +61,7 @@ def load_training_dataset(config: GRPOTrainingConfig) -> Dataset:
         )
 
     # Find label column
-    label_col = _find_column(df, ["label", "toxic", "toxicity", "is_toxic"])
+    label_col = _find_column(df, ["label", "labels", "toxic", "toxicity", "is_toxic"])
     if label_col is None:
         raise ValueError(
             f"No label column found. Available columns: {list(df.columns)}"
