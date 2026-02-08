@@ -34,6 +34,8 @@ class RaRRewardFunction:
         - Communication via HTTP (localhost:11434)
     """
 
+    __name__ = "rar_reward"
+
     def __init__(self, config: GRPOTrainingConfig):
         self.config = config
         self.session = requests.Session()
