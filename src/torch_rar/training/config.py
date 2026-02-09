@@ -41,7 +41,7 @@ class GRPOTrainingConfig:
     warmup_ratio: float = 0.1
 
     # Generation
-    max_new_tokens: int = 768
+    max_new_tokens: int = 2048
     temperature: float = 0.9
     top_p: float = 0.95
 
