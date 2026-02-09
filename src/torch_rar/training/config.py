@@ -41,7 +41,7 @@ class GRPOTrainingConfig:
     warmup_ratio: float = 0.1
 
     # Generation
-    max_new_tokens: int = 512
+    max_new_tokens: int = 768
     temperature: float = 0.9
     top_p: float = 0.95
 
@@ -62,5 +62,5 @@ class GRPOTrainingConfig:
     # Logging
     wandb_project: str = "torch-rar-grpo"
     logging_steps: int = 1
-    save_steps: int = 50
+    save_steps: int = 25
     eval_steps: int = 50

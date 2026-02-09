@@ -102,6 +102,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Run baseline evaluation before training",
     )
+    parser.add_argument(
+        "--resume",
+        type=str,
+        default=None,
+        help="Resume training from a checkpoint directory (e.g., ./checkpoints/checkpoint-25)",
+    )
     return parser.parse_args()
 
 
@@ -237,7 +243,7 @@ def main():
     # Train
     print("\nStarting GRPO training...")
     print("-" * 60)
-    trainer.train()
+    trainer.train(resume_from_checkpoint=args.resume)
 
     # Save
     print("\nSaving model...")
