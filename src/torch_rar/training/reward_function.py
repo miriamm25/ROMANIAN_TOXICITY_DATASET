@@ -12,13 +12,17 @@ for correctness, while implicit captures reasoning quality via RaR rubrics.
 """
 
 import json
+import logging
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
 import requests
 
 from torch_rar.training.config import GRPOTrainingConfig
 from torch_rar.training.utils import extract_classification
+
+logger = logging.getLogger(__name__)
 
 
 class RaRRewardFunction:
@@ -43,6 +47,13 @@ class RaRRewardFunction:
         self._executor = ThreadPoolExecutor(
             max_workers=config.judge_max_concurrent
         )
+        self._judge_call_count = 0
+
+        # Judge reasoning log file
+        log_dir = Path(config.output_dir)
+        log_dir.mkdir(parents=True, exist_ok=True)
+        self._judge_log_path = log_dir / "judge_reasoning.jsonl"
+        logger.info(f"Judge reasoning will be logged to {self._judge_log_path}")
 
     def __call__(self, completions, **kwargs) -> list[float]:
         """Compute rewards for a batch of completions.
@@ -240,8 +251,24 @@ class RaRRewardFunction:
 
         result = response.json()
         content = result["choices"][0]["message"]["content"]
+        rating = self._parse_rating(content)
 
-        return self._parse_rating(content)
+        # Log judge reasoning to JSONL file
+        self._judge_call_count += 1
+        try:
+            log_entry = {
+                "call": self._judge_call_count,
+                "rating": rating,
+                "judge_response": content[:2000],
+                "original_text": user_prompt.split("**Original Text (Romanian):**\n")[1].split("\n\n**Model Response:**")[0][:200] if "**Original Text (Romanian):**" in user_prompt else "",
+                "model_completion": user_prompt.split("**Model Response:**\n")[1].split("\n\n**Evaluation Criteria:**")[0][:300] if "**Model Response:**" in user_prompt else "",
+            }
+            with open(self._judge_log_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+        except Exception:
+            pass  # Never let logging break training
+
+        return rating
 
     @staticmethod
     def _parse_rating(text: str) -> int:
