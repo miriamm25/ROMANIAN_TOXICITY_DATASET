@@ -259,9 +259,9 @@ class RaRRewardFunction:
             log_entry = {
                 "call": self._judge_call_count,
                 "rating": rating,
-                "judge_response": content[:2000],
+                "judge_response_full": content[:4000],
                 "original_text": user_prompt.split("**Original Text (Romanian):**\n")[1].split("\n\n**Model Response:**")[0][:200] if "**Original Text (Romanian):**" in user_prompt else "",
-                "model_completion": user_prompt.split("**Model Response:**\n")[1].split("\n\n**Evaluation Criteria:**")[0][:300] if "**Model Response:**" in user_prompt else "",
+                "model_completion": user_prompt.split("**Model Response:**\n")[1].split("\n\n**Evaluation Criteria:**")[0][:1000] if "**Model Response:**" in user_prompt else "",
             }
             with open(self._judge_log_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
