@@ -241,7 +241,7 @@ class RaRRewardFunction:
                 {"role": "user", "content": user_prompt},
             ],
             "temperature": 0.1,
-            "max_tokens": 64,
+            "max_tokens": 512,
         }
 
         response = self.session.post(
