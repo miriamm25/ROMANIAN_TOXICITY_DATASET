@@ -9,11 +9,11 @@ class GRPOTrainingConfig:
 
     GPU Layout (2x H200 NVL):
         GPU 0: Training (model + LoRA + optimizer)
-        GPU 1: Judge (DeepSeek-R1:70b via Ollama)
+        GPU 1: Judge (Qwen3:32b via Ollama)
     """
 
     # Model
-    base_model: str = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    base_model: str = "Qwen/Qwen3-8B"
 
     # LoRA
     use_lora: bool = True
@@ -51,7 +51,7 @@ class GRPOTrainingConfig:
 
     # Judge (Ollama)
     judge_base_url: str = "http://localhost:11434/v1"
-    judge_model: str = "deepseek-r1:70b"
+    judge_model: str = "qwen3:32b"
     judge_max_concurrent: int = 2
     judge_timeout: int = 600
 

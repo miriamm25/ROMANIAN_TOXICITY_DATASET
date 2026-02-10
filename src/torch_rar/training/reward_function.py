@@ -4,7 +4,7 @@ This module bridges the TORCH-RaR reward calculation system into TRL's
 expected reward function signature. It supports three reward modes:
 
 1. rule_based: Fast binary check — does the classification match ground truth?
-2. implicit: LLM judge (DeepSeek-R1:70b via Ollama) gives holistic 1-10 score
+2. implicit: LLM judge (Qwen3:32b via Ollama) gives holistic 1-10 score
 3. hybrid: Weighted combination of rule_based + implicit
 
 The hybrid mode is recommended: rule_based provides a strong gradient signal
@@ -15,6 +15,7 @@ import json
 import logging
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 
 import requests
@@ -34,7 +35,7 @@ class RaRRewardFunction:
 
     GPU Layout:
         - Training model runs on GPU 0
-        - Ollama judge (DeepSeek-R1:70b) runs on GPU 1
+        - Ollama judge (Qwen3:32b) runs on GPU 1
         - Communication via HTTP (localhost:11434)
     """
 
@@ -49,10 +50,11 @@ class RaRRewardFunction:
         )
         self._judge_call_count = 0
 
-        # Judge reasoning log file
+        # Judge reasoning log file (one per training run)
         log_dir = Path(config.output_dir)
         log_dir.mkdir(parents=True, exist_ok=True)
-        self._judge_log_path = log_dir / "judge_reasoning.jsonl"
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self._judge_log_path = log_dir / f"judge_reasoning_{timestamp}.jsonl"
         logger.info(f"Judge reasoning will be logged to {self._judge_log_path}")
 
     def __call__(self, completions, **kwargs) -> list[float]:
@@ -162,7 +164,7 @@ class RaRRewardFunction:
     ) -> float:
         """LLM judge reward using implicit aggregation.
 
-        Sends all rubrics + the completion to DeepSeek-R1:70b via Ollama
+        Sends all rubrics + the completion to Qwen3:32b via Ollama
         for a holistic 1-10 score, then normalizes to [0, 1].
 
         Args:

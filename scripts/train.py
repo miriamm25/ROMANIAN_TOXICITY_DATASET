@@ -10,7 +10,7 @@ Usage:
 
     # Custom settings
     CUDA_VISIBLE_DEVICES=0 uv run python scripts/train.py \
-        --base-model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B \
+        --base-model Qwen/Qwen3-8B \
         --epochs 3 \
         --reward-mode hybrid \
         --lr 1e-5
@@ -34,7 +34,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--base-model",
-        default="deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+        default="Qwen/Qwen3-8B",
         help="Base model to fine-tune",
     )
     parser.add_argument(
@@ -84,7 +84,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--judge-model",
-        default="deepseek-r1:70b",
+        default="qwen3:32b",
         help="Ollama judge model name",
     )
     parser.add_argument(

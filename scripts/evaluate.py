@@ -6,12 +6,12 @@ Usage:
     uv run python scripts/evaluate.py --model ./checkpoints/final
 
     # Evaluate baseline (untuned model)
-    uv run python scripts/evaluate.py --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B --baseline
+    uv run python scripts/evaluate.py --model Qwen/Qwen3-8B --baseline
 
     # Compare baseline vs trained
     uv run python scripts/evaluate.py \
         --model ./checkpoints/final \
-        --compare-baseline deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+        --compare-baseline Qwen/Qwen3-8B
 
     # Quick test with fewer samples
     uv run python scripts/evaluate.py --model ./checkpoints/final --max-samples 20
@@ -67,7 +67,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--base-model",
-        default="deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+        default="Qwen/Qwen3-8B",
         help="Base model name (for loading LoRA adapter)",
     )
     return parser.parse_args()
