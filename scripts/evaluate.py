@@ -124,13 +124,15 @@ def main():
     )
     evaluator.save_results(metrics, results, args.output)
 
+    total_evaluated = metrics.total + metrics.no_classification
     print(f"\nAccuracy:            {metrics.accuracy:.1%}")
     print(f"F1 Score:            {metrics.f1:.1%}")
     print(f"Precision:           {metrics.precision:.1%}")
     print(f"Recall:              {metrics.recall:.1%}")
     print(f"False Positive Rate: {metrics.false_positive_rate:.1%}")
     print(f"False Negative Rate: {metrics.false_negative_rate:.1%}")
-    print(f"No Classification:   {metrics.no_classification}/{metrics.total}")
+    print(f"Classified:          {metrics.total}/{total_evaluated}")
+    print(f"No Classification:   {metrics.no_classification}/{total_evaluated}")
 
     # Print comparison if baseline was evaluated
     if baseline_metrics:

@@ -124,7 +124,7 @@ class Evaluator:
                 "label": label,
                 "predicted": predicted_label,
                 "predicted_class": predicted_class,
-                "completion": completion[:500],
+                "completion": completion[:2000],
                 "correct": predicted_label == label,
             })
 
@@ -143,7 +143,9 @@ class Evaluator:
     def _generate(self, text: str) -> str:
         """Generate a classification response for a Romanian text.
 
-        Uses greedy decoding (temperature=0.1) for deterministic evaluation.
+        Uses temperature=0.6 to match the model's trained generation style
+        (trained at 0.9) while being more deterministic for evaluation.
+        Enables Qwen3's <think> mode for chain-of-thought reasoning.
 
         Args:
             text: Romanian text to classify.
@@ -153,10 +155,11 @@ class Evaluator:
         """
         messages = format_prompt(text)
 
-        # Apply chat template if available
+        # Apply chat template with thinking enabled (Qwen3 <think> mode)
         if hasattr(self.tokenizer, "apply_chat_template"):
             input_text = self.tokenizer.apply_chat_template(
-                messages, tokenize=False, add_generation_prompt=True
+                messages, tokenize=False, add_generation_prompt=True,
+                enable_thinking=True,
             )
         else:
             input_text = messages[0]["content"]
@@ -172,13 +175,14 @@ class Evaluator:
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=self.config.max_new_tokens,
-                temperature=0.1,
+                temperature=0.6,
                 top_p=0.95,
                 do_sample=True,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
 
         # Decode only the new tokens (not the prompt)
+        # <think>/<​/think> are non-special tokens so they survive skip_special_tokens
         new_tokens = outputs[0][inputs["input_ids"].shape[1]:]
         return self.tokenizer.decode(new_tokens, skip_special_tokens=True)
 

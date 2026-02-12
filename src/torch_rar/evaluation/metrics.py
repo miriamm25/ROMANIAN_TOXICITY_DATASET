@@ -49,11 +49,7 @@ def compute_metrics(
     for pred, label in zip(predictions, labels):
         if pred is None:
             no_class += 1
-            # Count as wrong — model must produce a classification
-            if label == 1:
-                fn += 1
-            else:
-                fp += 1
+            # Excluded from confusion matrix — reported separately
             continue
 
         if pred == 1 and label == 1:

@@ -24,6 +24,14 @@ def extract_classification(text: str) -> str | None:
     # Normalize whitespace
     text_clean = text.strip()
 
+    # Strip <think>...</think> reasoning blocks — Qwen3 produces these
+    # and the reasoning often mentions "toxic" which causes false matches
+    text_clean = re.sub(r'<think>.*?</think>', '', text_clean, flags=re.DOTALL).strip()
+
+    # If stripping removed everything, fall back to original text
+    if not text_clean:
+        text_clean = text.strip()
+
     # Check for NON-TOXIC first (it contains "TOXIC" as substring)
     non_toxic_patterns = [
         r"\bNON[-_\s]?TOXIC\b",
