@@ -1,0 +1,1638 @@
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.21 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.21 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.24 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.24 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.29 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.29 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.28 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.28 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.33 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.33 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.34 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.34 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.3 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.3 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.31 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.31 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.33 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.33 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.35 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.35 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.47 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.47 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.38 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.38 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.37 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.37 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.39 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.39 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.38 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.38 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.4 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.4 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.42 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.42 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.43 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.43 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.44 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.44 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.45 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.45 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.46 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.46 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.47 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.47 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.49 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.53 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.53 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.52 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.54 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.54 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.55 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.55 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.59 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.59 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.56 seconds
+
+2026-02-08 23:40:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.56 seconds
+
+2026-02-08 23:42:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.45 seconds
+
+2026-02-08 23:42:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out. - timeout value=120.0, time taken=361.45 seconds
+
+2026-02-09 00:05:46 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:46 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:46 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:46 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:46 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:46 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:47 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:48 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:49 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:50 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:51 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:52 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:53 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:54 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:55 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:55 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:56 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:57 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:58 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:59 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:59 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:59 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:05:59 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:00 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:01 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:02 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:03 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:03 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:03 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:03 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:04 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:05 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:06 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:07 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:08 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:09 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:10 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:11 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:12 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:13 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:14 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:15 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:15 | ERROR | torch_rar.reward_calculator:calculate_implicit_reward:346
+Failed to calculate implicit reward: Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E2 - Personal Attack Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:16 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E1 - Correct Label Assignment': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E3 - Threat/Incitement Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:17 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'E4 - Group Hatred Detection': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:18 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I1 - Contextual Appropriateness': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:19 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I2 - Emotional Intensity Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I3 - Sarcasm/Implicit Toxicity Handling': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:20 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'I4 - Political Figure Recognition': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P1 - False Positive on Criticism': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:21 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P2 - False Negative on Implicit Toxicity': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:22 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:23 | ERROR | torch_rar.llm_client:complete:117
+LLM completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+
+2026-02-09 00:06:23 | ERROR | torch_rar.reward_calculator:_evaluate_single_rubric:255
+Failed to evaluate rubric 'P3 - Context-Free Classification': Completion failed: litellm.InternalServerError: InternalServerError: Hosted_vllmException - Connection error.
+

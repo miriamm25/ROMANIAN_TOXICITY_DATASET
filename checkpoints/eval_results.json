@@ -1,0 +1,915 @@
+{
+  "metrics": {
+    "accuracy": 0.45,
+    "f1": 0.3373493975903614,
+    "precision": 0.42424242424242425,
+    "recall": 0.28,
+    "false_positive_rate": 0.38,
+    "false_negative_rate": 0.72,
+    "total": 100,
+    "correct": 45,
+    "no_classification": 5
+  },
+  "results": [
+    {
+      "index": 0,
+      "text": "doamne ferește românia de asa catastrofă de președinte",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să înțeleg conținutul și semnificația sa. Textul dat este \"doamne ferește românia de asa catastrofă de președinte\". Primele observații sunt că limbajul folosit este foarte simplu și frumos, ferică, făcându-se paradoxul că textul ar trebui să îndemne o problemă. \n\nTermenul \"catastrofă\" este foarte negativ și arată o situație drăguță sau grea, în timp ce \"doamne ferește\" este un locuție care ar trebui să îndemne o problemă, dar nu-l f",
+      "correct": false
+    },
+    {
+      "index": 1,
+      "text": "digi nu stie sa organizeze dezbateri.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. Textul dat este \"digi nu stie sa organizeze dezbateri.\" Să observămurmătoarele puncte:\n\n1. **Conținutul limbii românii**: limbajul este bineînțeles și corect, fapt ce nu indică toxicitate.\n\n2. **Conținutul subiectiv**: textul nu exprimă opiniuni negative sau excesive, ci este mai descriptiv și feric.\n\n3. **Contextul limbii**: limbajul este natural și nu conține expresii care ar sugăra conți",
+      "correct": true
+    },
+    {
+      "index": 2,
+      "text": "după numărarea voturilor nu rămâne așa george simion va avea peste 43 % și antonescu urmează după el mai mult ca sigur nicușor rămâne în urma lor cu multe voturi !",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul dat este în română și conține afirmații despre numărarea voturilor într-o situație politico. Primele două frasese vorbind vor descrie un proces de votare și alegerea unui lider, George Simion, care are peste 43%, iar Antonescu urmărește cu multe voturi începerea lui Nicușor. limbajul folosit este formal și nu conține expresii excesive de angajare, dar însă afirmațiile pot fi inte",
+      "correct": true
+    },
+    {
+      "index": 3,
+      "text": "cum este cand iti intra pleava in ochi? ustura ?",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul \"cum este cand iti intra pleava in ochi? ustura ?\", îl încerc să înțeleg ce înseamnă. Şi, încerc să găsesc semnificația cerută.\n\nPentru început, textul are o întrebare și o ordine: \"cum este cand iti intra pleava in ochi? ustura ?\". Şi, încerc să găsesc ce înseamnă cuvântul \"ustura\" în această context.\n\n\"Ustura\" poate fi interpretat ca un ordine sau ca un îndelungător. Şi, încerc să găsesc connotația sa. Şi, pot fi conone că este o ordine de acionare sau o ordine de în",
+      "correct": false
+    },
+    {
+      "index": 4,
+      "text": "omul asta nu are toate doagele!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul este: \"omul asta nu are toate doagele!\"\n\nLimbajul folosit este simplu și frumos, fără conținut emotiv sau negativ. Sunt doar două cuvinte care pot avea un acord negativ: \"nu\" și \"nu are\". Cu toate acestea, aceste cuvinte nu conțin nimic care să implice o situație problemă sau periculosă.\n\nTextul nu conține expresii sau terminologii care ar fi potrivite pentru a denumi sau să împ",
+      "correct": false
+    },
+    {
+      "index": 5,
+      "text": "tataie tu ești prăjit bine de tot....",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul dat este: \"tataie tu ești prăjit bine de tot....\"\n\nPrima observare este folosirea termenului \"tataie,\" care poate avea diverse semnificații în Română. Totuși, în această context, poate fi interpretat ca un îndelungat sau un începător.\n\nTermenul \"prăjit bine de tot\" este foarte neglijent și conține un ton negativ. Utilizarea termenului \"prăjit\" poate fi interpretată ca un îndelun",
+      "correct": false
+    },
+    {
+      "index": 6,
+      "text": "dragă gadea ți a sunat ceasul laieee",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analyzează textul \"dragă gadea țıa sunat ceasul laieee\", îl împărțesc în părți mai mici pentru a înțelege conținutul și semnificația sa. \n\nPrima parțitate este \"dragă gadea țıa\". Termenul \"dragă\" arată că ceasul este frumos sau elegent, în timp ce \"gadea țıa\" arată că gadea este în ție sau în calitatea unei frumuseți. Așadar, această partea conține o valoare deosebită.\n\nA doua parțitate este \"sunat ceasul\". Termenul \"sunat\" arată că ceasul este frumos, elegent sau special. Așadar, aceas",
+      "correct": true
+    },
+    {
+      "index": 7,
+      "text": "da, putin la scos presedinte, da da, tre sa gasiti alta vrajeala ca asta cu rusii sa cam dus.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este în limba română și conține frasa \"da, putin la scos presedinte, da da, tre sa gasiti alta vrajeala ca asta cu rusii sa cam dus.\" \n\nPrima \"da\" poate fi o confirmare sau o întrebare. \"Putin la scos presedinte\" ar putea înseamnă că se scotă de la un loc sau că se înapoi la o poziție. \"Da da\" ar fi o răspuns la întrebare sau o confirmare. \"Tre sa gasiti alta vrajeala\" arată că se încercă să găsească altă variantă, probabil o ",
+      "correct": true
+    },
+    {
+      "index": 8,
+      "text": "nu eram sigur de intenția lui înainte de documentar. merci recorder!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analizeze conținutul și contextul său. Textul dat este: \"nu eram sigur de intenția lui înainte de documentar. merci recorder!\" \n\nPrima observare este că textul are un ton de reproach și neclaritate. Utilitatea de limbaj este slabă și exprimă o duda față de unghiul de vedere pe care îl are autorul asupra documentului. Totuși, această neclaritate poate fi interpretată în diverse moduri. \n\nNumai că, textul nu conține expresii sau li",
+      "correct": true
+    },
+    {
+      "index": 9,
+      "text": "cum doamne iartă mă cum sa votam la fel tot pe cei ce sunt in politica din 90",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce spune. Textul este \"cum doamne iartă mă cum sa votam la fel pe cei ce sunt in politica din 90\". Sper că înțeleg că autorul se exprimă întrerupt că, ca un om de stânga, să votăm ca ceilai din partea de dreaptă din 90, fără a fi convvinți de acestea.\n\nTextul are un ton critic și o cerință forțată, dar nu conține expresii ce arată că are riscul de a face male sau că se împărtășește info falsă. Se pune o problemă politicală, dar nu se face nicio a",
+      "correct": true
+    },
+    {
+      "index": 10,
+      "text": "așa cum strămoșii noștri și-au sacrificat chiar propria viață pentru noi, le vom lua exemplu în totalitate, pentru urmașii noștri",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că strămoșii noștri au sacrificat viața lor pentru a-i face bine pentru noi, și vrea să le facă același lucru pentru urmașii noștri. Acesta arată o oarecare pasare către sufletare sau către odată cu cei care au fost, dar nu este foarte clar dacă este toxic sau nu.\n\nPentru a determina dacă este toxic, trebuie să observăm motivele de acțiuni negative sau comportamente care pot fi considerate corect sau greşite. Aici, sa",
+      "correct": true
+    },
+    {
+      "index": 11,
+      "text": "nu cred ca un roman din \"strainatate\" se deplaseaza pana la centrele de vot ca sa voteze \"nul\"... si daca dupa inchidetea urnelor cei \"platiti\" s-au ocupat sa anuleze voturile.. eu as face un sit in c",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este scris în română și se referă la un roman sau un articol care se pune în discuție în raport cu modul în care se fac voturile la unele elecții. Afirmă că nu cred că un roman de \"strainatate\" ar trebui să se deplaseze până la centrele de vot pentru a vota \"nul\". Idea ar fi că un astfel de roman ar trebui să nu influenze voturile, dar textul nu este foarte clar despre această afișare.\n\nTextul continuă cu un punct de întâlnire",
+      "correct": true
+    },
+    {
+      "index": 12,
+      "text": "niciodată nu am crezut ca generația mea va fi mai inconștientă (încerc sa mă abțin) decât cei care se vindeau pe o sticlă de ulei și o pungă de orez. mulțumit ca ați postat. fiind un canal în trend sp",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl împărțesc în părți și fac un raționament pas cu pas.\n\nPrima paritate este o afirmație negative despre așteptarea unei generatii mai inconștientă în comparație cu cei care se vindeau pe o sticlă de ulei și o pungă de orez. Această afirmație conține elemente de cibernetică și critică, dar nu este prezentă o exprimare care ar fi considerată toxică.\n\nA doua paritate este o exprimare de multumire și adevărat, care nu conține elemente negative sau excesive.\n\nA treia par",
+      "correct": true
+    },
+    {
+      "index": 13,
+      "text": "gadea nu mai plânge!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. Textul dat este \"Gadea nu mai plânge!\" care are o apariție de 100 de ori în 100 de articole. Să observăm cu mare interest că textul este o afișare de istrăieră sau exprimare de frustrare, dar nu conține elemente ce pot fi considerate toxic într-un context general. Totuși, există posibilitatea interpretării negative, dar faptul că textul este simplu și nu conține limbaj extrem de excesiv sau",
+      "correct": false
+    },
+    {
+      "index": 14,
+      "text": "calmul si emoțiile lui nicusor dan este de ce avem nevoie acum ca si popor,crin e lupul batrân,lasconi e țața care îi place să se certe! simion bufonul fugar,ponta nu este!!! orice român deștept cu ca",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce conține. Textul are o apariție de termeni care pot fi interpretate ca o provocare sau ca o expreziune de toleranță. Există limbaj care poate conține elemente negative sau excesive de optimism, dar și limbaj care poate fi considerat mai calm și tolerabil.\n\nTextul include expresii ca \"calmul si emoțiile lui nicusor dan este de ce avem nevoie acum ca si popor,crin e lupul batrân,lasconi e țața care îi place să se certe!\", care ar trebui să fie in",
+      "correct": false
+    },
+    {
+      "index": 15,
+      "text": "pana si limbuta asta slinoasa isi pierdea rabdarea.. hahaha",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. Textul dat este \"pana si limbuta asta slinoasa isi pierdea rabdarea.. hahaha\". Să observăm că limbajul folosit este foarte simplu și uşor de înțeles, fapt ce arată că autorul are un întârtar sau un gând de natură umană. Utilizarea de limbaj humoristic sau repetător este un indicator că textul nu conține elemente negative sau pernose. Totuși, trebuie să verificăm dacă există conținuturi care",
+      "correct": false
+    },
+    {
+      "index": 16,
+      "text": "meseria lui de bază, mitoman",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul său și contextul în care este prezentat. Textul dat este \"meseria lui de bază, mitoman\". Şi în aceste linii, pot fi interpretate în diverse moduri. Dacă interpretăm \"meseria lui de bază\" ca fiind un număr sau un obiect, poate fi legat de un joc de cuvinte sau un paradox. De exemplu, \"mitoman\" poate fi interpretat ca un număr mic sau ca un număr mare, în funcție de modul în care se utilizează. Astfel, textul ",
+      "correct": true
+    },
+    {
+      "index": 17,
+      "text": "ludovică s-a prezentat la examen ca sa se treaca pe prezenta. a vazut subiectele si a zis pas",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat și a stabili dacă este toxic sau non-toxic, voi începe prin a înțelege contextul și conținutul textului. Textul este în limba română și conține o pereche de sale și un subiect. Voi să analizeză limbajul folosit, limbajul comun sau specializat, limbajul tehnologic, limbajul de argint și limbajul de argint special.\n\nDupă aceea, voi să observez expresiile și terminologii folosite, precum și modul în care salele și subiectul sunt prezentate. Voi să verific dacă textul ",
+      "correct": false
+    },
+    {
+      "index": 18,
+      "text": "marș ma lichelelor cu minciunile voastre",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și semnificația limbii folosite. Textul dat este \"marș ma lichelelor cu minciunile voastre\". \n\nPrima parere este că textul folosește terminologia \"marș\" pentru a denumi un om de viață, care este un substantiat negativ. Totuși, textul continuă cu \"lichelelor cu minciunile voastre\", care ar trebui să arate o supărtare sau o dată cu dragă. \n\nNumai că, termenul \"minciuni\" este foarte negativ și ar trebui să împă",
+      "correct": false
+    },
+    {
+      "index": 19,
+      "text": "ma bucura faptul ca domnul calin georgescu ii cel mai preferat de catre romani. doamne ajuta sa il avem presedinte pe viitor!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce vrea să spune. Textul spune că \"ma bucura faptul ca domnul calin georgescu ii cel mai preferat de catre romani. doamne ajuta sa il avem presedinte pe viitor!\" \n\nPrima paragraf: \"ma bucura faptul ca domnul calin georgescu ii cel mai preferat de catre romani.\" Aici, autorul exprime o adevărată preferință pentru un om public, Calin Ghinea, care este un om public deosebit, probabil un politic sau un indicator social. Acesta este o afișare de undă ",
+      "correct": false
+    },
+    {
+      "index": 20,
+      "text": "ciuvică nu mai zici nimic de pleava societății? ai mușcato?",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, trebuie să identificăm conținutul și să evaluăm dacă el este toxic sau non-toxic. Textul este: \"ciuvică nu mai zici nimic de pleava societății? ai mușcato?\" \n\nPrima observare este că limbajul folosit este oamenesc, frumos și ambigu. Utilitatea limbajului este un indicator important pentru a determina toxicitatea. limbajul frumos și ambigu este adesea folosit pentru a exprima apeluri la sufocare sau pânză.\n\nTermenul \"ciuvică\" poate avea diverse semnificații, dar unele",
+      "correct": false
+    },
+    {
+      "index": 21,
+      "text": "la puscarie",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analyzeze conținutul său. Textul dat este \"la puscarie\". Să observ că acest termen poate avea diverse semnificații în dependență de contextul în care este folosit. \n\nPuscarie este un loc specializat în vânzarea produselor agrare și minerale, inclusiv piersodite, fructuri, minerale și altele. Termenul \"la puscarie\" ar fi mai des folosit într-un context comercial sau agricole. \n\nDe aceea, textul nu conține informații negative sau e",
+      "correct": false
+    },
+    {
+      "index": 22,
+      "text": "baaazaaacooonnnniiiiii",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să identificăm conținutul și semnificația sa. Textul dat este \"baaazaaacooonnnniiiiii\". Observăm că conține multe literăre repetate: b, a, z, c, o, n, i. Aceste repetări pot reprezenta o formă artificială sau un tip de cod. De asemenea, textul nu conține nicio informație utile sau context care să facă să-l interpretăm ca fiind un mesaj numeric sau statistic. Astfel, textul nu are semnificație potențial toxică și poate fi considera",
+      "correct": false
+    },
+    {
+      "index": 23,
+      "text": "edilii americani s au dezis de acest petsonaj ! ambasadorul romaniei in america a dat declaratii la un post de televiziune si a spus clar si raspicat ca gc nu este sustinut de niciun om de stat din am",
+      "label": 0,
+      "predicted": null,
+      "predicted_class": null,
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul vine dintr-o conversație dintre două părți ale unei discripții sau argumentații. Şiambadorul romaniei din America a declarat că Gheorghe Chiriac nu este sustinut de niciun om de stat din America. Această afirmație este făcută într-un context de dis discrepanție sau de contrare.\n\nTextul folosește terminologia \"de petsonaj\" și \"de televiziune\", ce sugerează un discurs public sau o discripție publică. Şiambadorul este considerat ",
+      "correct": false
+    },
+    {
+      "index": 24,
+      "text": "foarte faină este moda de revenire in politică! cine știe? poate la prezidențialele din 2030 candidează dragnea independent și adrian năstase din partea psd-ului.",
+      "label": 0,
+      "predicted": null,
+      "predicted_class": null,
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că \"foarte faină este moda de revenire in politică! cine știe? poate la prezidențialele din 2030 candidează dragnea independent și adrian năstase din partea psd-ului.\"\n\nPrima paragraf: \"foarte faină este moda de revenire in politică!\" Aici, autorul folosește termenul \"foarte faină\" pentru a denumi un tip de comportament sau tendință în politică. poate fi o sarcină sau unicitate, dar poate și un termen care arată o cri",
+      "correct": false
+    },
+    {
+      "index": 25,
+      "text": "un adevărat parcurs ! unul dintre puținii candidați cu o pregătire reală de studiu și profesională, un olimpic, fost activist și bun administrator, nu un corupt, incompetent, extremist sau oportunist ",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că un candidat este \"un adevărat parcurs\", adică un singur cu care se potrivesc, în timp ce restul este considerat \"puținii candidați\" cu pregătirea reală de studiu și profesională. Acesta este un om olimpic, fost activist și bun administrator, dar nu este corupt, incompetent, extremist sau oportunist.\n\nPrima dată ce îl înveți, textul nu conține conținuturi negative sau extreme. Se referă doar la un contrast între un ",
+      "correct": true
+    },
+    {
+      "index": 26,
+      "text": "la noi e stalinism vad poate ajungem ca unu cadafii când iau dat la mue poporul așa ar trebui și la noi dar suntem slabi tari doar an fata ecranului",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este scris în limba română și conține expresii care pot avea un ton negativ sau extrem.\n\nPrima linie, \"la noi e stalinism vad poate ajungem ca unu cadafii când iau dat la mue poporul așa ar trebui și la noi dar suntem slabi tari doar an fata ecranului\", arată o apariție de ieftinism și marginalism. Termenul \"stalinism\" poate fi interpretat ca o referință la regimul comunism, dar poate și ca un mod de a se exprima negativ. \"Aju",
+      "correct": true
+    },
+    {
+      "index": 27,
+      "text": "domnule georgescu și eu sunt contra de ce dv sunteti pnl psd",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este: \"domnule georgescu și eu sunt contra de ce dv sunteti pnl psd\". Primele observații sunt că textul este scris în limbaj românesc, dar are un aspect ambigu. Există literatură greutăți și simbolism în limbaj românesc, așa că trebuie să verificăm dacă aceste termeni pot avea un acord numeric sau nu.\n\nTermenul \"domnule georgescu\" poate fi interpretat în două moduri: drept un nume de personal sau drept un nume de echipă sau de",
+      "correct": true
+    },
+    {
+      "index": 28,
+      "text": "magistrații în disperarea lor nu fac altceva decât să se discreditează foarte bine singuri .cum de nu au acuzat ue care cere şi condiționează abolirea acestor pensii?ăsta chiar e motiv serios de ieșit",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce spune. Textul vine dintr-o magistratitate și se referă la disperarea lor. Argumentează că magistratii nu fac nimic îngâlțit în afară de a se discreditează bine singuri. Spune că nu au acuzat oameni care cere sau condiționează abolirea pensiilorlor. Argumentează că această situație este un motiv serie de ieșit în stradă la proteste.\n\nPrima problemă este că afirmația că magistratii nu fac nimic în afară de a se discreditează bine singuri nu are ",
+      "correct": false
+    },
+    {
+      "index": 29,
+      "text": "tik tokul a fost lansat în 2017 iar în românia a ajuns în 2018,cum a fost posibil crearea in 2016 a 750 de conturi conform documentelor desecretizate csat ??",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce se spune. Textul vine din România și se referă la un site numit \"tik tokul\" care a fost lansat în 2017 și a ajuns în România în 2018. Se pune întrebarea cum a fost posibilă crearea lui 2016 cu 750 de conturi conform documentelor desecretizate ale CSAT.\n\nPrima observație este că CSAT este un nume de Mare Curț, care este un organ al regulatorului public din România. Documentele desecretizate în această context pot fi de natură foarte delicate",
+      "correct": true
+    },
+    {
+      "index": 30,
+      "text": "mascota podului prieteniei",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul \"mascota podului prieteniei\" este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său.\n\nPrima observație este că textul este foarte scurt și nu conține informații con concrete. \"Mascota podului prieteniei\" poate fi interpretat în diverse moduri, dar faptul că este scurt face împreună cu faptul că poate fi interpretat în multe direcții, necesită mai multă analiză.\n\nDe asemenea, textul nu conține limbaj care să impune interpretări negative sau exces",
+      "correct": false
+    },
+    {
+      "index": 31,
+      "text": "comunist împuțit",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul \"comunist împuțit\" este toxic sau non-toxic, încerc să analizez conținutul și semnificația termenului \"împuțit\". \n\n\"Comunist\" referă la un partid sau un caz legat de comunismul, care este un program de politică și economică care conține diverse idei și valori. Termenul \"împuțit\" poate avea diverse semnificații în dependență de contextul în care este folosit. \n\nDacă interpretăm \"împuțit\" ca fiind un numitor care conține elemente negative sau oameni care nu sunt acce",
+      "correct": false
+    },
+    {
+      "index": 32,
+      "text": "marș mă",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul \"marș mă\" este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. \n\n\"Marș mă\" este un mic fragment care poate avea diverse semnificații. Dacă interpretăm literar, poate reprezenta o literatură de literatură, dar faptul că este scris în limba română și are un număr mic de caractere face îndiferență. \n\nDe asemenea, textul poate fi interpretat ca un început al unei poeme sau unei scricături narrative, dar faptul că nu conține mult de informații fac",
+      "correct": false
+    },
+    {
+      "index": 33,
+      "text": "eu pe grrindeanu cu tribul lui l as trimite la bukele",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul \"eu pe grrindeanu cu tribul lui l as trimite la bukele\", încerc să înțeleg ce vrea să spune. Sper că grrindeanu este un nume de pescuit, iar \"tribul lui l\" ar putea fi un nume de pescuit sau alt substantiv. \"Trimite la bukele\" ar putea însemna să-i faci ceva pentru a ajunge la Bukele, care ar fi un loc de pescuit. Totuși, textul nu are un sens clar și ar trebui să fie interpretat într-o manieră specializată. De asemenea, textul nu conține informații sau mesaje conexe desp",
+      "correct": false
+    },
+    {
+      "index": 34,
+      "text": "alianța russia :românia, rușii îi lichidează imediat pe parlamentari!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că \"Alianța Rusă: România, Rușii îi lichidează imediat pe parlamentari!\" Ceea ce înseamnă \"licherează\" poate fi interpretat în diverse moduri. Dacă înseamnă a împărtășește curge sau a nu fiye corect în cazuri electorale, ar fi un motiv de a se împărtășește. Dar, dacă se referă la un proces alianțial sau la o acțiune politicală care ar fi periculo deosebit, ar fi un motiv de a fi toxic. Cu toate acestea, textul nu este",
+      "correct": true
+    },
+    {
+      "index": 35,
+      "text": "acum astia de la ccr si toti complicii lor vor sa ascunda averile si aveau nevoie de o lege ca sa isi poata ascunde averile printre rude....este atat de limpede...bravo romania onesta !!!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul este scris în limba română și conține expresii care pot avea un ton negativ sau extrem. Sunt menționate părerea că România este \"onesta\", care poate fi interpretat ca unicitate sau independentitate, dar poate și ca un inginer sau un termen care poate fi interpretat ca un inginer care nu este conform unei reguli sau o ordine.\n\nCuvinte ca \"acum astia de la ccr și totii complexii l",
+      "correct": false
+    },
+    {
+      "index": 36,
+      "text": "marsi gădea",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul \"marsi gădea\" este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său.\n\n\"marsi gădea\" poate fi interpretat în diverse moduri. Dacă se referă la un substantiat care conține elemente negative sau connotații negative, poate fi considerat toxic. De exemplu, dacă \"mars\" ar fi un substantiat negativ, cum ar fi \"mardul\" (mardul este un substantiat negativ), și \"gădea\" ar fi și el negativ, atunci textul ar fi toxicity.\n\nPrin urmare, fără context adiționa",
+      "correct": true
+    },
+    {
+      "index": 37,
+      "text": "bai da geoana ala e cel mai defensiv om .. n-ai voie sa il intebi nimic fara sa fie super arogant",
+      "label": 0,
+      "predicted": null,
+      "predicted_class": null,
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este: \"bai da geoana ala e cel mai defensiv om .. n-ai voie sa il intebi nimic fara sa fie super arogant\". Sper că înțeleg că este vorba despre un om de speță care este foarte defensiv, dar îl împărtășește în mod foarte negativ.\n\nPrima paragraf: \"băi da Geoana Ală e cel mai defensiv om\" sugerează că Geoana Ală este foarte defensiv. Cu \"băi da\" ar fi exprimarea unei accepții, dar poate și o desfărtare de culoare. Totuși, cuvânt",
+      "correct": false
+    },
+    {
+      "index": 38,
+      "text": "nu transformați scena politică într un circ doar pt a da jos actuala putere. votați responsabil. dacă cu ăștia de acum ne e rău, cu asta o sa ne fie rău de tot!!!!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl împărțesc în părți și o verific pe rând.\n\nPrima paragraf: \"nu transformați scena politică într-un circ doar pentru a da jos actuala putere.\" Aici, autorul încărește la numai cei care au putere la dispozitie să facă alegerea, sugărând că ei nu trebuie să facă nimic pentru a-i face bine. Această afirmație ar trebui s-o potrivesc ca o critică către statuții sau către o structură politică.\n\nA doua paragraf: \"votăți responsabil.\" Acesta este o ordine sau o cerință, car",
+      "correct": true
+    },
+    {
+      "index": 39,
+      "text": "față de cal trebuie trimis în ukraina",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. Textul dat este \"față de cal trebuie trimis în ukraina\". Să observăm chevârile de cal, care sunt o formă de calitate, pot fi interpretate în diverse moduri. Dacă se referă la produse de cal care pot fi folosite pentru fabricare sau pentru a îndoită țările, ar fi un aspect bun și potențial economic. Cu toate acestea, există posibilitatea interpretării negative, de exemplu, ca un inghetător d",
+      "correct": true
+    },
+    {
+      "index": 40,
+      "text": "nu se putea valida, fără să mai facă încă o cheltuire de bani ? ei își iau banii,fraierii ca noi plătesc.",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul și a determina dacă este toxic sau non-toxic, încerc să înțeleg conținutul și semnificația limbii folosite. Textul spune că nu se poate valida fără să mai facă o cheltuire de bani, și că ei își iau banii fără a fi plățite. Această afirmație arată o neajustare în fata banilor, care poate fi interpretată ca o acțiune nefiță sau tricierie. Totuși, faptul că textul este exprimat în limbaj normal și nu conține elemente de tricierie sau mențiuni de riscuri fără a fi clarific",
+      "correct": false
+    },
+    {
+      "index": 41,
+      "text": "miroase a anulări",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să înțelegem conținutul și semnificația sa. Textul dat este \"miroase a anulări\". Pe măsura de observare, textul nu conține expresii sau terminologii care să implicate intenții nefițe sau pernose. Totuși, există posibilitatea interpretării negative, dar faptul că textul este scris în limbaj banal și nu conține elemente de calitate care ar implica toxicitate. Deci, textul poate fi considerat non-toxic.\n</think>\n\n**Raționament:**\n\nTe",
+      "correct": true
+    },
+    {
+      "index": 42,
+      "text": "în seara asta am renunțat la netflix pentru voi. vă mulțumesc încă odată pentru ce faceți pentru presa românească.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat și a determina dacă este toxic sau non-toxic, voi începe prin a înțelege contextul și conținutul textului. Textul este scris de un utilizator care a renunțat la Netflix pentru a fi mai bine Mintea, motivând această renunțare prin multumirea pe partea de presă română. \n\nPrima vedere este că textul are un ton de multumire și apreciere, care nu ar trebui să fie toxicity. Totuși, pot exista aspecte care pot fi interpretate ca toxicity. De exemplu, folosirea termenului ",
+      "correct": true
+    },
+    {
+      "index": 43,
+      "text": "românii neam slab, nu se descurcă fără dictatură",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analyzeze conținutul și semnificația limbii folosite.\n\nTextul dat este: \"românii neam slab, nu se descurcă fără dictatură\"\n\nPrima paragrafare conține un termen care poate avea semnificație negativă: \"neam slab\". poate fi interpretat ca un numit care este slab, frumos sau slab în cazul unei conexe.\n\nTermenul \"dictatură\" este un termen care poate avea conotații negative în cazul unei regimi autocratice sau regimi de ordine.\n\nPrin u",
+      "correct": false
+    },
+    {
+      "index": 44,
+      "text": "de când aștept acest portret. jos pălăria, recorder!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul \"de când aștept acest portret. jos pălăria, recorder!\", îl împărțesc în părți mai mici pentru a înțelege conținutul și semnificația sa.\n\nPrima parțitate este \"de când aștept acest portret.\" Cuvântul \"de când\" sugerează o expectație sau o cerință, iar \"aștept\" arată o ansare sau o cerință de să se facă ceva. Portretul ar fi o reprezentare, poate artificială, a unei perioade sau a unei personalități.\n\nA doua parțitate este \"jos pălăria, recorder!\" Cuvântul \"jos\" arată o exp",
+      "correct": false
+    },
+    {
+      "index": 45,
+      "text": "mințiți cu nerușinare este sigurul președinte votat cu peste 5 6 milioane de voturi in 2024 nu există dovezi daca după anularea alegerilor prezidențiale 2024 nu a-ți reușit sa găsiți înseamnă ca nu ex",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că mințitul cu nerușinare este sigurul președinte care a fost votat cu peste 5 sau 6 milioane de voturi în anul 2024. Se pune în discuție faptul că după anularea alegerilor prezidențiale din acel an, nu a fost găsit un puct, adică un moment de ieșire sau de modificare a regelor.\n\nPrima problemă este că textul nu este complet sau clar. Nu se cunoște exact ce înseamnă \"puct\" în acest context. Ceea ce se poate spune este că",
+      "correct": true
+    },
+    {
+      "index": 46,
+      "text": "un nebun, ce poate afirma..",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul este \"un nebun, ce poate afirma..\". Să observăm că limbajul folosit este foarte simplu și frumos, fapt ce nu sugerează conținut negativ sau pernicious. Totuși, termenul \"nebun\" poate fi interpretat în diverse moduri, dar faptul că este folosit într-un limbaj de apel la suflet nu înseamnă împrejurare. Textul nu conține elemente ce pot fi interpretate ca menare sau abus. Deci, text",
+      "correct": false
+    },
+    {
+      "index": 47,
+      "text": "nu e ciudat cum un om care si-a construit imaginea pe tema unificarii romaniei cu basarabia nu mai vorbeste absolut deloc despre unire, ba mai mult, acum este si interzis in republica moldova? nu refl",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce spune. Textul este o intervenție pe forum unde un utilizator se exprimă contrar unei idei definite ca \"unificare România-Moldova\". Argumentează că acest unificare nu este corect și că Simion, un politician, este un oportunist care nu are suficiente deosebire.\n\nTextul are un ton negativ și reproachător, folosind terminologie care arată neajuns și oameni de acasă. Argumentele sunt argumentative dar nu sunt complet împărtășite într-o manieră logi",
+      "correct": false
+    },
+    {
+      "index": 48,
+      "text": "în primul tur au votat toți ghiolbanii. în turul doi au votat atât ghiolbanii, cât și oamenii normai la cap",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să înțeleg conținutul și semnificația sa. Textul spune că în primul tur au votat toți ghiolbanii, iar în turul doi au votat și oamenii normăși la cap. Acest lucru arată o ombrație sau o distincție specială către ghiolbanii, fapt pe care îl face ca fiind specializat sau excesiv. Astfel, textul ar fi potențial toxicity, deoarece conține distincții care pot fi interpretate ca o censură sau un tratament excesiv. Cu toate acestea, estevo",
+      "correct": false
+    },
+    {
+      "index": 49,
+      "text": "le e frica ca nu are destui scheleti ascunsi sa poata sa il manipuleze ei cum fac acum cu altii! pierd ciolanul partidele , vai de noi pe fata ne ard cum vor ei",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat și a determina dacă este toxic sau non-toxic, voi începe prin analiza termenilor și limbajul folosite. Textul este scris în limba română și conține expresii ce pot avea un ton negativ și excesiv.\n\nPrima observație este că textul utilizează termenul \"le e frica\", care poate fi interpretat ca un numitur sau ca un numit, depinzând de context. Totuși, limbajul este foarte excesiv și conține multe termeni care pot fi considerați negativi, cum ar fi \"destui scheleti ascu",
+      "correct": true
+    },
+    {
+      "index": 50,
+      "text": "f bine....dar o meritati cu varf si indesat ca i-ati votat",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul este \"f bine....dar o meritati cu varf si indesat ca i-ati votat\". Pe baza acestei frasese, pot deduce că autorul se referă la un proces de votare sau evaluare, unde este folosit un limbaj care arată aprecierea unuiiectului ca fiind bun, dar și ce se poate îmbunătăți. Termenul \"meritati cu varf\" sugerează ceva deosebit de bun, iar \"indesat ca i-ati votat\" arată că se poate îmbunătăți mai mult. Astfel, textul nu vine să împă",
+      "correct": true
+    },
+    {
+      "index": 51,
+      "text": "amenzi mai aspre",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul \"amenzi mai aspre\" este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său.\n\n\"Amoenzi\" este o formă de exprimare care poate avea diverse semnificații. Dacă este folosită într-o contextă care conține elemente de offensivitate sau abus, atunci poate fi considerată toxic. Cu toate acestea, dacă este folosită într-o contextă care nu conține astfel de elemente, atunci poate fi considerată non-toxic.\n\nPentru a face această decizie, trebuie să avem cuno",
+      "correct": true
+    },
+    {
+      "index": 52,
+      "text": "trecand peste alegerile astea... merge cineva totusi la parlamentare? :)) ca nu presedintele conduce tara, din pacate, pentru toti cei care cred ca suntem ca sua.",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este scris în română și conține o combinare de cuvinte și exprezie o opiniune.\n\nPrima paragraf: \"trecand peste alegerile astea...\" poate referi la procesul de alegere sau alegerea unei perechi. poate avea un ton negativ, dar nu este clar.\n\nA doua paragraf: \"merge cineva totusi la parlamentare? :)) ca nu presedintele conduce tara, din pacate, pentru toti cei care cred ca suntem ca sua.\" Aici, autorul exprimă o neglijare a prese",
+      "correct": false
+    },
+    {
+      "index": 53,
+      "text": "nu numai.trebuie sa se termine cu pensiile speciale. ăștia se cred dumnezei.daca li s-a cerut sa incaice constituția, își permit orice.",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este în limba română și conține două frasese:\n\n1. \"nu numai.trebuie sa se termine cu pensiile speciale. ăștia se cred dumnezei.\"\n2. \"daca li s-a cerut sa incaice constituția, își permit orice.\"\n\nPrima frasă merge la sânge și credețe, arătând o oose și o nevoie de a fi terminit în specialitate. A doua frasă este mai ambiguă și potrivită unei cerințe, dar arătă permisul unui acionare.\n\nDupă analiză, textul are elemente negative ",
+      "correct": false
+    },
+    {
+      "index": 54,
+      "text": "v-am ciuruit!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său. Textul dat este \"v-am ciuruit!\", care este un mesaj de ieftinire sau reproducere. Totuși, frumos să observăm că această frumositate este folosită de multe ori în discuții sau conversații ordinare, în special în contextul de chat sau de discuție online. De aceea, nu reprezintă un limbaj care ar trebui alarmat sau care ar trebui considerat toxic. Totuși, este important să notăm că limbajul de",
+      "correct": false
+    },
+    {
+      "index": 55,
+      "text": "văd aici la comentarii o grămadă de psd-iști. vedeți pe net că doamna anca îi pupă în f... pe psd de foarte mulți ani că ia rămas între dinți c.... o televiziune de c.... care ajută și ea la distruger",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul vine de la un utilizator care spune că vede un număr mare de comentarii pe un site unde se vorgează \"psd-iști\". Apoi, spune că există o personă numită Anca care este pupată în fapte pe un psd foarte lung, care a rămas între dinți unei multimi, și că această situație este îmbunătățită de o televizare care ajută la distrugerea României.\n\nPrima problemă este că termenul \"psd-iști\" nu este clar definit. poate referă la un site, un",
+      "correct": false
+    },
+    {
+      "index": 56,
+      "text": "m-am dus până la penny să iau un 1 kg de lămâie la reducere, înainte de a viziona.",
+      "label": 0,
+      "predicted": null,
+      "predicted_class": null,
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg cerința. Textul spune că oameni au fcut un risc de a du pân la un loc de reducere pentru a ieu un kilogran de lămâie înaintea de a viziona. \n\nPrima problemă este că \"până la penny\" nu are un sens comun. Probabil vrea să spună \"până înainte de a viziona\" sau \"până la un loc special\". Dacă interpretăm astfel, textul devine mai clar: oameni au fcut un risc de a du până înainte de a viziona pentru a obține un kilogran de lămâie.\n\nA doua problemă este",
+      "correct": false
+    },
+    {
+      "index": 57,
+      "text": "bună seara doamna anca alexandrescu mă numesc cristi stoian locuiesc în valencia spania vă rog să mă informați dacă sau închis secțiile de votare în valencia!!! mai bine zis în diaspora .mulțumesc",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analizez conținutul și contextul. Textul este adresat către Anca Alexandrescu și conține cerința de a închide secțiile de votare în Valencia. Numai aceste informații nu implicate nimeni într-o acțiune nefiță sau periculosă. Anca este un nume de personă, dar textul nu conține elemente ce pot fi interpretate ca mențiuni ale celor lipsă sau mențiuni ale de pericol. Argumentele de toxicitate sunt greşit de preț, iar textul nu vine di",
+      "correct": true
+    },
+    {
+      "index": 58,
+      "text": "lasconi ai uitat cand alergai dupa nicușor in noiembrie? cu el ai intrat in turul doi, tu nu înțelegi ca lumea te a votat ca nu avea de ales? eu te am votat pentru ca nu era nicușor dan candidat",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce se spune. Textul este scris în limbaj romanesc și conține două părți distincte, separate de un punct. Primele două linii vorbesc despre un ,,lascon'' care este pierdut și încă se hotterază după ,,nicușor'' în noiembrie. El spune că ,,alergai după nicușor'' în ,,turul doi'' și că ,,tu nu înțelegi ca lumea te a votat ca nu avea de ales''.\n\nApoi, el spune că ,,eu te am votat pentru ca nu era nicușor dan candidat''. Aici, ,,votat'' poate să înseze",
+      "correct": false
+    },
+    {
+      "index": 59,
+      "text": "ce agitat e ăla de la antena 1 , știe ca le vine sfârșitul",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este \"ce agitat e ăla de la antena 1 , știe ca le vine sfârșitul\". Se observă un limbaj care ar putea avea semnificații multiple.\n\nPrima paragrafitate \"ce agitat e ăla de la antena 1\" ar putea fi interpretată ca un întrebare sau un îndemân. Dacă este o întrebare, ar fi relevantă, dar dacă este un îndemân, ar trebui s-o analiza în această context.\n\nA doua paragrafitate \"știe ca le vine sfârșitul\" ar putea fi interpretată ca un ",
+      "correct": true
+    },
+    {
+      "index": 60,
+      "text": "despăducherea !",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul său și contextul în care este prezentat. Textul dat este \"despăducherea !\", care are un singur spațiu de 7 caractere. \n\nPrima observație este că textul este foarte scos și poate avea un impact negativ pe oamenii care îl înconjoară. Despădușarea este un termen care poate fi folosit pentru a denumi o șapte, dar poate și ca o ordine de severede sau ca o ordine de acord. Totuși, în limbajul curent, poate avea un",
+      "correct": true
+    },
+    {
+      "index": 61,
+      "text": "singurul candidat care a fost activist, adica a muncit pe gratis pentru binele comun. unii nu au muncit nici pe bani, vezi crin antonescu.",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că singurul candidat care a fost activist a muncit pe gratis pentru binele comun, dar unii nu au muncit nici pe bani, cum ar fi vezi crin Antonescu.\n\nPrima problemă este interpretarea termenului \"candidat\". În cazul unui ex curent, este un singur om care a dat voturi, dar poate și în cazul unei elecții, este un singur candidat care a dat contribuție în electiile locale. Dacă este un singur candidat, atunci textul ar fi m",
+      "correct": false
+    },
+    {
+      "index": 62,
+      "text": "băsescu e genial! se amuzã maxim de nivelul de pregătire al acestei \"jurnaliste\"!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este: \"băsescu e genial! se amuzã maxim de nivelul de pregătire al acestei 'jurnaliste'!\" \n\nPrima paragraf: \"băsescu e genial!\" este un aprecieriment pozitiv către un nume de personaj sau uniect. Se potrivesc cu multe contexte, dar faptul că este folosit într-un context de băutire sau reprogează sugerează că poate fi un motiv de reproge.\n\nA doua paragraf: \"se amuzã maxim de nivelul de pregătire al acestei 'jurnaliste'!\" arată ",
+      "correct": true
+    },
+    {
+      "index": 63,
+      "text": "aveți zilele programate de astrologi întunecați care stabilesc ziua ca noi cetățenii să nu ripostăm!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că aveți zilele programate de astrologi întunecate, care stabilesc zilele astfel încât noi cețenii să nu ripostăm. \n\nPrima problemă este că termenul \"zilele programate\" poate fi interpretat ca fiind zile fixate de astrologi, ce pot fi folosite pentru a influența comportamentul celor ce trebuie ripostat. Astfel, ar fi posibil ca aceste zile să nu fie alese în mod liber de decizia individualului, ci să fie determinate de a",
+      "correct": false
+    },
+    {
+      "index": 64,
+      "text": "numa pizdele întreabă de armata , dacă într-adevăr intra armata obligatorie , vom avea tineri care știu sa folosească un walter și un a.k, dar asa toate pizdele masculine le folosesc doar pe mouse ...",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce se spune. Textul se referă la pizdele întreabă de armata, și se pune o întrebare legată de folosirea armelor obligatorii. Argumentele sunt că dacă armata este obligatorie, tinerii ar folosi armile într-o manieră care ar fi periculoasă, dar în text nu se precizează exact cum ar fi periculoasă. Totuși, se observă o preocupare că tinerii nu au o instruire suficientă și ar devine \"secătuit bune\" fără a fi suficient de bune pentru a folosi armile c",
+      "correct": false
+    },
+    {
+      "index": 65,
+      "text": "iisuse fiu lui dumnezeu milueste ne pe noiii doamne ajută amin amin amin doamne eartămne amin amin amin",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce vrea să spune. Textul este scris în limba română și conține o mulțime de cuvinte care pot avea diverse semnificații. Speranța este o cuvântă care pot conține mitare sau un mesaj nefiindese. Fiul este un termen care poate fi folosit și ca număr, dar poate și ca substantiv. Dumnezeu este un număr de noroc, dar poate fi și un număr de peste care se spune că își înapoară. Milu este un substantiv care poate avea diverse semnificații, dar poate fi ș",
+      "correct": true
+    },
+    {
+      "index": 66,
+      "text": "nicolae ciucă abia vorbește...",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul este \"nicolae ciucă abia vorbește...\" care are un limbaj foarte simplu și repetat. Numărul deori \"abia\" poate fi interpretat în diverse moduri, fapt ce sugerează un întârtar sau un abuz. limbajul este puțin original și poate avea un impact negativ pe o comunitate mai frumoasă sau multă. Totuși, faptul că limbajul este simplu și repetat poate fi considerat un indicator al toxicită",
+      "correct": true
+    },
+    {
+      "index": 67,
+      "text": "un circ total ,desene animate cu protagoniștii crin și lasconi",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analizeze conținutul și contextul său. Textul dat este \"un circ total ,desene animate cu protagoniștii crin și lasconi\". \n\nPrima observare este termenul \"circ total\". Şi în cazul romanesc, \"circ\" poate avea diverse semnificații. Şi \"total\" adaugă un acord special. Şi pot fi interpretate în diverse contexte, dar unele pot fi negative, dar nu este clar.\n\nTermenul \"desene animate\" este clar, nu reprezintă niciodată toxicitate. Totuș",
+      "correct": false
+    },
+    {
+      "index": 68,
+      "text": "nu știu cum, la o dezbatere, este permis ca, la orice spunea nicușor dan, antonescu să poată zbiera peste el. cum să îți compui și să îți termini gândurile dacă e un candidat lângă tine căruia îi este",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl voi împărtășește pas cu pas.\n\n1. **Legături cu textul**: Textul este o dezbată dintre doi părere, care se referă la permisibilitatea de a vorbi peste altul într-o discuție. Numai unul dintre ei, Antonescu, este considerat \"nicușor dan\", iar celălalt este \"candidat lângă mine\".\n\n2. **Termenologia folosită**: Utilizarea termenului \"nicușor dan\" sugerează un tip de părere negativ, în timp ce \"candidat lângă mine\" este considerat cafi. Termenul \"zbiecare peste el\" est",
+      "correct": false
+    },
+    {
+      "index": 69,
+      "text": "cresterea economica e mica din cauza gunoaielor ca voi ca ne-ati mintit toti acesti ani lingailor",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul este: \"cresterea economica e mica din cauza gunoaielor ca voi ca ne-ati mintit toti acesti ani lingailor\". \n\nPrima paragraf: \"cresterea economica e mica din cauza gunoaielor\" sugerează că creșterea economică este slabă sau inițială deoarece sunt mult gunoailor. Gunoarele pot fi o problemă economică sau politico-legală care impede progresul economic.\n\nA doua paragraf: \"ca voi ca ne-ati mintit toti acesti ani lingailor\" arată",
+      "correct": true
+    },
+    {
+      "index": 70,
+      "text": "offffff. simioane te-a mancat in cur sa nu trimiti inregistrare offf.",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul este \"offffff. simioane te-a mancat in cur sa nu trimiti inregistrare offf.\" Pe măsura observărilor sale, textul pare să conțină multe \"of\"s, ce pot fi interpretate ca o formă de spam sau mesaj de marketing. Numărul de \"of\"s poate fi folosit pentru a determina culoarea mesajului, dar în cazul de față, textul are aspectul de spam, fiind că pare să încitească o ordine sau să încitească un mesaj de contact. Astfel, textul ar t",
+      "correct": true
+    },
+    {
+      "index": 71,
+      "text": "nu ne lasam! uniti vom invinge!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul dat este \"nu ne lasam! uniti vom invinge!\" care are o atmosferă de tensiune și ordine. Utilizarea termenului \"nu ne lasam\" poate fi interpretată ca o ordine sau ca o ordine de luptă, în timp ce \"uniti vom invinge\" conține elemente de identitate și determinare. limbajul este activ și conține instrucții potrivite unei ordine, fără a fi deosebit de offensiv sau emotiv. Prin urmare, ",
+      "correct": true
+    },
+    {
+      "index": 72,
+      "text": "doamneeee ferește... niciodată nu a fost atita luptă pentru această responsabilitate",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este \"doamneeee ferește... niciodată nu a fost atita luptă pentru această responsabilitate\". Pe mine mă dat să fac o analiză.\n\nPrima parere mea este că textul are o culoare negativă și o exprimare de țâră. Utilitatea de țâră este o formă de exprimare care conține elemente de tristă și neagă. De asemenea, frumosul de țâră este o formă de exprimare care conține elemente de glumitare și exprimare de optimism.\n\nTextul are și eleme",
+      "correct": false
+    },
+    {
+      "index": 73,
+      "text": "la vara o sa avem o gramanda de insecte noi din cauza la kakanarii de asiatici de 2 lei si ca vamesii nu fac verificari",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să înțeleg conținutul și semnificația sa. Textul spune că la vara avem o gramandă de insecte noi deoarece la kakanarii de asiatici de 2 lei și că vamesii nu fac verificări. \n\nPentru a face această judecă, pot observa că textul conține afirmații care pot fi interpretate ca o recomandare sau ca un îndelungare. Totuși, termenul \"gramandă de insecte noi\" poate fi interpretat ca un risc pentru viața localei, dar faptul că kakanarii de as",
+      "correct": false
+    },
+    {
+      "index": 74,
+      "text": "exipolurile mint, vedem mâine dimineață..!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul este: \"exipolurile mint, vedem mâine dimineață..!\"\n\nPrima parere este că limbajul folosit este foarte simplu și repetat, fapt ce poate sugăra un sentiment de inapăzit sau de pânză. Totuși, există și elemente care pot fi interpretate negativ, cum ar fi \"exipolurile mint\" și \"vedem mâine dimineață\", care pot fi interpretate ca o cerință sau ca un îndelungat.\n\nNumărul de caractere ",
+      "correct": true
+    },
+    {
+      "index": 75,
+      "text": "pentru tembeliviziunile românești, știrile cu georgescu, valorează cât toate știrile mapamondului adunate la un loc!!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este în română și conține două părți: \"pentru tembeliviziunile românești, știrile cu georgescu, valorează cât toate știrile mapamondului adunate la un loc!!\"\n\nPrima paritate, \"pentru tembeliviziunile românești,\" arată că textul este adresat către o comunitate specifică, anumiții tembeliviziunii români. Acest termen poate fi interpretat ca fiind o clasă socială sau un tip de identitate cultural.\n\nA doua paritate, \"știrile cu ge",
+      "correct": false
+    },
+    {
+      "index": 76,
+      "text": "hoti!!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul \"hoti!!\" este toxic sau non-toxic, încercăm să analizăm conținutul și contextul său.\n\n\"Hoti!!\" este un inginer care poate fi interpretat în moduri diferite. Pe măsura unei greşti, poate fi interpretat ca un inginer care nu are gânduri sau care nu se hotteră. Cu toate acestea, textul este foarte scurt și nu conține informații suficiente pentru a face o judecă clară.\n\nDacă interpretăm \"hoti!!\" ca un inginer care nu are gânduri sau care nu se hotteră, poate fi conside",
+      "correct": false
+    },
+    {
+      "index": 77,
+      "text": "un oportunist fără scrupule.",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul este \"un oportunist fără scrupule.\" \n\nPrimul pas este să înțelegem ce înseamnă termenul \"oportunist.\" Oportunist înseamnă o persoană sau o echipă care face cerințe sau își încărește lucru fără a fi sigur că va răspunde. Termenul \"fără scrupule\" adică fără a fi-placeholderi sau suficiente. \n\nLimbajul folosit este simplu și nu conține expresii negative sau connotații negative. Totu",
+      "correct": true
+    },
+    {
+      "index": 78,
+      "text": "venit de nicaieri,pentru astia preocupati cu jambonul :)",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul \"venit de nicaieri,pentru astia preocupati cu jambonul :)\" trebuie să identificăm conținutul și să evaluăm potențialul să fie toxic.\n\nPrima observare este că textul este scris în limbaj ușor și conține un numărmic de caractere. Utilizarea de limbaj informal și limbajul de ,,nu se mai încredă” sugerează un ton de apel la empatie și unghiură de vedere critică.\n\nTextul nu conține elemente care să implicate fapte fizice sau chimice potențial危险e. Totuși, limbajul folosit poate",
+      "correct": false
+    },
+    {
+      "index": 79,
+      "text": "ești cel mai trădător reporter care l-am văzut brio dată marsi?",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite. Textul dat este: \"este cel mai trădător reporter care l-am văzut brio dată marsi?\" \n\nPrima observare este că limbajul folosit este foarte negativ și conține termenul \"trădător,\" care poate avea un connotation negativ în limbaj românesc. Totuși, trebuie să verificăm dacă această evaluare este bine definită sau dacă este o afirmație faptuala.\n\nTermenul \"brio dată\" poate fi interpretat în ",
+      "correct": true
+    },
+    {
+      "index": 80,
+      "text": "să trăiască ei cu salariul minim",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și semnificația limbii folosite.\n\nTextul dat este: \"să trăiască ei cu salariul minim\"\n\nPrima parere este că poate avea un conținut negativ legat de salariul minim, care este un salariu mic sau lipsit de suficiență. Cu atât mai mult, folosirea cuvântului \"să trăiască\" arată o ordine sau o cerință care ar fi considerată inacceptabilă pentru un salariu minim.\n\nNumai că, de asemenea, textul este foarte simplu și",
+      "correct": true
+    },
+    {
+      "index": 81,
+      "text": "când vorbea nicușor ma tot uitam la ecran ca am crezut ca mi se întrerupea internetul",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce se spune. Textul este: \"când vorbea nicușor ma tot uitam la ecran ca am crezut ca mi se întrerupea internetul\". Speranța este că textul exprimă o preocupare sau un sentiment.\n\nPrima paragraf: \"când vorbea nicușor ma tot uitam la ecran\" sugerează că autorul are nevoie de să verifice ce spune Nicușor pe ecran. Acest lucru poate fi o preocupare de undă sau de a fi ușor de contact.\n\nA doua paragraf: \"ca am crezut ca mi se întrerupea internetul\" ar",
+      "correct": true
+    },
+    {
+      "index": 82,
+      "text": "lăudat fie domnul ca mai aveți curaj după cite vi s au întâmplat. dumnezeu sa va pună în fruntea tarii amin.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul este scris în română și conține două frasese:\n\n1. \"lăudat fie domnul ca mai aveți curaj după cite vi s au întâmplat.\"\n2. \"dumnezeu sa va pună în fruntea tarii amin.\"\n\nPrima frasă pare să se exprime în mod ambigu, folosind cuvinte ca \"lăudat\", \"domnul\", \"curaj\", \"vi s\", \"întâmplat\". Se pot interpreta în diverse sensuri, dar nu se pot face concluzii definite.\n\nA doua frasă este mai clară: \"dumnezeu sa va pună în fruntea tarii am",
+      "correct": true
+    },
+    {
+      "index": 83,
+      "text": "nicio intrebare in engleza....de ce? as fi vrut sa-i aud vorbind fluent o limba straina.",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl voi analiza pas cu pas. Textul este: \"nicio intrebare in engleza....de ce? as fi vrut sa-i aud vorbind fluent o limba straina.\" \n\nPrima observație este că textul nu conține nici o întrebare în limba engleza. Toate întrebările potrivite pot fi interpretate ca cerințe de conversație sau cerințe de încălzire. De asemenea, textul exprimă o cerință de a învăța o limba străină, care ar fi un motiv deosebit de negativ pentru a fi considerat toxic.\n\nNumerele de puncte ",
+      "correct": false
+    },
+    {
+      "index": 84,
+      "text": "la noi este proasta educația cei 7 ani de-a casă lipsesc de-aia suntem pe primul loc la toate...",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce spune. Textul spune că femeile de 7 ani nu au avut educația și sunt pierdute, pe primul loc la toate. Ceea ce îl încarează în minte este un sentiment de neequităție și nejustitate. Pe lândul acesteia, textul conține o afirmație care ar trebui să fie considerată toxică pentru a-i fi împărtășit dreptatea celor de 7 ani. Deci, după această analiză, textul este toxicity.\n</think>\n\n**Raționament pas cu pas:**\n\n1. **Analiza textului:** Textul spune ",
+      "correct": false
+    },
+    {
+      "index": 85,
+      "text": "ce excroc iohanis",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul său și contextul în care este prezentat. Textul dat este \"ce excroc iohanis\". Şi în aceste linii, pot fi interpretate în diverse moduri. Dacă interpretăm \"excroc\" ca fiind un substantiat care să se referă la un om sau un om de stânga, poate arăta că autorul are nevoie de să se facă ceea ce este cerut de ei. Totuși, textul este foarte scurt și nu conține informații suficiente pentru a face o judecă clară. Fie",
+      "correct": false
+    },
+    {
+      "index": 86,
+      "text": "iohannis are un document de armistițiu cu țara rusia..... ne spune ce document oficial s-a semnat? ca sa știe precis si următorul președinte.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat și a stabili dacă este toxic sau non-toxic, voi începe prin a înțelege contextul și conținutul textului. Textul este în limba română și conține două părți distincte. Primele două linii vorbesc despre un document de armistițiu cu țara Rusia și vorbesc despre faptul că acest document nu este oficial și că autorul vrei să îi spieze ce document oficial s-a semnat pentru a fi cunoștința exactă și pentru a următorului președinte.\n\nPentru a determina dacă textul este toxi",
+      "correct": true
+    },
+    {
+      "index": 87,
+      "text": "poporul roman nu mai poate fi mintit.",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul dat este: \"poppersul roman nu mai poate fi mintit.\"\n\nPrima observare este că limbajul folosit este foarte simplu și ușor de înțeles. Utilizarea termenului \"poppersul\" arată că se referă la poporul roman, dar termenul este foarte desenat și poate fi interpretat în diverse moduri.\n\nTermenul \"mintit\" este greu de interpretat. poate înseamnă că poporul roman este mintit de ceva, dar",
+      "correct": false
+    },
+    {
+      "index": 88,
+      "text": "votul nostru nu contează!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și semnificația sa. Textul dat este \"votul nostru nu contează!\" care are un ton negativ și excesiv. Utilitatea de vot este considerată superfluă sau îngângătoare, conținând o afirmație strongly negative. Afișarea de așa ceva poate conduce la o situație de neosecuritate sau contrarecomandă. Astfel, textul are semnificația de a fi toxic.\n</think>\n\n**Raționament:**\n\nTextul \"votul nostru nu contează!\" are un ton",
+      "correct": false
+    },
+    {
+      "index": 89,
+      "text": "tov prof iohanis....cel mai costisitor și nesimțit preș ...dintre toți cei ce s-au perindat la carma româniei...!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analizez conținutul său. Textul mentionază \"tov prof iohanis\" și \"cel mai costisitor și nesimțit preș\" și face referire la cei care au fost perdatori la carma româniei. \n\nTermenul \"costisitor\" poate fi interpretat ca fiind un om de statut social superior, dar combiner cu \"nesimțit\" sugerează un contrast negativ, împărtășirea de putere sau exclusivitate. Mărimea de opiniune este exprimată într-o manieră care ar putea conduce la o ",
+      "correct": false
+    },
+    {
+      "index": 90,
+      "text": "un om care a muncit si a facut ce scrie in cv-ul lui! iar acest fapt il pune deasupra celorlalti candidati. bravo lui si succes la alegeri!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analyzeze conținutul și limbajul folosite.\n\nTextul spune că un om care a muncit și a făcut ce scrie în curriculum vitae să alinieze pe el și să îl împărtășească pe ceilali candidați. Utilizează termenul \"bravo\" pentru a îndemana un om și \"succes la alegeri\" pentru a îndemana o sositură.\n\n limbajul folosit este activ, celebrist și este destul de îngângerat, dar nu conține elemente care să impune riscuri sau să împărtășească conțin",
+      "correct": true
+    },
+    {
+      "index": 91,
+      "text": "ba fraiere nu mai mugi !! lasa exitpolu ca simiona re la numarare 43 %",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul este: \"ba fraiere nu mai mugi !! lasa exitpolu ca simiona re la numarare 43 %\"\n\nPrima paragrafare, \"ba fraiere nu mai mugi\", arată o exprimare de neosemnă și neajuns, care poate fi interpretată ca un răspundere negativ la o întrebare implicită.\n\nA doua paragrafare, \"lasa exitpolu ca simiona re la numarare 43 %\", conține o ordine de acțiune care ar trebui s-o verificăm în context",
+      "correct": false
+    },
+    {
+      "index": 92,
+      "text": "da fiecare trebuie sa isi asume dar trebuie sa fie trasi la raspundere si de colegii care sunt constienti de ce fapte fac nu doar dupa ce se sesizeaza presa si oamenii",
+      "label": 0,
+      "predicted": null,
+      "predicted_class": null,
+      "completion": "Pentru a analiza textul dat, îl încerc să înțeleg ce înseamnă. Textul spune că fiecare trebuie să se asume, dar trebuie să fie trasat la răspunsul său și de colegii care sunt constenți de faptele făcute după ce se hotărășesc presa și oamenii.\n\nPrima parere mea este că textul conține o afirmație negativă despre a fi trasi la răspunsul colegilor. Această afirmație poate fi interpretată ca o omenire care nu este tolerabilă într-o comunitate, specializată în exprimare, unde se pune accent pe corecti",
+      "correct": false
+    },
+    {
+      "index": 93,
+      "text": "hai numai plângeți cine vă mai plătește cg președinte!! o să vă desfințați",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul și limbajul folosite.\n\nTextul este scris în limba română și conține expresii ce pot avea un ton negativ și excesiv. Utilizarea termenului \"hai numai plângeți\" sugerează o omenire deosebită sau o exprimare de undă, care pot fi interpretate ca o omenire greşită sau o menare.următorul termen \"cine vă mai plătește cg președinte\" conține un abus la nivel de nume și poate avea un impact negativ asupra președinte. ",
+      "correct": false
+    },
+    {
+      "index": 94,
+      "text": "eu nu stiu in ce societate traim… daca ma duc sa sparg o banca, politia nu imi cere doar banii furati inapoi fara sa ma aresteze si sa ma bage la mititica?… pe iohanis nu il salta ca a luat ilegal un ",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, îl analizăm pas cu pas.\n\n1. **Comprendere Initială**: Textul are aspect negativ, împărtășind o crtare critică asupra unei banca și a unui județean.\n\n2. **Identificarea Argumentelor**: Afișătorul se exprimă ca nu poate trăi într-o anumită societate și se pune în dilemi legale fata unei autorități.\n\n3. **Evaluarea Convinției**: Argumentele sunt exprimate într-o manieră care ar trebui să fie considerate corect, dar conțin elemente care pot fi",
+      "correct": false
+    },
+    {
+      "index": 95,
+      "text": "ce mizerie de țară...ăşti tot ca milogii vor să meargă la bruxelles cu capul plecat şi coada între picioare să cerşească o altă derogare, o altă amânare ...nu ştiu cum nu le e ruşine să se prezinte in",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, îl analizăm pas cu pas.\n\n1. **Comprendere Initială**: Textul are apariția termenului \"mizerie de țară\" și menționarea de \"milogii\" care pot fi interpretate ca o undă politică sau socială.\n\n2. **Termeni Legale**: Se folosesc termeni ca \"mizerie\", \"milogie\", \"cu capul plecat\" etc., care pot conduce la o imitație sau o denunțare critică.\n\n3. **Argumentarea Argumentării**: Textul încitește o contrastare între România și altelele din Europa, su",
+      "correct": false
+    },
+    {
+      "index": 96,
+      "text": "alo lume...30% prezenta probabil a fost mai mereu,numai că acuma se fura mai putin datorita tehnologiei (camere filmat, telefoane mobile, tablete care inregistreaza cand votam) zic si eu asa ca chesti",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să analizez conținutul său. Textul începe cu \"alo lume...30%\", ce sugărează că 30% din populația noastră este suficient de activitate. Apoi, spune că acum, aceste 30% au fcut mai putin datorită tehnologiei cumulatoare, cumere și telefoanele mobile, care înregistrează date când fac voturi. Argumentând că chestie... este greşit, ar fi fost mai bine făcut înainte de aceste tehnologii.\n\nAșadar, textul arătă o percepție negativă că tehno",
+      "correct": true
+    },
+    {
+      "index": 97,
+      "text": "la 74 de ani mult mai lucid decat multi politruci de la noi",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a analyzează textul dat, îl încerc să înțeleg ce înseamnă. Textul este: \"la 74 de ani mult mai lucid decat multi politruci de la noi\". Primele observații sunt că textul este scurt și folosește terminologia locală. Termenul \"lucid\" poate însemna clar, înțeles sau suficient de bun. Pe de altă parte, \"politruk\" ar fi un termen care ar putea fi interpretat ca un om politic sau ca un om care face poliție. \n\nTextul spune că o personă de 74 de ani este mult mai clar degrabă decât multi \"politruc",
+      "correct": true
+    },
+    {
+      "index": 98,
+      "text": "ultimul salar / inainte de pensionare ...!! .. .. la magistrati a fost mereu artificial umflat,.. in consecinta ... asa a fost calculata si pensia speciala ... tot exagerata a ramas ... verificati!.. ",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încerc să înțeleg conținutul său și să evaluze limbajul folosit.\n\nTextul este: \"ultimul salariu / înainte de pensionare ...!! .. .. la magistrat a fost mereu artificial umflat,.. în consecință ... asa a fost calculată și pensia specială ... tot exagerata a ramăsat ... verificat!.. si nedreapta a ramăsat.\"\n\nPentru început, textul utilizează limbaj care poate conține elemente negative sau excesive. Termenul \"umflat\" poate fi interpretat ca f",
+      "correct": true
+    },
+    {
+      "index": 99,
+      "text": "câtă corupție…..",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Pentru a determina dacă textul este toxic sau non-toxic, încercăm să analizăm conținutul său și contextul în care este prezentat. Textul dat este \"câtă corupție…..\", care are un număr mic de caractere și un număr mare de puncte suspense. \n\nPrima observație este că limbajul folosit este simplu și poate avea un ton critic sau negativ. Termenul \"corupție\" este o termenologie care poate avea conotații negative în limbajul românesc, potrivit datelor mele personale și contextelor în care această terme",
+      "correct": true
+    }
+  ]
+}
