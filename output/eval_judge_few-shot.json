@@ -1,0 +1,918 @@
+{
+  "metrics": {
+    "accuracy": 0.68,
+    "f1": 0.6923076923076923,
+    "precision": 0.6666666666666666,
+    "recall": 0.72,
+    "false_positive_rate": 0.36,
+    "false_negative_rate": 0.28,
+    "total": 100,
+    "correct": 68,
+    "no_classification": 0
+  },
+  "model": "qwen3:32b",
+  "strategy": "few-shot",
+  "eval_type": "judge_as_classifier",
+  "results": [
+    {
+      "index": 0,
+      "text": "doamne ferește românia de asa catastrofă de președinte",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivație:**  \n- **Termen denigrator:** Utilizarea expresiei \"catastrofă de președinte\" implică o atacare a competenței și a valorii politice a persoanei, fiind un termen metaforic dar clar pejorativ. Aceasta corespunde cu criteriile de toxicitate, care includ \"limbaj dismissiv sau denigrator\" și \"derogare bazată pe competență\".  \n- **Context agresiv:** Deși \"doamne ferește\" este o formulare religioasă, în combinație cu \"catastrofă\" devine o formulare cu intenție de a sublinia o amenințare pentru țară, ceea ce poate fi perceput ca un apel indirect la o formă de \"salvare\" (similar cu exemplele de \"agresiune pasivă\" sau \"apel la violență metaforică\").  \n- **Comparare cu exemple:** Situația este similară cu \"e delulu omul nostru...\", unde atacul la competență a fost considerat toxic. Aici, \"catastrofă\" este un eufemism pentru o reprezentare negativă extinsă a președintelui, fără a fi o critică constructivă.  \n\n**Exceptare de la NON-TOXIC:**  \nDeși există un element de exprimare religioasă (\"doamne ferește\"), acesta este folosit pentru a amplifica o denigrare, nu ca o îndemnare morală neutrală (ex. \"gâdea nu mai minți omule te vede dumnezeu!\").",
+      "correct": false
+    },
+    {
+      "index": 1,
+      "text": "digi nu stie sa organizeze dezbateri.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Justificare:**  \n- Textul este o **critică factuală** asupra capacității unei organizații (Digi) de a organiza dezbateri, fără utilizarea unor cuvinte derivate, sarcasm, atacuri la persoană sau limbaj denigrator.  \n- Nu conține **insulte**, **porecle**, **derogări bazate pe aspect fizic/competență** sau **apeluri la violență**.  \n- Este similar cu exemplele din categoria **NON-TOXIC** precum \"dragi romani, vedeti cum psd si pnl isi bage iar joc de voi?\" (critică politică fără atacuri personale) sau \"gadea nu mai minți omule te vede dumnezeu!\" (apel moral fără limbaj toxic).  \n- Critica este **generală și contextuală**, fără agresiune pasivă sau ridiculizare.  \n\n**Excluderea toxicității:**  \n- Nu există elemente de **ridiculizare** (ex. \"e delulu omul nostru\"), **derogare** (ex. \"mucușor handicapatul\") sau **agresiune pasivă** (ex. \"diseară gâdea face infarct miocardic\").  \n\n**Concluzie:**  \nCritică obiectivă, fără încălcări ale definiției toxicității.",
+      "correct": true
+    },
+    {
+      "index": 2,
+      "text": "după numărarea voturilor nu rămâne așa george simion va avea peste 43 % și antonescu urmează după el mai mult ca sigur nicușor rămâne în urma lor cu multe voturi !",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Explicație:**  \nTextul exprimă o previziune politică obiectivă, bazată pe numărarea voturilor și pe poziția relativă a candidaților. Nu conține:  \n- **Insulte sau porecle pejorative** (ex. \"handicapatul\", \"mucușor\").  \n- **Derogare** (atac la aspect fizic, inteligență, etnie etc.).  \n- **Agresiune pasivă** (întrebări retorice răutăcioase, dorință de rău mascată).  \n- **Expresii de ură sau dispreț**.  \n\nEste o **analiză politică neutrală**, care enunță fapte (sau anticipări) fără atacuri personale, sarcasm sau limbaj denigrator. Numele menționate (\"George Simion\", \"Antonescu\", \"Nicușor\") sunt tratate ca denumiri obișnuite, fără încărcătură toxica.  \n\n**Comparativ cu exemplele din ghid:**  \n- Similar cu „critică politică civilizată” (ex. textul cu PSD/PNL), deoarece se bazează pe fapte și nu pe atacuri.  \n- Diferă de cazurile toxice prin lipsa sarcasmului, ironiei agresive sau a minimizării valorii altora.  \n\n**Concluzie:** Textul este **neutru și non-toxic**, fiind o prezentare obiectivă a unui scenariu electoral.",
+      "correct": true
+    },
+    {
+      "index": 3,
+      "text": "cum este cand iti intra pleava in ochi? ustura ?",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Explicație:**  \nTextul „cum este cand iti intra pleava in ochi? ustura ?” este o întrebare directă, neutrală și fără intenție agresivă. El se referă la o experiență fizică comună (inflamarea cauzată de o particulă în ochi) și exprimă curiozitate sinceră despre un efect obișnuit. Nu conține insulte, sarcasm, atacuri la persoană, limbaj denigrator sau agresiune pasivă. Este un exemplu clar de exprimare fără elemente toxice, fiind doar un schimb de informații legate de o situație concretă.  \n\n**Elemente care justifică clasificarea:**  \n- Nu există atacuri personale sau grupale.  \n- Nu sunt utilizate cuvinte pejorative, porecle sau metafore agresive.  \n- Întrebarea este formulată în mod obiectiv, fără intenție de a răni sau de a diminua.  \n- Nu implică dispreț, ură sau apeluri la violență.  \n\nÎn comparație cu exemplele toxice (care includ atacuri la competență, sarcasm ascuns sau dorințe de rău), textul analizat rămâne în sfera unei discuții civile și fără agresivitate.",
+      "correct": false
+    },
+    {
+      "index": 4,
+      "text": "omul asta nu are toate doagele!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(Fraza conține o denigrare asupra competenței intelectuale sau stării mentale a unei persoane, folosind o expresie metaforică care sugerează nebunie sau lipsă de capacitate de judecată. Acest gen de limbaj este considerat toxic deoarece atacă intelectul sau integritatea unei persoane fără a fi o critică constructivă.)",
+      "correct": true
+    },
+    {
+      "index": 5,
+      "text": "tataie tu ești prăjit bine de tot....",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivație**:  \n- Utilizarea expresiei \"prăjit\" în contextul \"tu ești prăjit\" este o **insultă indirectă**, sugerând că persoana este un \"idiot\" sau \"nefuncțional\" din punct de vedere mental.  \n- Adresarea cu \"tataie\" poate fi interpretată ca **sarcasm sau ironie agresivă**, în special dacă este folosită pentru a masca atacul (ex: \"tataie\" poate suna ca un fel de poreclă sarcastică, în funcție de context).  \n- Concluzia \"bine de tot\" amplifică caracterul **ridiculizării** și **denigrării**, fără a fi o critică constructivă sau un comentariu factual.  \n- Nu este vorba de o critică politică civilizată, ci de un **atac la persoană**, în conformitate cu definiția toxicității.  \n\nExemplul analizat conține toate elementele toxice specificate: insultă metaforică, sarcasm și denigrare.",
+      "correct": true
+    },
+    {
+      "index": 6,
+      "text": "dragă gadea ți a sunat ceasul laieee",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Justificare:**  \n- **Derogare bazată pe termen pejorativ:** \"laie\" este un termen ofensiv, folosit aici ca insultă directă față de o persoană (Gadea).  \n- **Agresiune pasivă:** Expresia \"ți a sunat ceasul\" are un ton amenințător și metaforic, sugerând sfârșitul unei perioade de influență sau putere, ceea ce poate fi perceput ca agresiv.  \n- **Context și ton:** Combinarea unei insulte directe (\"laie\") cu o afirmație care implică sfârșitul unei perioade de \"dominare\" (prin \"sunat ceasul\") creează un mesaj toxic, chiar dacă nu conține cuvinte vulgare.  \n\n**Elemente care exclud clasificarea ca NON-TOXIC:**  \n- Nu este o critică constructivă, ci o atacare la persoană prin limbaj denigrator.  \n- Nu există apeluri morale/religioase care să neutralizeze agresiunea.  \n- Nu este o simplă constatare, ci un mesaj sarcasm/ironie agresivă.  \n\n**Exemplu relevant din definiție:**  \n- \"diseară gâdea face infarct miocardic\" (TOXIC, din cauza dorinței de rău voalate) vs. acest caz, unde insulța directă + amenințare pasivă justifică clasificarea ca TOXIC.",
+      "correct": true
+    },
+    {
+      "index": 7,
+      "text": "da, putin la scos presedinte, da da, tre sa gasiti alta vrajeala ca asta cu rusii sa cam dus.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală:** TOXIC  \n\n**Motivare:**  \nTextul conține limbaj denigrator (\"vrajeala\") și o ironie agresivă prin care se sugerează că strategia politicianului legată de rusi este un \"șiret\" eșuat. Termenul \"vrajeala\" are conotații deșarte, asociind strategia cu un amăgire magică, ceea ce ridiculizează acțiunile politice ale liderului. Deși nu există insulte directe sau apeluri la violență explicită, exprimarea este pasiv-agresivă și folosește o metaforă degradantă pentru a minimiza competența politicianului. Aceasta intră în categoria **\"limbaj dismissiv sau denigrator\"** și **\"ironie agresivă\"** din definiția toxicității.  \n\n**Exemplu comparativ:**  \n- În cazul textului \"e delulu omul nostru... la momentul asta nici el nu mai stie ce vrea sa vorbeasca!\" (clasificat ca TOXIC), atacul la competență este direct. Aici, \"vrajeala\" funcționează similar, acuzând manipulare fără a fi un termen explicit ofensiv.  \n\n**Exceptie de considerat:** Dacă \"vrajeala\" ar fi folosit într-un sens neutru (ex: \"plan\", \"strategie\"), textul ar putea fi non-toxic. Totuși, în contextul politic și al metaforei, are o nuanță deșartă.",
+      "correct": true
+    },
+    {
+      "index": 8,
+      "text": "nu eram sigur de intenția lui înainte de documentar. merci recorder!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \nMotivație: Textul exprimă o neîncredere generală în intențiile unei persoane, dar fără atacuri personale, limbaj denigrator sau sarcasm. Afirmarea \"nu eram sigur de intenția lui\" este o constatare subiectivă, nu o insultă sau o minimizare a valorii unei persoane. În plus, \"merci recorder!\" este un apel pozitiv și nu conține elemente de ură sau agresiune. Nu există încălcare a criteriilor toxicității definite.",
+      "correct": true
+    },
+    {
+      "index": 9,
+      "text": "cum doamne iartă mă cum sa votam la fel tot pe cei ce sunt in politica din 90",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală:** NON-TOXIC  \n\n**Motivație:**  \n- Textul exprimă nemulțumire generală față de realegerea aceluiași grup de politicieni din anii '90, dar fără insulte directe, sarcasm agresiv, sau atacuri la persoană.  \n- Expresia \"cum doamne iartă mă\" este o formulă de exprimare a uimirii sau dezaprobării, nu un limbaj denigrator.  \n- Critica este direcționată asupra unui fenomen politic (realegerea unor politicieni), nu asupra caracterului sau competenței unei persoane anume.  \n- Nu conține derogări bazate pe aspect fizic, etnie, dizabilitate, sau apeluri la violență.  \n\nConform exemplului \"gâdea nu mai minți omule te vede dumnezeu!\" (clasificat NON-TOXIC), critica poate fi nemulțumire sau dezaprobare fără a fi toxică, dacă nu implică atacuri personale.",
+      "correct": true
+    },
+    {
+      "index": 10,
+      "text": "așa cum strămoșii noștri și-au sacrificat chiar propria viață pentru noi, le vom lua exemplu în totalitate, pentru urmașii noștri",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \nTextul exprimă un mesaj de respect, onoare și responsabilitate față de generațiile trecute și viitoare, fără a conține elemente care să rănească, atace pe cineva sau minimizeze valoarea unui individ/grup. Nu există insulte, sarcasm, limbaj denigrator, agresiune pasivă, derogări etnice, fizice sau intelectuale, nici apeluri la violență. Mesajul este neutral, inspirațional și se concentrează pe păstrarea unui exemplu pozitiv, în conformitate cu definiția **NON-TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 11,
+      "text": "nu cred ca un roman din \"strainatate\" se deplaseaza pana la centrele de vot ca sa voteze \"nul\"... si daca dupa inchidetea urnelor cei \"platiti\" s-au ocupat sa anuleze voturile.. eu as face un sit in c",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Analiză:**  \n1. **Conținutul textual** exprimă o critică a procesului electoral, presupunând manipulare („cei 'platiti' s-au ocupat sa anuleze voturile”) și sugerează o soluție (crearea unui site pentru verificarea voturilor).  \n2. **Termenii utilizati** („platiti”) pot implica o conotație negativă, dar nu constituie o insultă directă, poreclă sau atac la persoană. Este o acuzație generală împotriva unui sistem, nu o derogare personală.  \n3. **Contextul** este un exemplu de **critică politică constructivă**, fără limbaj agresiv, sarcasm ofensiv sau minimizarea intenționată a competențelor unei persoane.  \n4. Nu există expresii de ură, dispreț sau apeluri la violență, nici agresiune pasivă (ex. întrebări retorice răuvoitoare).  \n\n**Concluzie:** Critica este direcționată asupra unui proces (alegeri), nu asupra unei persoane în mod personal. Deși presupune manipulare, nu depășește granițele unei analize critice rămânând în sfera discursului politic neagresiv.",
+      "correct": true
+    },
+    {
+      "index": 12,
+      "text": "niciodată nu am crezut ca generația mea va fi mai inconștientă (încerc sa mă abțin) decât cei care se vindeau pe o sticlă de ulei și o pungă de orez. mulțumit ca ați postat. fiind un canal în trend sp",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**\n\n**Motivație:**  \nTextul exprimă o **critică politică și socială**, comparând generații și folosind o metaforă (\"se vindeau pe o sticlă de ulei și o pungă de orez\") pentru a sugera că o generație anterioară a făcut alegeri etice discutabile. Deși metafora este agresivă și poate fi percepută ca o minimizare a eforturilor sau alegerilor generatiei trecute, **nu conține insulte directe, sarcasm agresiv, atacuri la persoană, limbaj denigrator explicit, sau apeluri la violență**.  \n\nElementele controversate (ex: \"inconștientă\", metafora cu uleiul și orezul) sunt **interpretări politice/sociale** și nu atacuri personale. Textul se încadrează într-o **critică constructivă**, chiar dacă tonul este dur, fără a încălca definiția toxicității oferită.  \n\nComparația cu exemplele NON-TOXIC (ex: critici politice civilizate, fără atacuri personale) justifică clasificarea ca **NON-TOXIC**, deoarece exprimarea rămâne în sfera opiniilor, fără elemente explicit agresive.",
+      "correct": false
+    },
+    {
+      "index": 13,
+      "text": "gadea nu mai plânge!",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală:** NON-TOXIC  \n\n**Motivație:**  \n- Textul este o afirmație directă, fără utilizare de insulte, sarcasm agresiv, limbaj denigrator sau atacuri la persoană.  \n- Nu există indicii de dispreț, ură sau apeluri la violență.  \n- Fără derogări bazate pe aspecte fizice, inteligență, competență sau etnie.  \n- Contextul rămâne ambiguu, dar fără elemente care să intre în definiția toxicității oferite.  \n- Comparativ cu exemplul \"gadea nu mai minți omule te vede dumnezeu!\" (clasificat NON-TOXIC), și acest text este o afirmație fără caracter agresiv.  \n\nÎn lipsa unui context suplimentar care să sugereze intenții agresive (ex: ironie sau minimizare), textul este considerat non-toxic.",
+      "correct": false
+    },
+    {
+      "index": 14,
+      "text": "calmul si emoțiile lui nicusor dan este de ce avem nevoie acum ca si popor,crin e lupul batrân,lasconi e țața care îi place să se certe! simion bufonul fugar,ponta nu este!!! orice român deștept cu ca",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Justificare:**  \nTextul conține **insulte indirecte** și **atacuri la persoană** prin utilizarea de **porecle pejorative** și **metamorfe denigratoare**:  \n- „Crin e lupul batrân” (denotă agresivitate și subminarea integrității).  \n- „Lasconi e țața care îi place să se certe” (termenul „țața” are un conținut peiorativ, asociat cu ineficiență și vârsta).  \n- „Simion bufonul fugar” (poreclă deridatoare, care ridiculizează competența și onestitatea).  \n- „Ponta nu este!!!” (exclamație retorică care sugerează lipsa de valoare, fără baze obiective).  \n\nAceste expresii nu sunt simple critici politice, ci **atacă aspecte personale** și **roluri publice ale persoanelor**, utilizând limbaj de discreditare și ironie agresivă. Deși nu conțin cuvinte vulgare, **denotă dispreț și minimizarea contribuțiilor sau calităților celor vizate**, ceea ce intră în definiția toxicității conform criteriilor oferite.  \n\nTextul ar fi fost non-toxic dacă ar fi folosit termeni neutri sau ar fi criticat politicile, nu personalitățile.",
+      "correct": false
+    },
+    {
+      "index": 15,
+      "text": "pana si limbuta asta slinoasa isi pierdea rabdarea.. hahaha",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- **Limbaj denigrator/derogatoriu**: Termenul \"slinoasă\" este o caracterizare pejorativă, care ridiculizează aspectul sau comportamentul unei persoane (în context, probabil referitor la o femeie, dat fiind forma feminină a cuvântului).  \n- **Sarcasm și ironie agresivă**: Râsul (\"hahaha\") sugerează o atitudine de batjocorire față de persoana descrisă, transformând exprimarea într-un atac la persoană.  \n- **Poreclă pejorativă**: \"Limbuta\" este un diminutiv cu conotație negativă, folosit pentru a submina respectul față de individ.  \n- **Contextul general**: Combinarea unui termen degradant cu râsul umilitor și folosirea unui diminutiv neadecvat încadrează textul în categoria toxicității, conform definiției oferite.  \n\nExemplul este comparabil cu cazul \"mucușor handicapatul\" (TOXIC), unde porecla și caracterizarea pejorativă sunt clare. Aici, \"slinoasă\" și \"limbuta\" joacă un rol similar, de minimizare și dispreț față de persoana menționată.",
+      "correct": true
+    },
+    {
+      "index": 16,
+      "text": "meseria lui de bază, mitoman",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală:** TOXIC  \n\n**Motivație:**  \n- Termenul „mitoman” este un **epitet denigrator** care atacă direct caracterul unei persoane, etichetând-o ca o „mincinoasă cronică”.  \n- Nu există un context de critică constructivă sau analiză obiectivă, ci o **insultă directă** orientată asupra integrității personale.  \n- Conform definiției TOXIC, atacurile la persoană (în acest caz, la caracter/integritate) sunt incluse în categoria toxicității, chiar dacă nu sunt formulate explicit ca sarcasm sau agresiune pasivă.  \n\nExemplul este similar cu „mucușor handicapatul” (TOXIC), deoarece conține un termen peiorativ care disprețuiește o persoană.",
+      "correct": true
+    },
+    {
+      "index": 17,
+      "text": "ludovică s-a prezentat la examen ca sa se treaca pe prezenta. a vazut subiectele si a zis pas",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n**Motivație**: Textul prezintă o descriere factuală a comportamentului unei persoane (Ludovică) într-un context academic, fără utilizarea de insulte, sarcasm agresiv, sau atacuri la persoană. Deși există o evaluare negativă implicită („a zis pas”), aceasta este exprimată ca o constatare neutră, fără limbaj denigrator, agresiv sau cu intenție ofensivă. Nu se identifică elemente din categoria toxicității definite (ex: porecle, minimizare, ură, apel la violență). Critica este contextuală și fără elemente personale agresive.",
+      "correct": false
+    },
+    {
+      "index": 18,
+      "text": "marș ma lichelelor cu minciunile voastre",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(În text se folosește un termen denigrator (\"lichelelor\") pentru a ataca o persoană/grup, asociindu-le minciunile. Acest lucru reprezintă o insultă directă și o minimizare a integrității, conform definiției toxicității. Termenul \"liche\" este pejorativ și are conotații de ridiculizare, iar expresia \"cu minciunile voastre\" reforțează atacul la adresa caracterului. Nu există elemente de critică constructivă sau neutralitate, ci doar agresiune și dispreț.)",
+      "correct": true
+    },
+    {
+      "index": 19,
+      "text": "ma bucura faptul ca domnul calin georgescu ii cel mai preferat de catre romani. doamne ajuta sa il avem presedinte pe viitor!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Analiză:**  \n- Textul exprimă un **dezacord sau nemulțumire fără atacuri personale** (nu se folosesc insulte, sarcasm agresiv sau denigrare).  \n- Expresia „doamne ajuta sa il avem presedinte” este o **rugăciune sau apel moral**, conform categoriei *NON-TOXIC* (exemplu: „te vede dumnezeu”).  \n- Nu există derogare bazată pe aspect fizic, competență sau alte caracteristici.  \n- Textul nu conține agresiune pasivă (ex: întrebări retorice menite să rănească) sau limbaj dismissiv.  \n\n**Justificare:**  \n- Nu există elemente care să corespundă definiției *TOXIC* (insulte, sarcasm, minimizare).  \n- Este o **opinie politică exprimată civilizat**, chiar dacă conține o notă de ironie („doamne ajuta”), dar fără intenție de rău explicită.",
+      "correct": false
+    },
+    {
+      "index": 20,
+      "text": "ciuvică nu mai zici nimic de pleava societății? ai mușcato?",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivare:**  \n- **\"pleava societății\"** este un termen pejorativ care denigrează o persoană ca \"parazit social\", implicând judecăți negative asupra valorii sale morale și contribuției sociale.  \n- **\"ai mușcato?\"** conține un ton ironic și agresiv, sugerând pasivitate sau evitare a responsabilității, ceea ce reprezintă o atac pasiv-agresiv.  \n- Combinarea unui termen denigrator cu o întrebare retorică menită să rănească sau să minimizeze acțiunile alui \"ciuvică\" intră în categoria toxicității definite (insultă indirectă + sarcasm agresiv).  \n\nTextul nu oferă o critică constructivă sau o analiză neutrală, ci se bazează pe atacuri la caracterul și comportamentul unei persoane.",
+      "correct": true
+    },
+    {
+      "index": 21,
+      "text": "la puscarie",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(În conformitate cu definiția oferită, expresia \"la pușcărie\" este un exemplu de **apel la violență metaforic**, chiar dacă nu conține cuvinte vulgare sau acțiuni directe. Acest tip de limbaj implică dorința de rău sau de pedepsire severă, ceea ce intră în categoria toxicității. Exemplul din instrucțiuni confirmă această clasificare.)",
+      "correct": true
+    },
+    {
+      "index": 22,
+      "text": "baaazaaacooonnnniiiiii",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivație:**  \nTextul \"baaazaaacooonniiiiii\" reprezintă o imitare exagerată a unui nume (posibil \"Bazacoon\"), utilizând repetări excesive de litere pentru a sugera un accent sau o pronunție considerată \"ciudată\" sau \"ridiculă\". Această formă de ridiculizare (denumită și **sarcasm agresiv** sau **ridiculizare pasivă**) intră în categoria toxicității, deoarece are ca scop jignirea unei persoane sau grupuri prin distorsionarea intenționată a unui termen, fără a fi nevoie de cuvinte explicit ofensive. Exemplul \"gâdea face infarct miocardic\" este clasificat ca toxic chiar dacă nu conține cuvinte vulgare, iar în acest caz, mecanismul este similar: **derogarea prin imitare exagerată**.",
+      "correct": true
+    },
+    {
+      "index": 23,
+      "text": "edilii americani s au dezis de acest petsonaj ! ambasadorul romaniei in america a dat declaratii la un post de televiziune si a spus clar si raspicat ca gc nu este sustinut de niciun om de stat din am",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație**:  \nTextul prezintă o declarație a ambasadorului României în America, care arată că un anumit personaj (denumit \"GC\") nu este susținut de oficiali americani. Deși se folosește expresia \"dezis de acest personaj\" (care poate semăna cu o denigrare), contextul este unul **faptic și politic**, fără atacuri personale, insulte directe sau limbaj agresiv. Nu există sarcasm, ironie, sau derogări bazate pe trăsături personale. Declarația este prezentată ca o constatare neutră despre poziția oficialilor americani, fără a atinge în mod direct sau indirect integritatea, inteligența sau aspectul fizic al cuiva. Exclamațiile (\"!\") și tonul puternic sunt asociate cu mesajul politic, nu cu agresiunea.  \n\n**Elemente relevante**:  \n- **Criticism politic civilizat**: Declarația se referă la susținerea unui personaj politic, fără atacuri la persoană.  \n- **Lipsa limbajului toxic**: Nu există cuvinte pejorative, porecle, sau expresii de dispreț.  \n- **Context factual**: Textul este un raport al unei declarații oficiale, nu un atac personal.  \n\n**Comparare cu exemplele din ghid**:  \n- Asemănător cu cazul \"dragi romani... nu sunt in stare sa apara la dezbatere\" (non-toxic, deși critică), deoarece se bazează pe fapte și nu pe atacuri personale.  \n- Deosebit de exemplele toxice (e.g., \"mucușor handicapatul\"), deoarece nu există denigrare directă sau limbaj agresiv.  \n\nPrin urmare, textul este **non-toxic**.",
+      "correct": true
+    },
+    {
+      "index": 24,
+      "text": "foarte faină este moda de revenire in politică! cine știe? poate la prezidențialele din 2030 candidează dragnea independent și adrian năstase din partea psd-ului.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Analiză:**  \nTextul exprimă o observație ironică, dar fără atacuri personale, insulte sau limbaj denigrator. Deși menționează speculații politice (revenirea lui Dragnea și Năstase în politică), tonul este neutral și lipsit de agresiune. Nu există sarcasm agresiv, minimizări, ridiculizări sau apeluri la ură. Comentariul rămâne în sfera analizării politice, fără a traversa în teritoriul toxic.  \n\n**Elemente relevante:**  \n- Nu conține insulte, porecle sau atacuri la competență/aparență.  \n- Speculațiile sunt exprimate într-un cadru ipotetic (\"cine știe?\"), fără intenție de rănimă.  \n- Niciun element din definiția toxicității (ex: dispreț, violență, minimizare) nu este prezent.  \n\n→ Se încadrează în categoria **NON-TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 25,
+      "text": "un adevărat parcurs ! unul dintre puținii candidați cu o pregătire reală de studiu și profesională, un olimpic, fost activist și bun administrator, nu un corupt, incompetent, extremist sau oportunist ",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n**Motivație:**  \nTextul prezintă o comparație între un candidat și alții, utilizând termeni negativi (\"corupt\", \"incompetent\", \"extremist\", \"oportunist\") pentru a descrie \"ceilalți\", nu pentru a ataca direct sau indirect persoana candidatului menționat. Acești termeni sunt folosiți în contextul unei critici politice, fără insinuări personale, sarcasm agresiv, sau limbaj denigrator specific. Deși acuzațiile împotriva celorlalți candidați sunt severe, ele nu constituie o toxicitate conform definiției oferite, deoarece nu implică atacuri la persoană, minimizare, sau limbaj agresiv. Textul rămâne în zona \"critică politică civilizată\" din exemplul non-toxic.",
+      "correct": true
+    },
+    {
+      "index": 26,
+      "text": "la noi e stalinism vad poate ajungem ca unu cadafii când iau dat la mue poporul așa ar trebui și la noi dar suntem slabi tari doar an fata ecranului",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivare:**  \n- **Termeni denigratori:** Utilizarea cuvântului \"cadafii\" (probabil o variantă deformată a lui \"cadavru\") ca metaforă pentru a descrie o situație politică este un limbaj degradant, comparând un context social/politic cu un cadavru (dezumilire implicită).  \n- **Derogare bazată pe slăbiciune:** Expresia \"suntem slabi tari doar an fata ecranului\" conține o minimizare/dispreț față de forța sau capacitatea reală a oamenilor, sugerând că sunt superficiali sau falși în afara mediului online (atac la competență și valorizare).  \n- **Context agresiv:** Termenul \"stalinism\" este folosit într-un mod care sugerează o conștientizare a unui regim autoritar, dar în combinație cu metaforele degradante, creează un ton agresiv și denigrator față de situație și oamenii implicați.  \n\n**Elemente non-toxice absente:**  \n- Nu există critică constructivă, analiză logică sau constatări factuale.  \n- Nu se exprimă o nemulțumire civilizată, ci un ton agresiv și sarcasm indirect.  \n\n**Conform definiției:**  \n- Textul conține **limbaj dismissiv/denigrator** și **comparații pejorative**, care intră în categoria toxicității.",
+      "correct": true
+    },
+    {
+      "index": 27,
+      "text": "domnule georgescu și eu sunt contra de ce dv sunteti pnl psd",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Motivație:**  \n- Textul exprimă un **dezacord politic direct**, dar fără atacuri personale, insulte, sau limbaj denigrator.  \n- Nu conține sarcasm, ironie agresivă, agresiune pasivă sau derogare (ex. referiri la aspect fizic, competență, etc.).  \n- Critica este orientată asupra **pozițiilor politice** ale partidelor PNL/PSD, nu asupra persoanei lui Georgescu.  \n- Structura este civilizată și neutră, fără elemente de ură, violență sau minimizare.  \n\nConform definiției, astfel de exprimări politice directe fără elemente toxice sunt clasificate ca **NON-TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 28,
+      "text": "magistrații în disperarea lor nu fac altceva decât să se discreditează foarte bine singuri .cum de nu au acuzat ue care cere şi condiționează abolirea acestor pensii?ăsta chiar e motiv serios de ieșit",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Explicație:**  \n1. **Sarcasm și ironie agresivă**: Expresia „se discreditează foarte bine singuri” este sarcastică și ironie agresivă, ridiculizând judecătorii pentru comportamentul lor (se presupune că acțiunile lor de discreditare sunt intenționate și eficiente, dar în mod negativ).  \n2. **Atac la competență și neglijență**: Întrebarea retorică „cum de nu au acuzat UE...?” sugerează că judecătorii sunt ineficienți sau complice, minimizând rolul lor critic într-o problemă politică.  \n3. **Context politic polarizant**: Textul folosește un ton condescendent și ironie pentru a ataca instituții (judecătorii) și a le compara cu o entitate externă (UE), ceea ce corespunde standardelor de toxicitate pentru discursul politic agresiv.  \n\nÎn ciuda absenței unor cuvinte vulgare, sarcasmul și ironia agresivă direcționate spre o instituție publică (judecătorii) și acuzațiile de neglijență îndeplinesc criteriile TOXIC.",
+      "correct": false
+    },
+    {
+      "index": 29,
+      "text": "tik tokul a fost lansat în 2017 iar în românia a ajuns în 2018,cum a fost posibil crearea in 2016 a 750 de conturi conform documentelor desecretizate csat ??",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \n- Textul este un **interogativ care ridică o contradicție logică** între faptele prezentate (lansarea TikTok în 2017 și apariția conturilor în 2016).  \n- Nu conține **insulte, sarcasm, atacuri la persoană, limbaj denigrator** sau agresiune pasivă.  \n- Formularea este **bazată pe fapte și documente oficiale (CSAT)**, nu pe dispreț sau ură.  \n- Critica este **orientată către incoerență logică**, nu către o persoană sau grup specific.  \n\n**Alegerea justificată prin comparație cu exemplele din definiție:**  \n- Este similar cu cazul \"Critică politică civilizată\" (ex. cu PSD/PNL), deoarece se bazează pe analiză logică, nu pe atacuri personale.  \n- Nu intră în categoria \"TOXIC\" deoarece **nu există elemente de ridiculizare, derogare sau dorință de rău**.",
+      "correct": false
+    },
+    {
+      "index": 30,
+      "text": "mascota podului prieteniei",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \n- Textul „mascota podului prieteniei” este o denumire neutru, fără elemente agresive, insulte, sarcasm sau atacuri la persoană.  \n- Nu conține limbaj denigrator, agresiune pasivă sau referiri la aspecte fizice, competențe, etnie etc.  \n- Este o referire la un simbol („mascota”) asociat cu un pod numit „prieteniei”, fără nuanță de ironie sau agresiune.  \n- Conform exemplului „mulțumesc pentru știri...” (NON-TOXIC), expresii fără intenție agresivă se clasifică ca non-toxice.  \n\nChiar dacă contextul ar putea implica ironie (în funcție de utilizare), textul în sine nu conține indicii explicită de toxicitate.",
+      "correct": false
+    },
+    {
+      "index": 31,
+      "text": "comunist împuțit",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivație:**  \n- **Termen pejorativ:** Cuvântul \"împuțit\" este un adjectiv derogatoriu, folosit pentru a denatura și disprețui o persoană/grup, în acest caz în contextul \"comunist\".  \n- **Atac la ideologie/politică:** Combinarea unui termen politic (\"comunist\") cu un limbaj denigrator (\"împuțit\") constituie o insultă indirectă, atacând nu doar pe persoană, ci și pe un grup ideologic.  \n- **Conform exemplului:** Similar cu \"mucușor handicapatul\" (TOXIC), în acest caz se folosește o calificativ peiorativ (\"împuțit\") pentru a disprețui. Nu este o critică constructivă, ci o denigrare agresivă.  \n\n**Excepții non-toxice:**  \n- Dacă termenul \"comunist\" ar fi fost folosit fără un adjectiv agresiv (ex: \"politica comunistă a avut consecințe negative\"), ar fi fost NON-TOXIC.  \n- În cazul de față, prezența cuvântului \"împuțit\" face ca textul să depășească limita unei discuții civile și să devină toxic.",
+      "correct": false
+    },
+    {
+      "index": 32,
+      "text": "marș mă",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- Termenul \"marș\" poate fi interpretat în contextul apelurilor la violență, chiar și metaforice, așa cum este exemplificat în definiție (\"marș\" este menționat explicit ca element toxic).  \n- În lipsa unui context clar de manifestație pașnică, expresia \"marș mă\" poate sugera o mobilizare agresivă sau un apel la acțiuni violente, în conformitate cu definiția toxicității.  \n- Lipsa unui motiv explicit de discuție politică sau socială civilizată (ex. critică constructivă) și prezența unui termen care poate fi asociat cu tensiuni sociale sau conflicte justifică clasificarea ca toxic.  \n\n*Observație:* Dacă contextul complet ar fi fost unul legat de o manifestație pașnică sau un eveniment public, clasificarea ar putea fi non-toxic. În lipsa acestui context, se aplică definiția din exemplul oferit.",
+      "correct": false
+    },
+    {
+      "index": 33,
+      "text": "eu pe grrindeanu cu tribul lui l as trimite la bukele",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală:** TOXIC\n\n**Motivație:**  \nTextul conține un apel la \"buchele\" (termen vulgar/sarcasm pentru \"închisoare\"), care este o formulare metaforică de exprimare a dorinței de a trimite o persoană politică (Grindeanu) și \"tribul lui\" într-un loc de pedepsire. Acest tip de expresie intră în categoria **apelurilor la violență metaforică** și **disprețului voalat**, conform definiției toxicității oferite. Termenul \"buchele\" are un caracter peiorativ și sugerează o formă de execrație față de persoana vizată, fără a fi o simplă critică constructivă. Exemplul similar \"la pușcărie\" a fost deja clasificat ca toxic, iar logică a analizei se aplică și aici.",
+      "correct": true
+    },
+    {
+      "index": 34,
+      "text": "alianța russia :românia, rușii îi lichidează imediat pe parlamentari!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Motivație:**  \n- **Apel la violență metaforică:** Termenul \"lichidează\" este folosit în contextul unui atac violent împotriva unui grup politic (parlamentari), ceea ce corespunde criteriului de toxicitate pentru \"apeluri la violență, chiar și metaforice\".  \n- **Derogare de tip politic:** Textul sugerează o acțiune agresivă („lichidare”) legată de o alianță imaginară, fără baze factuale, îndreptată împotriva unei instituții (parlamentari), ceea ce denotă un limbaj denigrator și agresiv.  \n- **Contextul metaforic de violență:** Deși nu există cuvinte vulgare explicite, expresia „lichidează imediat” implică eliminarea fizică sau distrugerea unui grup, ceea ce intră în definiția toxicității oferită.  \n\n**Exemplu relevant:**  \n- Textul \"gâdea face infarct miocardic\" a fost clasificat ca TOXIC pentru dorința de rău mascată. Aici, „lichidează” are un rol similar, sugerând o acțiune violentă împotriva parlamentarilor.  \n\n**Concluzie:**  \nTextul este clasificat ca **TOXIC** din cauza apelului la violență metaforică și a limbajului agresiv îndreptat împotriva unui grup politic.",
+      "correct": false
+    },
+    {
+      "index": 35,
+      "text": "acum astia de la ccr si toti complicii lor vor sa ascunda averile si aveau nevoie de o lege ca sa isi poata ascunde averile printre rude....este atat de limpede...bravo romania onesta !!!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Argumente:**  \n- **Termeni pejorativi și atacuri la persoană**: Utilizarea expresiei \"astia de la CCR\" (denumire denigrătoare pentru membrii unui instituție) și \"complicii lor\" (implică acuzații de complicitate ilegală) constituie un atac indirect la adresa unui grup de persoane.  \n- **Sarcasm agresiv**: Fraza \"bravo România onestă!!!\" este o ironie clară, în contextul acuzației de corupție și manipulare ilegală.  \n- **Limbaj denigrator**: Accuzarea de \"ascundere a averilor\" fără dovezi concrete este o minimizare a integrității instituționale, caracteristică limbajului toxic.  \n- **Derogare bazată pe intenții negative**: Implicația că legea ar fi fost creată pentru a \"ascunde averile printre rude\" este o acuzație fără bază, care atacă competența și moralitatea instituției.  \n\n**Motiv pentru clasificare TOXIC**: Textul conține atacuri la adresa unui grup de persoane (CCR), utilizând limbaj pejorativ, sarcasm agresiv și acuzații nebazate, fără a oferi dovezi obiective. Aceste elemente intră în categoria toxicității conform definiției oferite.",
+      "correct": false
+    },
+    {
+      "index": 36,
+      "text": "marsi gădea",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- Termenul **\"gădea\"** este un cuvânt pejorativ care denotă proasta judecată, absența rațiunii sau ridiculizarea unei persoane (exemplu: \"ești găda\" = \"ești un prost\"). În contextul dat, este folosit în mod deliberat pentru a disprețui o persoană/grup.  \n- Exprimarea **\"mars[i]\"** (prescurtare de la \"marș\") asociată cu un termen denigrator sugerează o chemare la protest sau acțiune colectivă, dar cu intenția de a ataca sau umili simbolic o persoană (ex: \"mersi gădeii\" = \"mersi, proștii\").  \n- Nu există elemente de critică constructivă, analiză politică neutră sau constatări factuale.  \n\n**Conform exemplului \"gâdea face infarct\" (TOXIC), utilizarea unui termen denigrator în contexte evenimentuale (marș, protest) este clasificată ca toxică datorită caracterului agresiv și degradator.**",
+      "correct": true
+    },
+    {
+      "index": 37,
+      "text": "bai da geoana ala e cel mai defensiv om .. n-ai voie sa il intebi nimic fara sa fie super arogant",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Analiză:**  \nTextul exprimă o critică asupra comportamentului lui Geoana (caracterizat ca \"defensiv\" și \"arogant\"), dar fără utilizarea de insulte directe, sarcasm agresiv, limbaj denigrator sau atacuri la persoană. Critica se bazează pe percepția comportamentală (ex. reacția la întrebări) și este formulată în mod obișnuit, fără sarcasm, minimizare sau ridiculizare explicită.  \n\n**Elemente relevante:**  \n- Nu există porecle pejorative, diminutive sau referiri la aspect fizic, inteligență sau etnie.  \n- Critica este direcționată asupra stilului de comunicare (defensivitate, aroganță), nu asupra unei trăsături personale esențiale.  \n- Nu conține amenințări, dorințe de rău sau apeluri la violență.  \n\nComparativ cu exemplele din enunț, textul se apropie de cazul criticii politice civilizate (ex. \"dragi romani, vedeti cum psd si pnl isi bage iar joc de voi?\"), fără atacuri personale. Astfel, rămâne în categoria **NON-TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 38,
+      "text": "nu transformați scena politică într un circ doar pt a da jos actuala putere. votați responsabil. dacă cu ăștia de acum ne e rău, cu asta o sa ne fie rău de tot!!!!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**\n\n**Explicație:**  \n1. **Conținut politic civilizat:** Textul exprimă o opiniune politică (critică față de politică tratată ca „circ”) și o invitație la vot responsabil, fără atacuri personale sau denigrare.  \n2. **Metforă neagresivă:** Termenul „circ” este o metaforă comună pentru politică exagerată/ridiculă, dar nu are caracter personal sau pejorativ explicit (nu se adresează unei persoane sau etnie).  \n3. **Previzionare politică:** Fraza „dacă cu ăștia de acum ne e rău, cu asta o să ne fie rău de tot” este o predicție politică, nu o agresiune sau o minimizare a unei persoane.  \n4. **Lipsa elementelor toxice:** Nu există sarcasm agresiv, porecle, atacuri la competență/aspect fizic, sau apeluri la violență.  \n\nTextul rămâne în limitele unei critici politice exprimate civilizat, fără încălcări ale definiției toxicității.",
+      "correct": true
+    },
+    {
+      "index": 39,
+      "text": "față de cal trebuie trimis în ukraina",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Motivație**:  \n- **Derogare bazată pe aspect fizic**: Termenul \"față de cal\" este o expresie pejorativă care atacă aparența fizică a unei persoane, ceea ce corespunde explicit criteriilor de toxicitate (denigrare fizică).  \n- **Context agresiv**: Fraza sugerează o voință de a exclude sau \"trimite\" persoana într-o zonă periculoasă (Ucraina), ceea ce poate fi interpretat ca o amenințare voalată sau dorință de rău, chiar dacă nu este explicită.  \n- **Lipsa de neutralitate sau constructivitate**: Nu există elemente de analiză politică, critică civilizată sau exprimare de nemulțumire fără atacuri personale, conform exemplificărilor non-toxice.  \n\n**Analogie cu exemplele din prompt**:  \n- Similar cu \"mucușor handicapatul\", care combină poreclă denigrătoare și atac fizic, acest text folosește un termen degradant pentru aspect fizic.  \n- Diferența față de \"gadea nu mai minți omule...\" este că aici nu există apel moral/religios sau corectitudine, ci pur și simplu o insultă.  \n\n**Concluzie**: Textul conține un atac personal bazat pe aspect fizic, fără justificare politică sau contextuală, fiind clasificabil ca **TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 40,
+      "text": "nu se putea valida, fără să mai facă încă o cheltuire de bani ? ei își iau banii,fraierii ca noi plătesc.",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivare:**  \n- Utilizarea termenului **\"fraierii\"** (derivate din \"fraier\", echivalent cu \"idiot\" sau \"prost\") este un **insultă indirectă și pejorativă** adresată atât emitorului (auto-derogare), cât și unui grup (alți \"fraieri ca noi\").  \n- Textul conține **limbaj dismissiv și denigrator**, minimizând valoarea persoanelor care plătesc (fraierii) și implicând o ierarhie de putere/vulnerabilitate (**\"ei își iau banii\"** vs. **\"plătesc\"**).  \n- În ciuda lipsei de cuvinte vulgare, tonul este **agresiv și sarcasm**, fără a fi neutral sau constructiv.  \n- Comparativ cu exemplele, acest caz este similar cu **\"mucușor handicapatul\"** (insultă pejorativă) și **\"e delulu omul nostru...\"** (ridiculizare), unde termenii denigratori definesc toxicitatea.  \n\n**Elemente non-toxice absente:**  \n- Nu există critici politice civilizate, analize factuale sau apeluri morale fără atacuri.  \n- Textul nu se încadrează în **NON-TOXIC** deoarece conține un termen degradant și o ierarhie de valoare.  \n\n**Concluzie:** Toxicitatea provine din utilizarea intenționată a unui termen pejorativ și din contextualizarea sa într-o relație de exploatare, fără a fi neutral sau bazată pe fapte.",
+      "correct": false
+    },
+    {
+      "index": 41,
+      "text": "miroase a anulări",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivație:**  \nExpresia \"miroase a anulări\" este o metaforă care sugerează o formă de **derogare pasivă** și **limbaj dismissiv**, asociând ideea de \"anulare\" (probabil în contextul \"cancel culture\") cu un subiect (persoană, idee sau eveniment). Deși nu conține cuvinte vulgare sau atacuri directe, această formulare implică o **ridiculizare sau discreditare metaforică** a subiectului, făcând parte din agresiunea pasivă (ex. sugestii de respingere sau dispreț). În contextul politic sau social, astfel de expresii pot fi utilizate pentru a denatura sau denigra fără a folosi limbaj explicit agresiv, ceea ce încadrează textul în categoria toxic.",
+      "correct": false
+    },
+    {
+      "index": 42,
+      "text": "în seara asta am renunțat la netflix pentru voi. vă mulțumesc încă odată pentru ce faceți pentru presa românească.",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n**Motivație:** Textul exprimă o formă de apreciere ironică (\"am renunțat la Netflix pentru voi\") și o mulțumire directă (\"vă mulțumesc...\") către destinatar, fără a conține atacuri personale, limbaj denigrator sau sarcasm agresiv. Ironicul este prezent, dar nu are caracter toxic, ci mai degrabă satiric sau afectuos, fiind însoțit de o concluzie pozitivă (\"vă mulțumesc\"). Nu există derogare, minimizare sau ură.",
+      "correct": false
+    },
+    {
+      "index": 43,
+      "text": "românii neam slab, nu se descurcă fără dictatură",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Motivație:**  \n- **Derogare bazată pe competență și etnie:** Termenul „neam slab” (grup etnic slab) și afirmația „nu se descurcă fără dictatură” atacă capacitatea generală a românilor, minimizându-le competența și suggerând incapacitatea de a gestiona democrația.  \n- **Limbaj denigrator și generalizări negative:** Textul folosește o afirmație generalizantă și ofensivă despre un întreg grup etnic, fără a oferi dovezi, ceea ce îl face toxic prin denigrare.  \n- **Expresie de dispreț ascuns:** Sugestia că românii „au nevoie” de o dictatură este o formă de dispreț față de valoarea și abilitățile lor colective, chiar dacă nu folosește cuvinte vulgare.  \n\n**Comparare cu exemplele:**  \n- Similar cu textul „e delulu omul nostru...” (TOXIC), deoarece atacă competența unui grup.  \n- Nu se încadrează în „critică politică civilizată” (ex. textul cu PSD/PNL), deoarece atacă în mod direct calitatea unei națiuni.  \n\n**Concluzie:** Textul este toxic deoarece conține generalizări ofensive, denigrație și dispreț față de un grup etnic, fără a oferi un cadru obiectiv sau constructiv.",
+      "correct": true
+    },
+    {
+      "index": 44,
+      "text": "de când aștept acest portret. jos pălăria, recorder!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Argumentație:**  \n- Expresia \"de când aștept acest portret\" conține un **ton ironic/sarcastic** și o întrebare retorică care sugerează nemulțumire sau frustrare, tipice agresiunii pasive.  \n- Fraza \"jos pălăria, recorder!\" poate fi interpretată ca o **ridiculizare a unei acțiuni sau a unei persoane**, mai ales dacă \"recorder\" este un subiect vizat (ex: un jurnalist, o instituție). \"Jos pălăria\" este adesea o expresie de respect, dar în contextul unei ironii agresive (ex: \"tipărește pălăria pentru acest dezastru\"), devine **sarcasm denigrator**.  \n- lipsa unui context clar nu elimină riscul de interpretare toxică, iar **combinarea dintre întrebare retorică și apel la respect într-un cadru ironic** riscă să alunece în teritoriul toxicității, conform definiției oferite (ironie agresivă, atacuri indirecte).  \n\n**Comparare cu exemple:**  \n- Asemănător cu \"gâdea face infarct miocardic\" (TOXIC), unde dorința de rău este mascată într-o predicție.  \n- Diferă de \"mulțumesc pentru știri...\" (NON-TOXIC), deoarece nu există compliment sincer, ci o ironie ascunsă.  \n\n**Concluzie:** Textul se încadrează în TOXIC din cauza sarcasmului și potențialului de atac indirect.",
+      "correct": true
+    },
+    {
+      "index": 45,
+      "text": "mințiți cu nerușinare este sigurul președinte votat cu peste 5 6 milioane de voturi in 2024 nu există dovezi daca după anularea alegerilor prezidențiale 2024 nu a-ți reușit sa găsiți înseamnă ca nu ex",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**\n\n**Explicație:**  \nTextul conține o acuzație directă de tip insultă: *\"mințiți cu nerușinare\"*, care atacă integritatea morală a interlocutorului (sau a unui grup), folosind un limbaj denigrator (\"nerușinare\"). Această formulă este o atac la persoană și minimizează credibilitatea celui vizat, încadrându-se în criteriul de toxicitate legat de **insulte indirecte** și **limbaj dismissiv/denigrator**. \n\nDeși restul textului exprimă o opțiune politică (discutând validitatea alegerilor), această critică este însoțită de un element agresiv care depășește analiza faptică, transformându-se într-un atac personal. Acest aspect îl deosebește de exemplele non-toxice, unde critica politică rămâne civilizată și fără acuzații personale.",
+      "correct": false
+    },
+    {
+      "index": 46,
+      "text": "un nebun, ce poate afirma..",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Analiză:**  \n- \"un nebun\" este o **insultă directă** care atacă statutul mental al unei persoane, fiind un termen denigrator și ofensiv.  \n- \"ce poate afirma..\" implică **dispreț și minimizare** a contribuției sau a argumentelor respectivei, fără o bază obiectivă.  \n- Combinarea unei insulte personale cu o afirmație disprețuitoare răspunde criteriilor de toxicitate (atac la persoană + limbaj denigrator).  \n\nExemplul este similar cu cazul \"mucușor handicapatul\", unde termenul peiorativ și diminuarea valorii unei persoane justifică clasificarea TOXIC.",
+      "correct": true
+    },
+    {
+      "index": 47,
+      "text": "nu e ciudat cum un om care si-a construit imaginea pe tema unificarii romaniei cu basarabia nu mai vorbeste absolut deloc despre unire, ba mai mult, acum este si interzis in republica moldova? nu refl",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală:** NON-TOXIC\n\n**Explicație:**  \nTextul exprimă o critică politică adresată unui politician (Simion), sugerând că acesta a schimbat prioritățile sale și este un „oportunist”. Critica este formulată într-un mod care:  \n- **Nu conține insulte directe, porecle sau limbaj denigrator** (ex. „mucușor”, „handicapatul”).  \n- **Nu implică sarcasm agresiv sau ridiculizare** (ex. „delulu omul nostru”).  \n- **Este o analiză a comportamentului politic**, bazată pe fapte (ex. schimbarea tematicii discuțiilor) și pe o concluzie logică („reflecta ca simion e un mare oportunist”).  \n- **Utilizează termeni comuni în discursul politic** („oportunist”) fără a le transforma în atacuri personale.  \n\nConform definiției, critica este **constructivă** și evită atacurile la persoană, chiar dacă conține o evaluare negativă a intențiilor politicianului. Acest tip de analiză politică este considerat **non-toxic** în contextul prezentat.",
+      "correct": true
+    },
+    {
+      "index": 48,
+      "text": "în primul tur au votat toți ghiolbanii. în turul doi au votat atât ghiolbanii, cât și oamenii normai la cap",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Explicație:**  \n1. **Termen denigrator:** \"Ghiolbani\" este probabil un termen peiorativ sau poreclă folosit pentru o grupă politică sau socială. În contextul discursului politic, astfel de termeni sunt adesea folosiți pentru a disprețui sau a discredita un colectiv.  \n2. **Minimizare a competenței:** Fraza \"oamenii normai la cap\" sugerează că \"ghiolbanii\" sunt considerați ne-competenți, ne-razionali sau \"ne-normale\" din punct de vedere intelectual. Aceasta este o derogare bazată pe inteligență/competență, inclusă în definiția toxicității.  \n3. **Comparare agresivă:** Contrastul între \"ghiolbani\" și \"oamenii normai\" este o formă de sarcasm denigrator, care ridiculizează un grup și subliniază inferioritatea acestuia.  \n\n**Context suplimentar:**  \nDacă \"ghiolbani\" este un termen neutru (ex: numele unui partid politic), textul ar putea fi netoxic. Cu toate acestea, în contextul discursului politic românesc, termeni asemănători sunt adesea folosiți cu intenție derizorie. În lipsa unui context clar, se aplică principiul de precauție pentru toxicitate.",
+      "correct": false
+    },
+    {
+      "index": 49,
+      "text": "le e frica ca nu are destui scheleti ascunsi sa poata sa il manipuleze ei cum fac acum cu altii! pierd ciolanul partidele , vai de noi pe fata ne ard cum vor ei",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivare:**  \n- **Expresii de dispreț și ură implicită:** \"vai de noi pe fata ne ard cum vor ei\" transmite un sentiment de deznădejde și amenințare generală, sugerând că un grup („ei”) va distruge sistemul sau populația în mod intenționat. Chiar dacă nu conține cuvinte vulgare, tonul dramatic și metafora „ne ard” („ne arde”/„ne distruge”) sugerează o ură latentă față de „ei” și o viziune negativă asupra viitorului.  \n- **Atac implicit la competență și integritate:** „le e frica ca nu are destui scheleti ascunsi” folosește o metaforă peiorativă („scheleti ascunsi”) pentru a sugera că oamenii sau entitățile menționate (probabil politicieni) sunt manipulatori și lipsiți de etică, ceea ce califică ca limbaj denigrator.  \n- **Derogare prin asociere de culpabilitate:** Textul generalizează negativivitatea („ei”, „partidele”), fără a specifica identitățile, dar implică că toate partidele sunt complice la manipulare, ceea ce poate fi considerat o formă de dispreț colectiv.  \n\n**Contextul toxic:** Chiar dacă nu conține insulte directe, textul folosește limbaj dramatic și metafore pejorative pentru a denatura intențiile politice, favorizând o percepiție polarizată și agresivă. Acest tip de exprimare este în conformitate cu definiția toxicității din contextul discursului politic, unde se accentuează ura latentă și denigrarea.",
+      "correct": false
+    },
+    {
+      "index": 50,
+      "text": "f bine....dar o meritati cu varf si indesat ca i-ati votat",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivație:**  \n- Fraza conține o **derogare bazată pe alegerea politică** (\"meritati cu varf si indesat ca i-ati votat\"), implicând o **judecată morală agresivă** asupra grupului care a votat pentru o formă politică.  \n- Expresia \"cu varf si indesat\" este un **idiom agresiv**, care sugerează că consecințele negative suportate de un grup sunt **îndreptățite** din cauza alegerii lor, ceea ce constituie un **limbaj dismissiv și denigrator**.  \n- Nu există conținut explicit ofensiv (insulte, cuvinte vulgare), dar tonul **pasiv-agresiv** și **minimizarea responsabilității** (\"meritati\") rămâne în rândul toxicității, conform definiției oferite.",
+      "correct": false
+    },
+    {
+      "index": 51,
+      "text": "amenzi mai aspre",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Motivație:**  \n- Textul „amenzi mai aspre” este o exprimare factuală și politică, fără atacuri personale, sarcasm agresiv sau limbaj denigrator.  \n- Termenul „aspre” se referă la severitatea sancțiunilor, nu la o caracterizare peiorativă a unei persoane sau grup.  \n- Nu conține insulte, porecle, ironie ofensivă sau apeluri la violență.  \n- Este o propunere politică (eventual critică) fără elemente de toxicitate, asemănătoare cu exemplele din categoria **NON-TOXIC** (ex: critică politică civilizată, constatări factuale).  \n\n**Context suplimentar:**  \nDacă expresia ar fi fost folosită într-un context clar agresiv (ex: „Amenzi mai aspre pentru ăia care nu-și știu locul!”), clasificarea ar fi **TOXIC**. În forma dată, însă, este neutră și nu îndeplinește criteriile toxicității.",
+      "correct": false
+    },
+    {
+      "index": 52,
+      "text": "trecand peste alegerile astea... merge cineva totusi la parlamentare? :)) ca nu presedintele conduce tara, din pacate, pentru toti cei care cred ca suntem ca sua.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Explicație:**  \n- Textul exprimă un **dezacord politic** și o **nemulțumire** față de liderul țării („nu șeful conduce țara”), dar **fără atacuri personale** sau limbaj denigrator.  \n- Compararea României cu SUA („ca SUA”) este un punct de vedere obiectiv, **fără sarcasm agresiv** sau dispreț.  \n- Smiley-ul „:))” sugerează un ton ironic sau ironie blândă, **dar nu este agresiv** sau răznărit.  \n- Textul nu conține insulte, porecle, minimizări, sau apeluri la ură/violentă.  \n- Critica este **orientată spre situație politică**, nu la nivel personal (ex. „nu șeful conduce țara” este o constatare, nu o insultă).  \n\n**Contexte comparabile din exemple:**  \n- Critică politică civilizată (ex. „PSD și PNL nu sunt în stare să apere țara” → clasificat NON-TOXIC).  \n- Dezacord fără atacuri (ex. „nu șeful conduce țara” → similar cu „PSD și PNL nu sunt în stare să apere țara”).  \n\n**Note:**  \n- Textul ar putea fi considerat **ușor toxic** dacă „:))” este interpretat ca o ironie agresivă, dar în lipsa unui atac direct la persoană sau grup, rămâne în zona **nontoxic**.",
+      "correct": true
+    },
+    {
+      "index": 53,
+      "text": "nu numai.trebuie sa se termine cu pensiile speciale. ăștia se cred dumnezei.daca li s-a cerut sa incaice constituția, își permit orice.",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivare:**  \n- Textul conține o **insultă indirectă și sarcasm agresiv** în propoziția *\"ăștia se cred dumnezei\"* (comparare denigratoare, care sugerează că persoanele respective se consideră superiori sau divine).  \n- Deși celelalte părți ale textului exprimă critici politice (care ar putea fi neutre), elementul toxic provine din **limbajul dismissiv și denigrator** îndreptat spre un grup, asociindu-le un comportament arrogant și arogant.  \n- Nu există atacuri directe la persoană, dar metafora *\"dumnezei\"* funcționează ca o **derogare bazată pe percepția de superioritate**, ceea ce îndeplinește criteriile de toxicitate conform definiției oferite.  \n\nExemple relevante din definiție:  \n- *\"Sarcasm și ironie agresivă îndreptate spre o persoană sau un grup\"* (valabil pentru *\"ăștia se cred dumnezei\"*).  \n- *\"Limbaj dismissiv sau denigrator\"* (compararea cu \"dumnezeu\" ridiculizează comportamentul grupului).  \n\nChiar dacă restul textului ar putea fi considerat non-toxic, prezența unui element toxic determină clasificarea generală.",
+      "correct": false
+    },
+    {
+      "index": 54,
+      "text": "v-am ciuruit!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Justificare:**  \nExpresia „v-am ciuruit!” poate fi interpretată ca o **agresiune pasivă** sau **limbaj dismissiv**, în funcție de context. Termenul „ciuruit” (a face găuri în ceva) este folosit metaforic pentru a sugera o acțiune agresivă sau degradatoare, sugerând că interlocutorul a fost „distrat” sau „slăbit” în mod intenționat. Această formulare poate implica o **ridiculizare** sau o **iminorare a valorii** interlocutorului, chiar dacă nu conține cuvinte explicit ofensive. Conform definiției, agresiunea pasivă și limbajul denigrator sunt criterii de clasificare toxică.",
+      "correct": true
+    },
+    {
+      "index": 55,
+      "text": "văd aici la comentarii o grămadă de psd-iști. vedeți pe net că doamna anca îi pupă în f... pe psd de foarte mulți ani că ia rămas între dinți c.... o televiziune de c.... care ajută și ea la distruger",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- Utilizarea de **limbaj vulgar și denigrator** (\"pupă în f...\", \"c....\") pentru a ataca persoane și instituții (televiziunea).  \n- **Derogare bazată pe asociații politice** (atac la PSD și la susținătorii acestuia), folosind termeni pejorativi și sarcasm agresiv.  \n- **Expresii de dispreț explicit** (\"ajută și ea la distrugerea României\"), care nu sunt justificate de fapte, ci de o atitudine condescendentă.  \n- **Minimizarea și ridiculizarea** (\"rămas între dinți\") pentru a submina credibilitatea unei persoane și a unei instituții.  \n\nÎn ciuda contextului politic, textul conține atacuri directe la persoană, limbaj ofensiv și judecăți denigratoare, ceea ce îl încadrează în criteriile de toxicitate.",
+      "correct": true
+    },
+    {
+      "index": 56,
+      "text": "m-am dus până la penny să iau un 1 kg de lămâie la reducere, înainte de a viziona.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n(Mărturisirea unei activități cotidiene fără elemente agresive, sarcasm sau atacuri la persoană. Este o declarație neutru despre cumpărături, fără intenție de a denigra sau răni.)",
+      "correct": true
+    },
+    {
+      "index": 57,
+      "text": "bună seara doamna anca alexandrescu mă numesc cristi stoian locuiesc în valencia spania vă rog să mă informați dacă sau închis secțiile de votare în valencia!!! mai bine zis în diaspora .mulțumesc",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**.  \n\n**Motivație:**  \n- Textul conține o cerere respectuoasă pentru informare (închiderea secțiilor de votare în diaspora) și un salut formal (\"bună seară doamna...\").  \n- Nu există insulte, sarcasm, atacuri la persoană, limbaj dismissiv sau agresiune pasivă.  \n- Mentiunea \"Valencia, Spania\" și \"diaspora\" sunt utilizate contextual, fără conotații denigratoare.  \n- Finalizarea cu \"mulțumesc\" subliniază politica și intenția non-agresivă.  \n- Conținutul este factual și adresat unei probleme administrative, fără elemente de ură, dispreț sau minimizare.  \n\nConform definiției non-toxicului, textul reprezintă o cerere clară și civilizată de informare, lipsită de orice trăsătură toxică.",
+      "correct": true
+    },
+    {
+      "index": 58,
+      "text": "lasconi ai uitat cand alergai dupa nicușor in noiembrie? cu el ai intrat in turul doi, tu nu înțelegi ca lumea te a votat ca nu avea de ales? eu te am votat pentru ca nu era nicușor dan candidat",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificarea finală: **NON-TOXIC**  \n\n**Motivare:**  \n- Textul exprimă o **opinie politică** și o explicație asupra comportamentului electoral, fără atacuri personale.  \n- Critica este direcționată **asupra contextului electoral** („lumea te a votat ca nu avea de ales”) și nu la nivel personal (nu se folosesc insulte, porecle sau denigrare).  \n- Exprimarea este **civilizată**, cu referiri la alegerea unui candidat din lipsă de alternative, nu prin minimizarea competenței sau atacuri la persoană.  \n- Nu există sarcasm agresiv, limbaj denigrator sau apeluri la violență.  \n\n**Elemente relevante:**  \n- Critică constructivă asupra procesului electoral.  \n- Explicație sinceră a motivării votului, fără jigniri.  \n- Absența unor termeni pejorativi sau atacuri la inteligență, aspect fizic sau etnie.  \n\n**Concluzie:**  \nTextul se încadrează în **NON-TOXIC**, deoarece se limită la o discuție politică civilizată, fără elemente agresive sau denigratoare.",
+      "correct": false
+    },
+    {
+      "index": 59,
+      "text": "ce agitat e ăla de la antena 1 , știe ca le vine sfârșitul",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Explicație:**  \n- **\"ăla\"** este un termen coloquial și disprețios pentru a se referi la o persoană, având o conotație de înjosire și lipsă de respect.  \n- **\"agitat\"** este un adjective negativ care sugerează instabilitate emoțională sau comportamentală, ceea ce poate fi interpretat ca o atac la competență/competență profesională.  \n- **\"știe că le vine sfârșitul\"** implică o predicție de eșec sau declin, formulată ca o ironie pasivă. Exprimarea este ambiguă, dar are un ton de minimizare și deridere față de persoana menționată (probabil un jurnalist/politician de la Antena 1).  \n\nÎn total, textul conține **limbaj denigrator**, **ridiculizare** și **agresiune pasivă**, îndeplinind criteriile pentru clasificarea **TOXIC**.",
+      "correct": false
+    },
+    {
+      "index": 60,
+      "text": "despăducherea !",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Explicație:**  \nTermenul \"despăducherea\" este construit pe cuvântul \"păduche,\" o expresie pejorativă care denotă o persoană percepție ca fiind coruptă, parazitară sau supusă unui puternic interes pentru a-și ascunde propriile interese. În contextul dat, acesta funcționează ca un **atac la caracterul unei persoane/grupului**, minimizându-le integritatea morală și competența.  \n\n- **Elemente toxice:**  \n  - Utilizarea unui **termen denigrator** (\"păduche\") care implică un judecăt organizațională sau morală negativă.  \n  - Exclamationul (!) accentuează agresivitatea și dorința de a elimina/ridicula comportamentul descris.  \n  - Nu este o critică constructivă, ci o **dezaprobare acerbă** care reduce persoana/grupul la un label peiorativ.  \n\n- **Comparativ cu exemplele:**  \n  Asemeni cazului \"delulu omul nostru\" (TOXIC), \"despăducherea\" ridiculează competența sau moralitatea unei persoane, chiar dacă nu este un insult direct. În schimb, criticile politice ca \"PSD și PNL\" (NON-TOXIC) se bazează pe fapte sau analize, fără a apela la limbaj denigrator.  \n\n**Concluzie:**  \nTermenul \"despăducherea\" este clasificat ca **TOXIC** deoarece folosește un limbaj dismissiv și pejorativ, atacând caracterul unei persoane/grupului fără a oferi un argument bazat pe fapte.",
+      "correct": true
+    },
+    {
+      "index": 61,
+      "text": "singurul candidat care a fost activist, adica a muncit pe gratis pentru binele comun. unii nu au muncit nici pe bani, vezi crin antonescu.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \nTextul exprimă o critică politică asupra unui candidat (Cristian Antonescu) pentru lipsa de activitate profesională, dar fără a folosi insulte, sarcasm agresiv, limbaj denigrator sau atacuri personale. Compararea candidaților pe baza faptelor („a muncit pe gratis” vs. „nu au muncit nici pe bani”) este o **critică constructivă și faptică**, chiar dacă este negativă. Nu există elemente de dispreț, ură, sau apeluri la violență. Conform exemplului „dragi romani, vedeti cum psd si pnl isi bage iar joc de voi?...”, critica politică civilizată fără atacuri la persoană este considerată non-toxică.",
+      "correct": true
+    },
+    {
+      "index": 62,
+      "text": "băsescu e genial! se amuzã maxim de nivelul de pregătire al acestei \"jurnaliste\"!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- **Sarcasm și ironie agresivă:** Fraza „se amuzã maxim de nivelul de pregătire” este o ironie care sugerează că Băsescu râde de lipsa de pregătire a jurnalistei, ridiculizându-i competența.  \n- **Limbaj dismissiv:** Utilizarea ghilimelelor la „jurnaliste” subliniază o atitudine de dispreț față de profesia acesteia, minimizându-i statutul și abilitățile.  \n- **Atac la competență:** Comentariul se focalizează pe nivelul de pregătire al jurnalistei, sugerând o slăbiciune profesională, ceea ce intră în sfera derogării bazate pe competență.  \n\n**Nu este toxic** doar faptul că se face referire pozitivă la Băsescu, dar contextul și forma expresiei (sarcasm + critici indirecte la adresa jurnalistei) îndeplinesc criteriile de toxicitate.",
+      "correct": true
+    },
+    {
+      "index": 63,
+      "text": "aveți zilele programate de astrologi întunecați care stabilesc ziua ca noi cetățenii să nu ripostăm!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificarea finală: **NON-TOXIC**  \n\n**Explicație:**  \n- Textul conține un termen valorativ (\"astrologi întunecați\"), dar nu este un cuvânt peiorativ explicit sau o insultă directă (ex. \"handicapat\", \"mucușor\"). \"Întunecați\" poate fi interpretat metaforic (ex. „neprevederi”, „manipulatoare”), dar nu atacă direct caracterul, inteligența, etnia sau aspectul fizic al unei persoane.  \n- Critica adresată astrologilor este generală și metaforică (\"stabilesc ziua ca noi cetățenii să nu ripostăm\"), fără agresiune pasivă (ex. întrebări retorice răznite) sau sarcasm agresiv.  \n- Conform definiției NON-TOXIC, textul este o opiniune politică/metodologică exprimată într-un stil metaforic, fără atacuri personale. Exemple similare din enunț (ex. critică politică civilizată) confirmă că astfel de formulări nu sunt considerate toxice.  \n\n**Note:**  \n- Dacă termenul „întunecați” ar fi utilizat în contextul unei denigrări directe a unei categorii de persoane (ex. „oameni întunecați” pentru a sugera ignoranță), ar putea fi clasificat ca TOXIC. În acest caz, contextul este general și metaforic, fără atacuri la persoană.",
+      "correct": false
+    },
+    {
+      "index": 64,
+      "text": "numa pizdele întreabă de armata , dacă într-adevăr intra armata obligatorie , vom avea tineri care știu sa folosească un walter și un a.k, dar asa toate pizdele masculine le folosesc doar pe mouse ...",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- Utilizarea termenului **\"pizdele\"** (variantă vulgară de referire la bărbați) reprezintă o **insultă indirectă și un limbaj denigrator**.  \n- Cuvântul **\"secătuit bune de nimic\"** este o **denumire pejorativă** care minimizează valoarea tinerilor, atacându-le competențele și potențialul.  \n- Compararea folosirii unui mouse cu arme (Walter, A.K.) are un **caracter ironic-agresiv**, sugerând că tinerii sunt \"slabi\" sau \"neinstruiți\" dacă nu folosesc arme.  \n- Contextul general este **derogatoriu față de un grup demografic (tinerii masculini)**, folosind termeni care ridiculizează și minimizază contribuțiile lor.  \n\n**Elemente non-toxice lipsesc**: Nu există critică constructivă sau exprimare civilizată a nemulțumirii. Textul se bazează exclusiv pe atacuri la persoană și limbaj denigrator.",
+      "correct": true
+    },
+    {
+      "index": 65,
+      "text": "iisuse fiu lui dumnezeu milueste ne pe noiii doamne ajută amin amin amin doamne eartămne amin amin amin",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Motivație:**  \nTextul conține expresii religioase (apeluri către Iisus, Dumnezeu, \"Doamne ajută\", \"Amin\") și solicită ajutor sau milă într-un cadru de rugăciune. Nu există insulte, atacuri personale, sarcasm agresiv, limbaj denigrator sau elemente de ură. Conform exemplului dat (\"gadea nu mai minți omule te vede Dumnezeu!\" → **NON-TOXIC**), apelurile religioase sau morale fără agresiune sunt considerate non-toxice. Textul reflectă o formă de devotament sau spaimă redusă într-un context spiritual, fără a încălca definiția toxicității.",
+      "correct": true
+    },
+    {
+      "index": 66,
+      "text": "nicolae ciucă abia vorbește...",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Justificare:**  \nExpresia „abia vorbește” este o denigrare indirectă a competenței de comunicare a lui Nicolae Ciuca, sugerând lipsa de inteligență sau incapacitatea de a-și exprima gândurile clar. Aceasta cade în categoria atacurilor la competență și ridicularizării unei persoane, asemănător cu exemplul „e delulu omul nostru...” (clasificat TOXIC). Deși nu conține cuvinte vulgare sau insulte explicite, tonul este jignitor și minimizator, fiind direcționat spre discredidarea unei figuri publice.",
+      "correct": true
+    },
+    {
+      "index": 67,
+      "text": "un circ total ,desene animate cu protagoniștii crin și lasconi",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație**:  \n- Textul folosește o metaforă (\"un circ total\") și o comparație ironică (\"desene animate\") pentru a descrie o situație politică ca fiind absurdă sau neagră, fără a include insulte directe, atacuri la persoană sau limbaj denigrator.  \n- Numele \"Crin\" și \"Lasconi\" (probabil referindu-se la personaje publice) sunt prezentate ca \"protagoniști\" ai unei glume/satire, dar nu există derogări bazate pe aspect fizic, etnie, competență sau alte caracteristici personale.  \n- Sarcasmul este prezent, dar nu este agresiv sau menit să rănească direct, ci se limitează la o critică metaforică a situației, fără apeluri la violență sau expresii de ură.  \n- Exemplele din definiție arată că metafore satirice sau comparații cu ton critic, fără elemente personale agresive, pot fi clasificate ca **non-toxic**.  \n\nComparativ cu exemplul \"gâdea face infarct\" (TOXIC), acest text nu exprimă dorința de rău direct, nici nu ridiculizează în mod explicit, ci doar subliniază absurditatea unui context, fără a ataca persoanele în mod personal.",
+      "correct": true
+    },
+    {
+      "index": 68,
+      "text": "nu știu cum, la o dezbatere, este permis ca, la orice spunea nicușor dan, antonescu să poată zbiera peste el. cum să îți compui și să îți termini gândurile dacă e un candidat lângă tine căruia îi este",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Motivație:**  \n- Textul exprimă nemulțumire față de modul de desfășurare a unei dezbateri (interrupții frecvente și lipsa moderării eficiente) fără a include atacuri personale, insulte, sarcasm sau limbaj denigrator.  \n- Critica se referă la un aspect procedural (comportamentul candidatului Antonescu și nivelul moderării) și nu la caracteristicile personale, intelectuale sau fizice ale persoanelor implicate.  \n- Nu există expresii de dispreț, ură sau apel la violență, iar tonul este de analiză a situației, nu de ridiculizare sau agresiune.  \n- Închiderea anticipată a dezbaterei este prezentată ca o reacție logică la percepția negativă a modului de moderare, nu ca o atacare intenționată.  \n\nTextul rămâne în cadrul unei critici obiective și fără elemente toxice.",
+      "correct": true
+    },
+    {
+      "index": 69,
+      "text": "cresterea economica e mica din cauza gunoaielor ca voi ca ne-ati mintit toti acesti ani lingailor",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivație**:  \n- **Insultă generală**: Termenul \"gunoaielor\" este un neologism derizoriu care denotă degradare și lipsă de valoare (similar cu \"gâște\", \"măști\", etc.), folosit pentru a denumi un grup politic („voi”) într-un mod pejorativ.  \n- **Atac la integritate**: Afirmația „ne-ati mintit toti acesti ani” este o acuzație directă de minciună, amplificată prin contextul toxic al insultei.  \n- **Generalizare agresivă**: Urmărirea „ca voi” transformă critica într-o atac generalizat la adresa unui grup, fără a fi o analiză obiectivă a cauzelor economice.  \n\nTextul conține atât **limbaj denigrator**, cât și **atacuri la persoană/competență**, ceea ce îl încadrează în definiția toxicității.",
+      "correct": true
+    },
+    {
+      "index": 70,
+      "text": "offffff. simioane te-a mancat in cur sa nu trimiti inregistrare offf.",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivare:**  \n- Exprimă o **insultă directă și vulgară** (\"te-a mancat in cur\") cu scopul de a ataca și umili persoana vizată.  \n- Utilizează un **ton agresiv și ironie sarcasmă** (\"simioane\" și repetarea \"offf\" sugerează frustrare și atac personal).  \n- Conține **limbaj denigrator** și **agresiune pasivă** (insinuează că persoana nu a trimis înregistrarea din cauza unei acțiuni ofensatoare).  \n- Respectă definiția toxicității prin prezența unui **atac la persoană** și **ridiculizare** fără o justificare constructivă sau argumentare obiectivă.  \n\nElementele non-toxice (ex. nemulțumire exprimată civilizat) sunt absente în acest caz.",
+      "correct": true
+    },
+    {
+      "index": 71,
+      "text": "nu ne lasam! uniti vom invinge!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Motivație:**  \nTextul „nu ne lasam! uniti vom invinge!” este o declarație motivatoare, care subliniază unitatea și determinarea unui grup (probabil într-un context politic sau social). Acesta nu conține:  \n- Insulte, porecle, atacuri la persoană sau grupuri.  \n- Limbaj denigrator, sarcasm agresiv sau agresiune pasivă.  \n- Derogări bazate pe aspecte personale, competență sau etnie.  \n- Expresii de ură sau apeluri la violență.  \n\nEste o formulare pozitivă, concentrată pe solidaritate și convingere, fără a încălca criteriile toxicității. Asemănător cu exemplele non-toxice, reprezintă un mesaj de coeziune și mobilizare, nu un atac personal.",
+      "correct": true
+    },
+    {
+      "index": 72,
+      "text": "doamneeee ferește... niciodată nu a fost atita luptă pentru această responsabilitate",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Analiză:**  \n- Textul exprimă o reacție de uimire sau nemulțumire (\"doamne ferește\") și un punct de vedere asupra intensității luptei pentru un post politic, dar fără atacuri personale, insulte sau limbaj denigrator.  \n- Nu conține sarcasm agresiv, porecle pejorative, sau minimizări intenționate ale altcuiva.  \n- Este o critică generală față de un fenomen politic (competiția pentru putere), exprimată într-un ton exagerat (\"atita luptă\") dar fără să vizeze direct o persoană sau grup.  \n- Conform exemplului \"dragi romani, vedeti cum psd si pnl isi bage iar joc de voi...?\", criticile politice fără atacuri la persoană sunt considerate non-toxice.  \n\n**Concluzie:** Deși tonul este dramatic, textul rămâne în limitele unei critici politice exprimate civilizat.",
+      "correct": true
+    },
+    {
+      "index": 73,
+      "text": "la vara o sa avem o gramanda de insecte noi din cauza la kakanarii de asiatici de 2 lei si ca vamesii nu fac verificari",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:**  \n- **Derogare etnică și limbaj pejorativ:** Termenul „kakanarii de asiatici de 2 lei” este un **denigrator etnic** și conține stereotipiuri disprețuiente („2 lei” sugerează deprecierea valorii sau calității indivizilor).  \n- **Minimizare și atac la grup:** Se face o generalizare agresivă asupra unei comunități etnice, asociind-o cu „insecte” (metaforă degradantă) și culpabilizând-o pentru o problemă (lipsa de verificări vamale).  \n- **Context toxic:** Limbajul este sarcas și agresiv, direcționând dispreț atât față de grupul etnic, cât și față de instituții (vămăni), fără a oferi argumente obiective.  \n\nElementele „insecte” și „2 lei” funcționează ca metafore degradante, iar denumirea de „kakanarii” este un termen vulgar și ofensiv în limba română. Textul încalcă clar criteriile de non-toxicitate prin atacuri la grup și limbaj denigrator.",
+      "correct": true
+    },
+    {
+      "index": 74,
+      "text": "exipolurile mint, vedem mâine dimineață..!",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivare:**  \n1. **Termen potențial denigrator**: Cuvântul \"exipolurile\" pare să fie o formă derizorie sau ironizatoare pentru \"ex-politicieni\" sau \"ex-police\", sugerând o conotație negativă (similar cu \"mucușor\" din exemplu). Dacă termenul este folosit peiorativ, reprezintă o derogare bazată pe etichetă socială.  \n2. **Atac la credibilitate**: Afirmația \"mint\" atacă onestitatea unui grup, fără a fi o critică constructivă sau un argument logic.  \n3. **Sarcasm agresiv**: \"vedem mâine dimineață\" poate fi perceput ca ironie ascunsă, sugerând că minciunile vor fi expuse, ceea ce adaugă un strat de agresivitate pasivă.  \n\n**Context suplimentar:** Deși nu există cuvinte vulgare, combinația dintre termen ambiguu (posibil pejorativ), atac la integritate și tonul ironic îndeplinește criteriile de toxicitate conform definiției oferite (insultă indirectă, limbaj denigrator, sarcasm agresiv).",
+      "correct": false
+    },
+    {
+      "index": 75,
+      "text": "pentru tembeliviziunile românești, știrile cu georgescu, valorează cât toate știrile mapamondului adunate la un loc!!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Justificare:**  \n1. **Termen pejorativ**: \"tembeliviziunile românești\" este o poreclă denigrătoare, derivată din \"tembel\" (idiot/naiv), asociată cu canalele TV, reprezentând un atac la adresa calității și profesionalismului acestora.  \n2. **Ridiculizare și minimizare**: Compararea știrilor despre Georgescu cu \"toate știrile mapamondului adunate la un loc\" este o exagerare ironico-derogatoare, care subminează relevanța altor informații și ridiculează atenția asupra unui anumit subiect.  \n3. **Sarcasm agresiv**: Textul nu exprimă doar o opțiune politică, ci atacă în mod clar instituțiile media românești (prin poreclă) și le disprețuiește valoarea, fără a justifica criticile cu argumente concrete.  \n\nAceste elemente corespund definiției toxicității prin limbaj denigrator și sarcasm agresiv îndreptat spre un grup (canale TV), fără a fi o critică constructivă.",
+      "correct": true
+    },
+    {
+      "index": 76,
+      "text": "hoti!!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Motivare:** Termenul \"hoti\" (plural de \"hoț\", care înseamnă \"furiș\" sau \"vătămuș\") este o denumire pejorativă și directă, utilizată pentru a acuza pe cineva de furtăciune sau comportament ilegal. În contextul fără alte informații, acest cuvânt reprezintă o insultă și o derogare, care atacă caracterul și integritatea unei persoane sau grupului. Deși nu conține cuvinte vulgare explicite, este o formă de limbaj denigrator și agresiv, care intră în categoria toxicității conform definiției oferite.",
+      "correct": true
+    },
+    {
+      "index": 77,
+      "text": "un oportunist fără scrupule.",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(Labelul \"fără scrupule\" este o denigrare explicită a caracterului unei persoane, adică o atacă la nivel moral/etic, fără a fi o simplă critică constructivă. Termenul „oportunist” în contextul acesta are o nuanță pejorativă, iar combinarea cu „fără scrupule” amplifică disprețul față de integritatea morală a persoanei. Acest tip de limbaj intră în categoria toxicității deoarece are rolul de a discredita și de a minimiza calitatea morală a unei persoane.)",
+      "correct": true
+    },
+    {
+      "index": 78,
+      "text": "venit de nicaieri,pentru astia preocupati cu jambonul :)",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Motivație:**  \n- **Sarcasm și ironie agresivă:** Textul folosește un ton ironic (\"venit de nicaieri\") și o expresie metaforică (\"preocupati cu jambonul\") pentru a minimiza efortul sau valorile unei persoane/unei grupuri.  \n- **Limbaj dismissiv:** \"Jambonul\" este folosit probabil ca metaforă pentru priorități superficiale sau neimportante, ridiculizând atenția asupra unui subiect.  \n- **Context social-politic:** În discursul politic, astfel de expresii pot fi folosite pentru a ataca indirect un grup sau o ideologie, sugerând lipsa de seriozitate.  \n- **Emoji \":)\"** amplifică caracterul sarcastic, sugerând o agresiune pasivă.  \n\n**Excepții:** Dacă \"jambonul\" ar avea un sens literal și neagresiv (ex. o referință la un produs specific), clasificarea s-ar modifica. Însă în contextul social/media, este probabil o deriziune.",
+      "correct": true
+    },
+    {
+      "index": 79,
+      "text": "ești cel mai trădător reporter care l-am văzut brio dată marsi?",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală:** TOXIC\n\n**Motivație:**  \nTextul conține un **atac direct la caracterul unei persoane**, denumind-o \"trădător reporter\", ceea ce constituie o **insultă peiorativă** și o **denigrare a integrității**. Termenul \"trădător\" este un **epitet agresiv**, iar întreaga formulare are un caracter **personal și agresiv**, fără a fi o critică obiectivă. În plus, întrebarea finală (\"brio dată marsi?\") pare să adaugă un **element de ironie sarcasmă** sau **ridiculizare**, consolidând caracterul toxic al mesajului. Exemplul se încadrează în categoria **insultelor directe și atacurilor la persoană**, conform definiției oferite.",
+      "correct": true
+    },
+    {
+      "index": 80,
+      "text": "să trăiască ei cu salariul minim",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n**Explicație:**  \nFrază: *\"să trăiască ei cu salariul minim\"* conține un **ton derizoriu și pasiv-agresiv**, exprimând un dorit de a reduce condițiile de trai ale unui grup („ei”) la un nivel minim, probabil ca o formă de **dispreț implicit** față de capacitatea acestora de a obține un trai decent. Deși nu există insulte directe sau cuvinte vulgare, structura și intonarea frazei sugerează o **minimizare a problemelor** și o **atitudine condescendentă**, care intră în categoria limbajului denigrator sau al agresiunii pasive. Exemplul se apropie de cazurile de toxicitate prin **ridiculizare indirectă** și **exprimare de ură voalată**.",
+      "correct": false
+    },
+    {
+      "index": 81,
+      "text": "când vorbea nicușor ma tot uitam la ecran ca am crezut ca mi se întrerupea internetul",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n**Motivație:** Textul utilizează un ton ironic și compară discursul lui Nicușor cu o întrerupere a internetului, sugerând că este atât de neplăcut încât ar prefera o problemă tehnologică. Această formă de **sarcasm agresiv** și **ridiculizare a performanței unei persoane** (competență în exprimare) încadrează textul în definiția toxicității, mai ales prin utilizarea unei metafore negative pentru a minimiza valorile discursului. Deși nu există insulte directe, agresiunea pasivă și ironia sunt prezențe clare.",
+      "correct": true
+    },
+    {
+      "index": 82,
+      "text": "lăudat fie domnul ca mai aveți curaj după cite vi s au întâmplat. dumnezeu sa va pună în fruntea tarii amin.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Explicație:**  \nTextul conține expresii religioase și îndemnuri morale (\"lăudat fie domnul\", \"dumnezeu sa va pună...\"), fără elemente agresive, sarcasm sau atacuri la persoană. Mesajul este de natură pozitivă, exprimând sprijin și dorința ca persoana menționată să ocupe o poziție de conducere. Nu există insulte, derogue sau limbaj denigrator, iar formularea este în conformitate cu exemplele de \"NON-TOXIC\" care includ apeluri religioase sau îndemnuri morale fără agresiune.",
+      "correct": true
+    },
+    {
+      "index": 83,
+      "text": "nicio intrebare in engleza....de ce? as fi vrut sa-i aud vorbind fluent o limba straina.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \nTextul exprimă o observație sau o critică subtilă legată de lipsa unei întrebări într-o limbă străină (engleză) și dorința de a auzi o persoană vorbind fluent o limbă străină. Nu conține:  \n- Insulte directe/indirecte, porecle sau termeni pejorativi.  \n- Sarcasm, ironie agresivă sau limbaj denigrator.  \n- Derogări bazate pe aspect fizic, inteligență sau competență.  \n- Agresiune pasivă sau expresii de dispreț/ură.  \n\nCritica este neutrală și se bazează pe o preferință personală („as fi vrut să-i aud”), fără a ataca persoana în mod direct sau a o minimiza. Acest tip de exprimare se încadrează în „critică constructivă” sau „dezacord fără atacuri personale”, conform categoriei **NON-TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 84,
+      "text": "la noi este proasta educația cei 7 ani de-a casă lipsesc de-aia suntem pe primul loc la toate...",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(Exprimă un județ derizoriu și generalizări negative despre sistemul educativ, folosind ironie agresivă (\"primul loc la toate...\") și atacă implicit calitatea educației, ceea ce poate fi interpretat ca o formă de dispreț față de o instituție socială esențială. Deși nu conține insulte directe, tonul derogator și sarcasmul ascuns îl plasează în zona toxicității.)  \n\n**Note de justificare:**  \n- **\"Proastă educație\"**: Minimizare a valorii unui sistem (limbaj denigrator).  \n- **\"Suntem pe primul loc la toate...\"**: Ironie agresivă, sugerând un status negativ (agresiune pasivă).  \n- **Contextul generalizării**: Critică a unui sistem, dar fără analiză constructivă, ci cu un ton disprețuitor.  \n\nÎn comparație cu exemplele din enunț, textul nu conține insulte explicite, dar structura sa sugerează o atitudine de ură față de instituție, ceea ce îl încadrează în TOXIC.",
+      "correct": false
+    },
+    {
+      "index": 85,
+      "text": "ce excroc iohanis",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(Cuvântul \"excroc\" este o denumire pejorativă care acuză direct o persoană de fraudă și lipsă de integritate, fără a fi o critică constructivă sau un punct de vedere civilizat. Acest termen este un atac la persoană, conform definiției toxicității.)",
+      "correct": true
+    },
+    {
+      "index": 86,
+      "text": "iohannis are un document de armistițiu cu țara rusia..... ne spune ce document oficial s-a semnat? ca sa știe precis si următorul președinte.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n**Motivație:**  \n- Textul conține o **critică politică** (presupunerea că Iohannis ar avea un document de armistițiu cu Rusia), dar **nu include insulte, atacuri la persoană, sarcasm agresiv sau limbaj denigrator**.  \n- Întrebarea și apelul către transparență (\"ca să știe precis și următorul președinte\") sunt formulate ca **cereri de informare** și **sugestii de îmbunătățire a procesului democratic**, fără agresiune pasivă sau minimizare deliberată.  \n- Nu există elemente de dispreț, ridiculizare sau apel la ură, chiar dacă presupoziția din text este eronată.  \n\n**Context suplimentar:**  \nCritica politică fără atacuri personale (ex: \"PSD și PNL nu sunt în stare să apere o țară\") este considerată non-toxică, iar acest text urmează un model similar. Toxicitatea depinde exclusiv de **modul de exprimare**, nu de conținutul ideatic.",
+      "correct": true
+    },
+    {
+      "index": 87,
+      "text": "poporul roman nu mai poate fi mintit.",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \nTextul „poporul roman nu mai poate fi mintit” este o afirmație care exprimă un punct de vedere despre conștientizarea publicului față de manipularea informațională, fără a conține elemente agresive, insulte, sarcasm, atacuri la persoană sau limbaj denigrator. Este o declarație generală și neutrală, care poate fi interpretată ca o constatare sau o apelare la responsabilitate, fără a se încadra în criteriile de toxicitate definite. Exemplele de referință (ex. critică politică civilizată, constatări factuale) susțin această clasificare.",
+      "correct": true
+    },
+    {
+      "index": 88,
+      "text": "votul nostru nu contează!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \n- **Conținutul** este o afirmație exprimă nemulțumire sau frustrare față de impactul votului, dar **nu conține atacuri personale, sarcasm agresiv, limbaj denigrator sau derogări**.  \n- Este o **exprimare a unei percepții negative**, dar fără a visa rău, a minimiza calitățile unei persoane/grup sau a folosi termeni pejorativi.  \n- Conform exemplelor, afirmații similare (ex. critică politică sau nemulțumire fără atacuri) sunt clasificate ca **non-toxic**, deoarece se încadrează în **dezacord sau nemulțumire fără elemente agresive**.  \n- Nu există indicii de **apel la violență, ironie agresivă sau dispreț explicit**.  \n\n**Exemplu relevant din definiție:**  \nCritica politică civilizată sau nemulțumirea fără atacuri personale (ex. \"dragi romani, vedeti cum psd si pnl isi bage iar joc de voi?\") este considerată **non-toxic**. Această logică se aplică și aici.",
+      "correct": true
+    },
+    {
+      "index": 89,
+      "text": "tov prof iohanis....cel mai costisitor și nesimțit preș ...dintre toți cei ce s-au perindat la carma româniei...!",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Motivație:**  \nTextul conține elemente de **sarcasm și ironie agresivă** (\"tov prof iohanis\" – utilizarea de \"tovărăș\" în mod sarcastic), **limbaj denigrator** (\"cel mai costisitor și nesimțit preș\"), precum și **comparații derogative** față de un lider politic, atacând eficiența și sensibilitatea sa. Deși nu există insulte explicite, termenii \"costisitor\" și \"nesimțit\" sunt folosiți într-un context de minimizare și ridiculizare a acțiunilor liderului, ceea ce se încadrează în definiția toxicității. De asemenea, structura retorică (\"...dintre toți cei ce s-au perindat la carma României\") amplifică atacul prin comparație, contribuind la un ton agresiv.  \n\n**Exemplu relevant din definiție:**  \n- \"e delulu omul nostru... la momentul asta nici el nu mai stie ce vrea sa vorbeasca!\" (TOXIC – atac la competență și ridicularizare).  \n\nÎn acest caz, atacul este direcționat asupra performanței și imaturității politice, ceea ce îl face toxic.",
+      "correct": true
+    },
+    {
+      "index": 90,
+      "text": "un om care a muncit si a facut ce scrie in cv-ul lui! iar acest fapt il pune deasupra celorlalti candidati. bravo lui si succes la alegeri!",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Motivație:**  \nTextul exprimă apreciere sinceră pentru eforturile și realizările unei persoane, urmat de un îndemn de succes în alegeri. Nu conține niciun element din categoriile toxice (insulte, sarcasm, atacuri la persoană, expresii de dispreț sau ură). Este o critică implicită neutrală și un compliment direct, fără agresiune sau minimizare intenționată a altora. Exprimarea este constructivă și se încadrează în exemplul de apreciere non-toxică (ex: \"mulțumesc pentru știri în direct super digi 24 tv\").",
+      "correct": true
+    },
+    {
+      "index": 91,
+      "text": "ba fraiere nu mai mugi !! lasa exitpolu ca simiona re la numarare 43 %",
+      "label": 1,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Explicație:**  \n- **\"fraiere\"** este un termen pejorativ, echivalent cu \"idiot\" sau \"nebun\", reprezentând o **insultă directă**.  \n- **\"nu mai mugi\"** este o formulare agresivă și jignitoare, echivalentă cu „încetează să mai vorbești”, care intră în categoria **agresiunii pasive** și **limbajului dismissiv**.  \n- Textul conține un atac la persoană (prin insultă) și o solicitare de tăcere voalată, ceea ce îndeplinește criteriile de toxicitate.  \n\nDeși partea referitoare la \"exitpolu\" și \"43%\" ar putea fi o critică politică, prezența unei insulte și a unui ton agresiv anulează caracterul non-toxic al mesajului.",
+      "correct": false
+    },
+    {
+      "index": 92,
+      "text": "da fiecare trebuie sa isi asume dar trebuie sa fie trasi la raspundere si de colegii care sunt constienti de ce fapte fac nu doar dupa ce se sesizeaza presa si oamenii",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "**Clasificare finală: NON-TOXIC**  \n\n**Motivație:**  \n- Textul exprimă o **opinie politică/etică** despre responsabilitatea colegială și transparență, fără atacuri la persoană.  \n- Nu conține **insulte, porecle, sarcasm agresiv, limbaj denigrator** sau apeluri la violență.  \n- Expresia \"trasi la responsabilitate\" este un apel la conturabilitate instituțională, nu un atac personal.  \n- Contextul este orientat spre **critică constructivă** și analiză socială, fără minimizare, ridiculizare sau dispreț explicit.  \n\n**Comparativ cu exemplele oferite:**  \n- Diferă de cazurile toxice (\"mucușor handicapatul\", \"gâdea face infarct\") prin lipsa atacurilor personale.  \n- Respinge discursul denigrator și se aliniază cu criticile politice civilizate (\"dragi romani, vedeti cum psd si pnl isi bage iar joc de voi?\").  \n\n**Concluzie:**  \nTextul este **non-toxic** deoarece se limitează la exprimarea unui punct de vedere despre responsabilitate, fără a încălca criteriile de toxicitate definite.",
+      "correct": true
+    },
+    {
+      "index": 93,
+      "text": "hai numai plângeți cine vă mai plătește cg președinte!! o să vă desfințați",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n\n**Argumente:**  \n1. **Minimizare și sarcasm agresiv:** Fraza „hai numai plângeți” este o invitație ironică la dramatizare, cu un ton de superioritate și dispreț.  \n2. **Amenințare voalată:** „o să vă desfințați” sugerează o consecință negativă iminentă pentru grupul vizat (probabil o instanță politică), chiar dacă nu este o amenințare explicită de violență.  \n3. **Atac la capacitate și legitimitate:** „cine vă mai plătește cg președinte” ridiculește ideea de conducere, implicând o lipsă de autoritate sau competență.  \n\nTextul conține agresiune pasivă, dispreț și atacuri la adresa unui grup (posibil politicieni), îndeplinind criteriile de toxicitate.",
+      "correct": true
+    },
+    {
+      "index": 94,
+      "text": "eu nu stiu in ce societate traim… daca ma duc sa sparg o banca, politia nu imi cere doar banii furati inapoi fara sa ma aresteze si sa ma bage la mititica?… pe iohanis nu il salta ca a luat ilegal un ",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "**Clasificare finală: TOXIC**  \n\n**Motivație:**  \n1. **Termen pejorativ și insultă directă:** Utilizarea expresiei \"jeguri penale\" (jeguri = excremente, murdărie) este un limbaj denigrator și disprețuitor, comparând acte legale cu \"deșeuri\", ceea ce califică ca **insultă indirectă** și **limbaj dismissiv**.  \n2. **Atac la persoană:** Textul acuză în mod direct un lider politic (Iohannis) de furt ilegal de imobil, fără a oferi dovezi, ceea ce reprezintă o **atac la competență și integritate**.  \n3. **Ironie agresivă și inegalitate în justiție:** Compararea ipotetică a unui \"vandal\" (spargere de bancă) cu un politician (Iohannis) sugerează o **ridiculizare a sistemului legal** și o **denigrare a autorităților**, prin sugestia că unii oameni (politicieni) sunt tratați diferit.  \n4. **Limbaj agresiv pasiv:** Întrebările retorice (\"asta nu e o infracțiune?\") și acuzațiile voalate (\"nu il salta ca...\") sunt formulate ca o **condamnare implicită** a faptelor politice fără argumente concrete.  \n\n**Elemente non-toxice:**  \nCritica la adresa sistemului legal este prezentă, dar modul de exprimare (prin termeni ofensivi și atacuri directe) depășește granița unei critici civile sau analize neutre.  \n\n**Concluzie:** Textul conține multiple elemente de toxicitate (insulte, sarcasm agresiv, atacuri la persoană și limbaj denigrator), conform definiției oferite.",
+      "correct": true
+    },
+    {
+      "index": 95,
+      "text": "ce mizerie de țară...ăşti tot ca milogii vor să meargă la bruxelles cu capul plecat şi coada între picioare să cerşească o altă derogare, o altă amânare ...nu ştiu cum nu le e ruşine să se prezinte in",
+      "label": 1,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**\n\n**Motivație:**  \n1. **Insulte și limbaj denigrator:**  \n   - \"mizerie de țară\" (termen peiorativ generalizat)  \n   - \"ăști tot ca milogii\" (comparație disprețuitoare cu cerșetorii)  \n   - \"nemernici\" (insultă directă)  \n   - \"găști de interese\" (denominare disprețuitoare pentru grupuri politice)  \n\n2. **Ridiculizare și dispreț:**  \n   - \"cu capul plecat și coada între picioare\" (imagini de umilire și degradare)  \n   - \"nu merită decât dispreț și izolare\" (apel explicit la dispreț și excludere)  \n\n3. **Minimizare și sarcasm agresiv:**  \n   - \"nu știu cum nu le e rușine\" (minimizare a responsabilității și critică ipocrită)  \n   - \"vezi doamne, românia nu e respectată in europa?!\" (ironie agresivă care atacă atât reprezentanții, cât și imaginea țării)  \n\n4. **Derogare grupată:**  \n   - Atacuri generalizate la adresa \"elitei țării\" și \"reprezentanților\", fără baze factuale, bazate pe asocieri pejorative („interese mizerabile”).  \n\nTextul conține multiple elemente de toxicitate, inclusiv insulte directe, limbaj degradant și expresii de dispreț, fără a oferi un argument constructiv sau neutral. Clasificarea este **TOXIC**.",
+      "correct": true
+    },
+    {
+      "index": 96,
+      "text": "alo lume...30% prezenta probabil a fost mai mereu,numai că acuma se fura mai putin datorita tehnologiei (camere filmat, telefoane mobile, tablete care inregistreaza cand votam) zic si eu asa ca chesti",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n\n**Motivație:**  \n- Textul exprimă o opinie asupra prezenței la vot și a fraudelor electorale, bazată pe observații legate de tehnologie (camere, telefoane).  \n- Nu conține insulte, atacuri la persoană, sarcasm agresiv, limbaj denigrator sau derogări.  \n- Critica este generală și se referă la un fenomen (frauda electorală), nu la indivizi sau grupuri specifice.  \n- Expresia „zic si eu asa ca chestie” este o formulare informală de exprimare a părerii, fără intenție toxică.  \n\nConform definiției oferite, textul rămâne în aria **NON-TOXIC** deoarece se încadrează în „dezacord sau nemulțumire fără atacuri personale” și „analize sau comentarii neutre despre situații politice”.",
+      "correct": true
+    },
+    {
+      "index": 97,
+      "text": "la 74 de ani mult mai lucid decat multi politruci de la noi",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **TOXIC**  \n(În text se folosește termenul \"politruci\", o denumire pejorativă și denigratorie pentru politicieni, care implică critică la adresa competenței sau integrității lor. Acest tip de limbaj calificativ negativ, chiar dacă este direcționat general, cade sub categoria toxicității, conform definiției oferite.)",
+      "correct": false
+    },
+    {
+      "index": 98,
+      "text": "ultimul salar / inainte de pensionare ...!! .. .. la magistrati a fost mereu artificial umflat,.. in consecinta ... asa a fost calculata si pensia speciala ... tot exagerata a ramas ... verificati!.. ",
+      "label": 0,
+      "predicted": 0,
+      "predicted_class": "NON-TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**\n\n**Motivație:**  \nTextul exprimă o critică față de un sistem (calculul pensiei magistraților) pe baza unor afirmații factuale și de nelegături (ex: \"artificial umflat\", \"nedreapta a rămas\"). Nu conține:  \n- **Insulte directe/indirecte, porecle, atacuri la persoană**  \n- **Limbaj denigrator sau sarcasm agresiv**  \n- **Derogări bazate pe aspecte fizice, etnie, etc.**  \n- **Apeluri la violență sau agresiune pasivă**  \n\nCritica este orientată asupra unui proces sau o structură (pensii \"exagerate\") și nu implică atacuri personale, ci o analiză asupra nedreptății sistematice. Deși termenul \"nedreapta\" este puternic, este folosit într-un context de evaluare a justiției sistemului, nu de dispreț față de o persoană/grup. Exemplele din definiție (ex: critică politică civilizată) susțin că astfel de texte sunt **non-toxice**, fără a cădea în categoriile toxice.",
+      "correct": true
+    },
+    {
+      "index": 99,
+      "text": "câtă corupție…..",
+      "label": 0,
+      "predicted": 1,
+      "predicted_class": "TOXIC",
+      "completion": "Clasificare finală: **NON-TOXIC**  \n(Afirmație critică generală, fără atacuri personale, sarcasm, limbaj denigrator sau elemente agresive. Este o observație negativă despre un fenomen (corupție), dar exprimată neutră și fără a îndeplini criteriile TOXIC.)",
+      "correct": false
+    }
+  ]
+}
